@@ -1,0 +1,43 @@
+version: '3'
+services:
+   jenkins:
+      image: thanhtha/jenkins
+      container_name: jenkins
+      privileged: true
+      #user: jenkins
+      user: root
+      restart: always
+      ports:
+         - 8080:8080
+         - 50000:50000
+      volumes:
+         - ${JENKINS_HOME}:/var/jenkins_home:rw
+         - /var/run/docker.sock:/var/run/docker.sock
+    
+   proxy:
+      image: nginx
+      container_name: nginx-proxy
+      user: root
+      restart: always
+      ports:
+         - 80:80
+         - 443:443
+      volumes:
+         - ${NGINX_CONF_DIR}:/etc/nginx/conf.d
+         - ${NGINX_LOGS_DIR}:/var/log/nginx
+         - ${CERTBOT_WWW_DIR}:/var/www/certbot
+         - ${CERTBOT_CONF_DIR}:/etc/letsencrypt
+         - ${CERTBOT_VAR_DIR}:/var/lib/letsencrypt
+         - /var/run/docker.sock:/tmp/docker.sock
+
+   certbot:
+      container_name: certbot
+      image: certbot/certbot:latest
+      volumes:
+         - ${CERTBOT_CONF_DIR}:/etc/letsencrypt
+         - ${CERTBOT_VAR_DIR}:/var/lib/letsencrypt
+         - ${CERTBOT_WWW_DIR}:/var/www/certbot
+         - /var/run/docker.sock:/tmp/docker.sock
+      command: certonly --webroot --webroot-path=/var/www/certbot --email letha01685022@gmail.com --agree-tos --no-eff-email -d jenkins.thanhtha.name.vn
+      depends_on:
+         - proxy

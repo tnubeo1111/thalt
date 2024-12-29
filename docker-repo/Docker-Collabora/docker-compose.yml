@@ -1,0 +1,17 @@
+version: "3"
+services:
+  collabora:
+    container_name: collabora
+    image: collabora/code:latest
+    cap_add: 
+        - MKNOD
+    environment: 
+      - domain=collabora.thanhtha.name.vn
+      - username=admin
+      - password=12121212
+      - extra_params=--o:ssl.enable=false
+    ports:
+      - 9980:9980
+    restart: always
+    volumes:
+      - /etc/localtime:/etc/localtime

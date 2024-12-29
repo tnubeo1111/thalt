@@ -1,0 +1,24 @@
+Started on Apr 15, 2024, 5:19:24 PM
+Started by event from 140.82.115.37 ⇒ https://jenkins.thanhtha.name.vn:8080/github-webhook/ on Mon Apr 15 17:19:24 UTC 2024
+Using strategy: Default
+[poll] Last Built Revision: Revision 4d2f5f5383f09becb5a522bca09e79f6434d23a7 (refs/remotes/origin/master)
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.2'
+ > git ls-remote -h -- https://github.com/tnubeo1111/cicd-jenkins.git # timeout=10
+Found 1 remote heads on https://github.com/tnubeo1111/cicd-jenkins.git
+[poll] Latest remote head revision on refs/heads/master is: 0cbe2224d574997dc97fff185cb2b92ab34e6bd1
+Using strategy: Default
+[poll] Last Built Revision: Revision 4d2f5f5383f09becb5a522bca09e79f6434d23a7 (refs/remotes/origin/master)
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.2'
+ > git ls-remote -h -- https://github.com/tnubeo1111/cicd-jenkins.git # timeout=10
+Found 1 remote heads on https://github.com/tnubeo1111/cicd-jenkins.git
+[poll] Latest remote head revision on refs/heads/master is: 0cbe2224d574997dc97fff185cb2b92ab34e6bd1
+Done. Took 2.2 sec
+Changes found

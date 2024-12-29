@@ -1,0 +1,10 @@
+commit 0cbe2224d574997dc97fff185cb2b92ab34e6bd1
+tree 66041d4e0ddb7cdfcf625e771acfbc2f75bcf3ac
+parent 4d2f5f5383f09becb5a522bca09e79f6434d23a7
+author tnubeo1111 <pelu0377583903@gmail.com> 2024-04-16 00:19:11 +0700
+committer tnubeo1111 <pelu0377583903@gmail.com> 2024-04-16 00:19:11 +0700
+
+    add stage Email
+
+
+:100644 100644 a7550d9ea4930af78115b151f1116259bdbcde82 2c24f75bdca2589270c9a43bd887fd6e086e3bf3 M	Jenkinsfile

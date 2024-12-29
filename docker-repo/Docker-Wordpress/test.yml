@@ -1,0 +1,53 @@
+version: '3.3'
+
+services:
+  wordpress:
+    container_name: wordpress
+    image: wordpress:php8.1-apache
+    restart: always
+    stdin_open: true
+    tty: true
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: wp_dp
+      WORDPRESS_DB_PASSWORD: 121212
+      WORDPRESS_DB_NAME: wp_dp
+    volumes:
+      - /data/wp/wordpress:/var/www/html
+    depends_on: 
+      - db
+
+  db:
+    container_name: mariadb
+    image: mariadb:10.4
+    restart: always
+    environment:
+      MYSQL_DATABASE: wp_dp
+      MYSQL_USER: wp_dp
+      MYSQL_PASSWORD: 121212
+      MYSQL_RANDOM_ROOT_PASSWORD: t2ATQZd2
+    volumes:
+      - /data/wp/db:/var/lib/mysql
+
+  nginx:
+    container_name: nginx
+    image: nginx:latest
+    restart: unless-stopped
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - /data/wp/nginx/conf:/etc/nginx/conf.d
+      - /data/wp/certbot/conf:/etc/nginx/ssl
+      - /data/wp/certbot/data:/var/www/html
+
+  certbot:
+    container_name: certbot
+    image: certbot/certbot:latest
+    command: certonly --webroot --webroot-path=/var/www/html --email letha01685022@gmail.com --agree-tos --no-eff-email -d domain.com -d www.domain.com
+    volumes:
+      - /data/wp/certbot/conf:/etc/letsencrypt
+      - /data/wp/certbot/logs:/var/log/letsencrypt
+      - /data/wp/certbot/data:/var/www/html
+
+  

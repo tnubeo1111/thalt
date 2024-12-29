@@ -1,0 +1,55 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson.plugins.emailext.ExtendedEmailPublisherDescriptor plugin="email-ext@2.105">
+  <mailAccount>
+    <smtpHost>smtp.gmail.com</smtpHost>
+    <smtpPort>465</smtpPort>
+    <credentialsId>email</credentialsId>
+    <useSsl>true</useSsl>
+    <useTls>false</useTls>
+    <advProperties></advProperties>
+    <defaultAccount>true</defaultAccount>
+    <useOAuth2>false</useOAuth2>
+  </mailAccount>
+  <addAccounts>
+    <hudson.plugins.emailext.MailAccount>
+      <address>tha.lt11011@gmail.com</address>
+      <smtpHost>smtp.gmail.com</smtpHost>
+      <smtpPort>465</smtpPort>
+      <useSsl>true</useSsl>
+      <useTls>true</useTls>
+      <advProperties></advProperties>
+      <defaultAccount>false</defaultAccount>
+      <useOAuth2>true</useOAuth2>
+    </hudson.plugins.emailext.MailAccount>
+  </addAccounts>
+  <charset>UTF-8</charset>
+  <defaultContentType>text/html</defaultContentType>
+  <defaultSubject>$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!</defaultSubject>
+  <defaultBody>$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS:
+
+Check console output at $BUILD_URL to view the results.</defaultBody>
+  <defaultPresendScript></defaultPresendScript>
+  <defaultPostsendScript></defaultPostsendScript>
+  <defaultClasspath/>
+  <defaultTriggerIds>
+    <string>hudson.plugins.emailext.plugins.trigger.AlwaysTrigger</string>
+    <string>hudson.plugins.emailext.plugins.trigger.FailureTrigger</string>
+    <string>hudson.plugins.emailext.plugins.trigger.ScriptTrigger</string>
+    <string>hudson.plugins.emailext.plugins.trigger.PreBuildScriptTrigger</string>
+    <string>hudson.plugins.emailext.plugins.trigger.StatusChangedTrigger</string>
+    <string>hudson.plugins.emailext.plugins.trigger.SuccessTrigger</string>
+    <string>hudson.plugins.emailext.plugins.trigger.FixedUnhealthyTrigger</string>
+  </defaultTriggerIds>
+  <emergencyReroute></emergencyReroute>
+  <maxAttachmentSize>-1</maxAttachmentSize>
+  <recipientList></recipientList>
+  <defaultReplyTo></defaultReplyTo>
+  <allowedDomains></allowedDomains>
+  <excludedCommitters></excludedCommitters>
+  <listId></listId>
+  <precedenceBulk>false</precedenceBulk>
+  <debugMode>false</debugMode>
+  <requireAdminForTemplateTesting>false</requireAdminForTemplateTesting>
+  <enableWatching>false</enableWatching>
+  <enableAllowUnregistered>false</enableAllowUnregistered>
+</hudson.plugins.emailext.ExtendedEmailPublisherDescriptor>
