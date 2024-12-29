@@ -1,0 +1,59 @@
+version: '3'
+
+services:
+  db:
+    image: mariadb:10.6
+    restart: always
+    command: --transaction-isolation=READ-COMMITTED --log-bin=binlog --binlog-format=ROW
+    volumes:
+      - /data/nextcloud/db:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=121212
+      - MYSQL_PASSWORD=121212
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextcloud
+
+  app:
+    image: nextcloud:apache
+    restart: always
+    volumes:
+      - /data/nextcloud/root_dir:/var/www/html
+      - /data/nextcloud/data:/var/www/html/data
+    environment:
+      - VIRTUAL_HOST=file.thanhtha.name.vn
+      - LETSENCRYPT_HOST=file.thanhtha.name.vn
+      - MYSQL_PASSWORD=121212
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextcloud
+      - MYSQL_HOST=db
+    depends_on:
+      - db
+    
+  proxy:
+    build: ./proxy
+    restart: always
+    ports:
+      - 80:80
+      - 443:443
+    labels:
+      com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy: "true"
+    volumes:
+      - /data/nextcloud/certs:/etc/nginx/certs
+      - /data/nextcloud/vhost.d:/etc/nginx/vhost.d
+      - /data/nextcloud/html:/usr/share/nginx/html
+      - /var/run/docker.sock:/tmp/docker.sock
+      - /data/nextcloud/nginx/conf.d:/etc/nginx/conf.d
+ 
+  letsencrypt-companion:
+    image: nginxproxy/acme-companion
+    restart: always
+    volumes:
+      - /data/nextcloud/certs:/etc/nginx/certs
+      - /data/nextcloud/acme:/etc/acme.sh
+      - /data/nextcloud/vhost.d:/etc/nginx/vhost.d:rw
+      - /data/nextcloud/html:/usr/share/nginx/html
+      - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - proxy
+
+ 

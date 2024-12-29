@@ -1,0 +1,14 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<scriptApproval plugin="script-security@1326.vdb_c154de8669">
+  <approvedScriptHashes>
+    <string>SHA512:015bc6e1e81c786935bad5d53e176b58646c7d76e7a2ffe03c8097daee04bfa212fbd0e93a3e82edbe70f8aa1c1e5ffc0dba8a2d18bf37c38d1c27e06c6d1dda</string>
+    <string>SHA512:3f205299bef2fe3329258a42f2c60d332cc35ccb41a3ca0512d7869c6aff4561ff708c48123b4f7c3dec33ccca30d54fb8b9b51b5bc7070f96236d11a3f0bdcb</string>
+    <string>SHA512:ecb1e3c4cf22c1e392f593bb6a1a57fb4fbedf34c19760e6bb8d18407c33758494b8ccf72a4a4eba57dd700ca5ec941c57144a649364ad84f0b577103bccbd7e</string>
+  </approvedScriptHashes>
+  <approvedSignatures/>
+  <aclApprovedSignatures/>
+  <approvedClasspathEntries/>
+  <pendingScripts/>
+  <pendingSignatures/>
+  <pendingClasspathEntries/>
+</scriptApproval>

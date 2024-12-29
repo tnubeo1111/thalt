@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Hudson-Version: 2.332.4
+Plugin-Dependencies: configurationslicing:1.47;resolution:=optional,em
+ ail-ext:2.90
+Implementation-Title: Email Extension Template Plugin
+Long-Name: Email Extension Template Plugin
+Implementation-Version: 1.5
+Group-Id: org.jenkinsci.plugins
+Plugin-License-Name: MIT License
+Specification-Title: Email Extension Template Plugin
+Plugin-ScmUrl: https://github.com/jenkinsci/emailext-template-plugin
+Plugin-Version: 1.5
+Jenkins-Version: 2.332.4
+Url: https://github.com/jenkinsci/emailext-template-plugin
+Short-Name: emailext-template
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-Developers: Basil Crow:basil:
+Build-Jdk-Spec: 1.8
+Created-By: Maven Archiver 3.6.0
+Specification-Version: 1.5
+
