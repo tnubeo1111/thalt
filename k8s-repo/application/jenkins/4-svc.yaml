@@ -1,0 +1,29 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: jenkins-login
+  namespace: thalt-jk
+spec:
+  selector:
+    app: jenkins-server
+  type: NodePort
+  ports:
+    - port: 8080
+      targetPort: 8080
+      nodePort: 31808
+      name: login
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: jenkins-agent
+  namespace: thalt-jk
+spec:
+  selector:
+    app: jenkins-server
+  type: NodePort
+  ports:
+    - port: 50000
+      targetPort: 50000
+      nodePort: 31500
+      name: agent
