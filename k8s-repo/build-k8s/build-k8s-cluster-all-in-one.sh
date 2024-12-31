@@ -71,33 +71,3 @@ helm install prometheus-operator prometheus-community/kube-prometheus-stack -n m
 
 
 echo "Done !!! --> https://www.cherryservers.com/blog/install-kubernetes-on-ubuntu"
-
-# Setup loadbalancer using MetaLP
-
-# First edit kube through the following link and also install metalp
-echo "https://metallb.universe.tf/installation/"
-
-mkdir -p metalp
-
-cat <<EOF > metalp/config.yaml
-# Create file config IPAddressPool
-apiVersion: metallb.io/v1beta1
-kind: IPAddressPool
-metadata:
-  name: default-pool
-  namespace: metallb-system
-spec:
-  addresses:
-  - 192.168.10.10-192.168.10.100
----
-apiVersion: metallb.io/v1beta1
-kind: L2Advertisement
-metadata:
-  name: default-pool
-  namespace: metallb-system
-spec:
-  ipAddressPools:
-  - default-pool
-EOF
-
-#  kubectl apply -f metalp/config.yaml
