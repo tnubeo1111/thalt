@@ -1,0 +1,21 @@
+kind: Ingress
+metadata:
+  name: jenkins-ingress
+  namespace: thalt-jk
+spec:
+  ingressClassName: nginx
+  tls:
+  - hosts:
+      - jenkins.infiniband.vn
+    secretName: jenkins.infiniband.vn
+  rules:
+  - host: jenkins.infiniband.vn
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: jenkins-login
+            port:
+              number: 8080
