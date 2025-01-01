@@ -1,0 +1,32 @@
+service:
+  type: ClusterIP
+ingress:
+  enabled: true
+  hosts:
+    - name: sonar.infiniband.vn
+  tls:
+    - secretName: sonar.infiniband.vn
+      hosts:
+        - sonar.infiniband.vn
+persistence:
+  enabled: true
+jdbcOverwrite:
+  # If enable the JDBC Overwrite, make sure to set `postgresql.enabled=false`
+  enabled: true
+  jdbcUrl: "jdbc:postgresql://172.25.155.236:5422/sonar"
+  jdbcUsername: "sonar"
+  jdbcPassword: "sonar"
+postgresql:
+  enabled: false
+readinessProbe:
+  initialDelaySeconds: 300
+  periodSeconds: 200
+  failureThreshold: 10
+livenessProbe:
+  initialDelaySeconds: 300
+  periodSeconds: 200
+  failureThreshold: 10
+startupProbe:
+  initialDelaySeconds: 300
+  periodSeconds: 200
+  failureThreshold: 24
