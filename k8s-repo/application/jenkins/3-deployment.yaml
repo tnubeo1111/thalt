@@ -17,6 +17,10 @@ spec:
             fsGroup: 1000 
             runAsUser: 1000
       serviceAccountName: jenkins-admin
+      hostAliases:
+      - ip: "172.26.24.80"
+        hostnames:
+        - "sonar.infiniband.vn"
       containers:
         - name: jenkins
           image: jenkins/jenkins:lts
