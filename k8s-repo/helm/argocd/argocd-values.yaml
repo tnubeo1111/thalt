@@ -1,0 +1,7 @@
+server:
+  ingress:
+    enabled: true
+    ingressClassName: "nginx"
+    hostname: "argocd.infiniband.vn"
+    tls: true
+    
