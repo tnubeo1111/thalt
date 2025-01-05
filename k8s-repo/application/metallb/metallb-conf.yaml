@@ -16,4 +16,6 @@ metadata:
 spec:
   ipAddressPools:
   - default-pool
+  interfaces:
+  - eth0
 
