@@ -1,0 +1,47 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: iperf-to-influx-configmap
+data:
+  iperf-to-influx.sh: |
+    #!/bin/bash
+
+    # Packages
+    apt update -y && apt install -y curl jq > /dev/null 2>&1
+
+    # Debug: print server address and ports
+    echo "Connecting to iperf server at $SERVER:$PORT"
+
+    # Run iperf3 test
+    OUTPUT=$(iperf3 -c $SERVER -p $PORT -J 2>&1)
+
+    # Debug: print iperf3 output
+    echo "iperf3 output: $OUTPUT"
+
+    # Extract relevant data
+    BANDWIDTH_RECEIVED=$(echo $OUTPUT | jq '.end.sum_received.bits_per_second')
+    BANDWIDTH_SENT=$(echo $OUTPUT | jq '.end.sum_sent.bits_per_second')
+    RETRANSMITS=$(echo $OUTPUT | jq '.end.streams[0].sender.retransmits')
+
+    # Extract RTT metrics for the sender
+    MAX_RTT=$(echo $OUTPUT | jq '.end.streams[0].sender.max_rtt')
+    MEAN_RTT=$(echo $OUTPUT | jq '.end.streams[0].sender.mean_rtt')
+    MIN_RTT=$(echo $OUTPUT | jq '.end.streams[0].sender.min_rtt')
+
+
+    # Debug: print extracted metrics
+    echo "Extracted bandwidth received: $BANDWIDTH_RECEIVED"
+    echo "Extracted bandwidth sent: $BANDWIDTH_SENT"
+    echo "Extracted retransmits: $RETRANSMITS"
+    echo "Extracted max RTT: $MAX_RTT"
+    echo "Extracted mean RTT: $MEAN_RTT"
+    echo "Extracted min RTT: $MIN_RTT"
+
+    # Create InfluxDB line protocol data
+    DATA="iperf,host=$(hostname) bandwidth_received=$BANDWIDTH_RECEIVED,bandwidth_sent=$BANDWIDTH_SENT,max_rtt=$MAX_RTT,mean_rtt=$MEAN_RTT,min_rtt=$MIN_RTT,retransmits=$RETRANSMITS"
+
+    # Debug: print data to be sent to InfluxDB
+    echo "Data to be sent to InfluxDB: $DATA"
+
+    # Send data to InfluxDB
+    curl -i -XPOST "$INFLUXDB_URL/write?db=$INFLUXDB_DB" --data-binary "$DATA"

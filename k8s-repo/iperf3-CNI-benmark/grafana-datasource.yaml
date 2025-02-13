@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: influx-grafana-datasource
+  labels:
+     grafana_datasource: "1"
+data:
+  influxdb-iperf.yaml: |-
+    apiVersion: 1
+    datasources:
+      - name: influxdb
+        type: influxdb
+        database: iperf
+        url: http://influxdb.YOUR_NAMESPACE.svc:8086
+        # change YOUR_NAMESPACE with the right value
+        access: proxy
+        jsonData:
+          timeInterval: "15s"
