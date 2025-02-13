@@ -1,0 +1,39 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: iperf-client-cronjob
+spec:
+  schedule: "*/5 * * * *"  # Run every 5 minutes
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            app: iperf-client
+        spec:
+          containers:
+          - name: iperf-client
+            image: networkstatic/iperf3
+            command: ["/bin/sh", "-c"]
+            args: ["sh /scripts/iperf-to-influx.sh"]
+            env:
+            - name: SERVER
+              value: "iperf-server"
+            - name: PORT
+              value: "5201"
+            - name: INFLUXDB_URL
+              value: "http://influxdb:8086"
+            - name: INFLUXDB_DB
+              value: "iperf"
+            volumeMounts:
+            - name: script-volume
+              mountPath: /scripts
+              readOnly: true
+          restartPolicy: OnFailure
+          volumes:
+          - name: script-volume
+            configMap:
+              name: iperf-to-influx-configmap
+              items:
+              - key: iperf-to-influx.sh
+                path: iperf-to-influx.sh
