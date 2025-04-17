@@ -1,0 +1,15 @@
+import os
+
+print(os.getenv("CTX_CLUSTER1"))
+print(os.getenv("CTX_CLUSTER2"))
+print(os.getenv("CTX_EXTERNAL_CLUSTER"))
+print(os.getenv("CTX_EXTERNAL_CLUSTER2"))
+print(os.getenv("CTX_REMOTE_CLUSTER"))
+print(os.getenv("CTX_REMOTE_CLUSTER2"))
+print(os.getenv("CTX_SECOND_CLUSTER"))
+print(os.getenv("SECOND_CLUSTER_NAME"))
+print(os.getenv("REMOTE_CLUSTER_NAME"))
+print(os.getenv("EXTERNAL_ISTIOD_ADDR"))
+print(os.getenv("SSL_SECRET_NAME"))
+print(os.getenv("EXTERNAL_ISTIOD_ADDR2"))
+print(os.getenv("SSL_SECRET_NAME2"))
