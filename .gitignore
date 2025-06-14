@@ -1,3 +1,4 @@
 aws-repo/.terraform/
 aws-repo/terraform.tfstate
 aws-repo/terraform.tfstate.backup
+aws-repo/.terraform.lock.hcl
