@@ -47,7 +47,7 @@ sudo systemctl restart kubelet.service
 
 # Initialize the Kubernetes cluster on the master node
 sudo kubeadm config images pull
-sudo kubeadm init --pod-network-cidr=10.10.0.0/16
+sudo kubeadm init --pod-network-cidr=10.10.0.0/16 --skip-phases=addon/kube-proxy
 sudo mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
