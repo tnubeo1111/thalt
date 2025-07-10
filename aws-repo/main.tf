@@ -41,7 +41,7 @@ module "lambda_function" {
 # EC2 Instance Module
 module "ec2_instance" {
   source              = "./modules/ec2"
-  ami_id              = "ami-034488765f896f58f" # Replace with your AMI ID
+  ami_id              = "ami-010876b9ddd38475e" # Replace with your AMI ID
   instance_type       = "t2.micro" # Replace with your desired instance type
   subnet_id           = module.vpc.subnet_public_ids
   key_pair            = module.key_pair.key_pair_id
