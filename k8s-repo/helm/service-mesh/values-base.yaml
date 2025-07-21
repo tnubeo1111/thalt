@@ -1,0 +1,4 @@
+_internal_defaults_do_not_set:
+  global:
+    hub: "vcr2.infiniband.vn/meaas/istio/base"
+    tag: "latest"

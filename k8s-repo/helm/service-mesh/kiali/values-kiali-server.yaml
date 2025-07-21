@@ -1,0 +1,15 @@
+auth:
+  strategy: "anonymous"
+#  openid:
+#      insecure_skip_verify_tls: true
+#      client_id: "istio"
+#      disable_rbac: true
+#      issuer_uri: "http://172.25.216.100:8080/realms/istio"
+#      scopes: ["openid", "profile", "email"]
+deployment:
+  logger:
+    log_lever: "debug"
+  view_only_mode: true
+external_services:
+  prometheus:
+        url: "http://172.25.216.100:9090"

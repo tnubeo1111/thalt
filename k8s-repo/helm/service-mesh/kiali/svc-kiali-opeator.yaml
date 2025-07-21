@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: kiali-svc
+  namespace: kiali-operator
+spec:
+  selector:
+    app: kiali-operator
+  ports:
+  - name: http
+    port: 20001
+    targetPort: 20001
+  type: LoadBalancer

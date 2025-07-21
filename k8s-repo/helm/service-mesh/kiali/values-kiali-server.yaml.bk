@@ -1,0 +1,8 @@
+auth:
+  strategy: "anonymous"
+deployment:
+  logger:
+    log_lever: "debug"
+external_services:
+  prometheus:
+        url: "http://172.25.216.100:9090"

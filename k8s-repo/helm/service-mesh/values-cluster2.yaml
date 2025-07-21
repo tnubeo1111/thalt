@@ -1,0 +1,22 @@
+_internal_defaults_do_not_set:
+  meshConfig:
+    accessLogFile: /dev/stdout
+    defaultConfig:
+      proxyMetadata:
+        ISTIO_META_DNS_CAPTURE: "true"
+#        ISTIO_META_DNS_AUTO_ALLOCATE: "true"
+
+#  pilot:
+#    hub: "vcr.infiniband.vn/meaas/istio"
+#    tag: "1.25.2"
+  global:
+#    hub: "vcr.infiniband.vn/meaas/istio"
+#    tag: "1.25.2"
+    proxy:
+      outlierLogPath: ""
+    meshID: mesh1
+    multiCluster:
+      enabled: true
+      clusterName: "cluster2"
+    network: "network2"
+    externalIstiod: true

@@ -1,0 +1,37 @@
+_internal_defaults_do_not_set:
+  name: east-westgateway
+  global:
+    proxy:
+      privileged: "true"
+#    hub: "vcr.infiniband.vn/meaas/istio"
+#    tag: "1.25.2"
+#  k8s:
+#    env:
+#      - name: ISTIO_META_ROUTER_MODE
+#        value: "sni-dnat"
+#      - name: ISTIO_META_REQUESTED_NETWORK_VIEW
+#        value: "network2"
+  podAnnotations:
+    sidecar.istio.io/inject: "false"
+  service:
+    type: ClusterIP # test set custom, production set default LB
+    ports:
+    - name: tls
+      port: 15443
+      targetPort: 15443
+    - name: status-port
+      port: 15021
+      targetPort: 15021
+    - name: tls-xds
+      port: 15012
+      targetPort: 15012
+    - name: tls-webhook
+      port: 15017
+      targetPort: 15017
+    externalIPs: [172.25.157.184] # test set custom, production set default LB
+  labels:
+    istio: eastwestgateway
+    app: istio-eastwestgateway
+    topology.istio.io/network: network2
+  networkGateway: "network2" 
+

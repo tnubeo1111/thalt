@@ -1,0 +1,12 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: istio-remote-access-binding
+subjects:
+- kind: ServiceAccount
+  name: istio-remote-access
+  namespace: istio-system
+roleRef:
+  kind: ClusterRole
+  name: istio-remote-access
+  apiGroup: rbac.authorization.k8s.io

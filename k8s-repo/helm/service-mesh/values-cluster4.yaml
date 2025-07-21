@@ -1,0 +1,30 @@
+_internal_defaults_do_not_set:
+  meshConfig:
+    accessLogFile: /dev/stdout
+    enableTracing: true
+    defaultConfig:
+      tracing: {}
+    extensionProviders:
+    - name: zipkin
+      zipkin:
+        service: zipkin.istio-system.svc.cluster.local
+        port: 9411
+#    defaultConfig:
+#      proxyMetadata:
+#        ISTIO_META_DNS_CAPTURE: "true"
+#        ISTIO_META_DNS_AUTO_ALLOCATE: "true"
+  global:
+#    hub: "vcr.infiniband.vn/meaas/istio"
+#    tag: "1.25.2"
+    proxy:
+      outlierLogPath: ""
+    multiCluster:
+      enabled: true
+      clusterName: "cluster4"
+    network: "network2"
+    configCluster: "true"
+    remotePilotAddress: "172.25.157.184"
+  istiodRemote:
+    enabled: true
+    injectionPath: /inject/cluster/cluster4/net/network2
+

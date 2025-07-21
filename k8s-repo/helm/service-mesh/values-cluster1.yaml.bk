@@ -1,0 +1,17 @@
+_internal_defaults_do_not_set:
+  meshConfig:
+    accessLogFile: /dev/stdout
+#  pilot:
+#    hub: "vcr.infiniband.vn/meaas/istio"
+#    tag: "1.25.2"
+  global:
+#    hub: "vcr.infiniband.vn/meaas/istio"
+#    tag: "1.25.2"
+    proxy:
+      outlierLogPath: ""
+    meshID: mesh1
+    multiCluster:
+      enabled: true
+      clusterName: "cluster1"
+    network: "network1"
+    externalIstiod: true

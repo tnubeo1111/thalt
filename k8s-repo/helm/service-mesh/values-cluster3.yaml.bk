@@ -1,0 +1,16 @@
+_internal_defaults_do_not_set:
+  meshConfig:
+    accessLogFile: /dev/stdout
+  global:
+#    hub: "vcr.infiniband.vn/meaas/istio"
+#    tag: "1.25.2"
+    proxy:
+      outlierLogPath: ""
+    multiCluster:
+      enabled: true
+      clusterName: "cluster3"
+    configCluster: "true"
+    remotePilotAddress: "172.25.157.223"
+  istiodRemote:
+    injectionPath: /inject/cluster/cluster3/net/network1
+

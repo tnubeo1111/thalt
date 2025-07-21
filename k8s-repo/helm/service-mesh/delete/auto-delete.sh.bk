@@ -1,0 +1,46 @@
+#!/bin/bash
+
+echo "------------------------------------------------------------------------------"
+
+# ENV
+DIR=/root/istio-primary-remote/values-helm/multi-primary/delete
+
+echo "-----Auto delete ISTIO on ${CTX_CLUSTER1}------"
+
+yes y | istioctl install --context="${CTX_CLUSTER1}" -f ${DIR}/cluster1.yaml
+istioctl uninstall -y --purge --context="${CTX_CLUSTER1}"
+kubectl delete ns istio-system sample  --context="${CTX_CLUSTER1}"
+echo "Waiting for 10 seconds before recreating namespace..."
+sleep 10
+kubectl create ns istio-system --context="${CTX_CLUSTER1}"
+
+echo "-----Auto delete ISTIO on ${CTX_CLUSTER2}------"
+
+yes y | istioctl install --context="${CTX_CLUSTER2}" -f ${DIR}/cluster2.yaml
+istioctl uninstall -y --purge --context="${CTX_CLUSTER2}"
+kubectl delete ns istio-system sample --context="${CTX_CLUSTER2}"
+echo "Waiting for 10 seconds before recreating namespace..."
+sleep 10
+kubectl create ns istio-system --context="${CTX_CLUSTER2}"
+
+echo "-----Auto delete ISTIO on ${CTX_CLUSTER3}------"
+
+yes y | istioctl install --context="${CTX_CLUSTER3}" -f ${DIR}/cluster3.yaml
+istioctl uninstall -y --purge --context="${CTX_CLUSTER3}"
+kubectl delete ns istio-system sample --context="${CTX_CLUSTER3}"
+echo "Waiting for 10 seconds before recreating namespace..."
+sleep 10
+kubectl create ns istio-system --context="${CTX_CLUSTER3}"
+
+echo "-----Auto delete ISTIO on ${CTX_CLUSTER4}------"
+
+yes y | istioctl install --context="${CTX_CLUSTER4}" -f ${DIR}/cluster4.yaml
+istioctl uninstall -y --purge --context="${CTX_CLUSTER4}"
+kubectl delete ns istio-system sample --context="${CTX_CLUSTER4}"
+echo "Waiting for 10 seconds before recreating namespace..."
+sleep 10
+kubectl create ns istio-system --context="${CTX_CLUSTER4}"
+
+
+echo "------------------------------------------------------------------------------"
+
