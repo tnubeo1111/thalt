@@ -3,7 +3,7 @@
 echo "------------------------------------------------------------------------------"
 
 # ENV
-DIR=/home/thanhtha/github/thalt/k8s-repo/helm/service-mesh/delete
+DIR=/home/thanhtha/github/thalt/k8s-repo/tools/service-mesh/delete
 
 echo "-----Auto delete ISTIO on ${CTX_CLUSTER1}------"
 
