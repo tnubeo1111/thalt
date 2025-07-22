@@ -6,6 +6,10 @@ RUN apt-get update && apt-get install -y lsb-release
 
 RUN apt-get install -y  maven
 
+RUN apt-get update && apt-get install -y curl \
+  && curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
+  && apt-get install -y nodejs
+
 RUN curl -fsSLo /usr/share/keyrings/docker-archive-keyring.asc \
   https://download.docker.com/linux/debian/gpg
 
