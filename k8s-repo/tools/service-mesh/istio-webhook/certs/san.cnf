@@ -1,0 +1,15 @@
+[req]
+distinguished_name = req_distinguished_name
+req_extensions = v3_req
+prompt = no
+
+[req_distinguished_name]
+CN = istio-sync-webhook.istio-system.svc
+
+[v3_req]
+subjectAltName = @alt_names
+
+[alt_names]
+DNS.1 = istio-sync-webhook.istio-system.svc
+DNS.2 = istio-sync-webhook.istio-system
+DNS.3 = istio-sync-webhook

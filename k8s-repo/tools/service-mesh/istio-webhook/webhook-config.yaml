@@ -1,0 +1,35 @@
+apiVersion: admissionregistration.k8s.io/v1
+kind: MutatingWebhookConfiguration
+metadata:
+  name: istio-resource-sync-webhook
+webhooks:
+- name: sync.istio.resources
+  clientConfig:
+    service:
+      name: istio-sync-webhook
+      namespace: istio-system
+      path: /mutate
+    caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURJVENDQWdtZ0F3SUJBZ0lVT3JxK0NPY0ZzdzNtUllCSUlOMElad3ZDZ3h3d0RRWUpLb1pJaHZjTkFRRUwKQlFBd0lERWVNQndHQTFVRUF3d1ZhWE4wYVc4dGMzbHVZeTEzWldKb2IyOXJMV05oTUI0WERUSTFNRGN6TVRFeApOVEl5TlZvWERUSTJNRGN6TVRFeE5USXlOVm93SURFZU1Cd0dBMVVFQXd3VmFYTjBhVzh0YzNsdVl5MTNaV0pvCmIyOXJMV05oTUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUE3c2J0ZVMyQjd6dHEKWllEdTJvTGcyei8ybkdPRWFabnVqWGVVRlNBWTMybVZCRDYrczZQWkVmSndwZS9CUVlVa3h2bHZ6OUFuemR0bQpNSzZpdlMybUZ3RmUzckJITzhoaFpFRlZCYmsxakpCSS9ORGxTY2pVeHhMUjAzMjFlRFllTnFuUzIrbjdSZGJDCjcwZ2dLRjJaeVNiUERlWkp5cnUvQytiK21vd1NDdm5EanZYWThyb1J4dCtNaktOWG1pd0Y3ci9SNkdpL3VscjAKWnVucTBhK2NySEJYNURhK3QxTEk2bTUvVWdrUThwQkFFandUN3p4d2JKL3RLMHhKV3NhaDhjMUdQOHRxR2JQVwovZHk3d1B3cDVPS00yUHNVOXQ0Nm1oakF1Q3JySjA2N0NjS2VtQjdFSEFlNTd5WXpoNXJlbmNsYjZ0Mm5ha21rCm13Z0dvTzlKMHdJREFRQUJvMU13VVRBZEJnTlZIUTRFRmdRVUs2bDlGdi9ZUUVKQXRHNmtoNGxoTXREUmllVXcKSHdZRFZSMGpCQmd3Rm9BVUs2bDlGdi9ZUUVKQXRHNmtoNGxoTXREUmllVXdEd1lEVlIwVEFRSC9CQVV3QXdFQgovekFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBTVJtS0Y1VW4xWFpEZmNBbms1TFJBdUp2eEtnSzNyK0duZ205CjVnWnJhNExjSWlyR3dGQWdLUlBxTFh1OXZiZTA5c3Iwb1VNRXl1YWpPc3RKRTh6WFB6dEREbHRTRXM1V05yVzMKekc1UmNud1FHekMxdnVCQXMwcjFtWE53cU51M2YrR2oxS2FkcWp1bUwrTWJMa29SeE9SdjdEbCt0ZW5Ua3FEWgpqalhwU25JNUR6eFlzekdnTlJTOXZTVThuUXM4cFhCZ3o3WlNHQ040UGYwOGVtbjg1eUJkMlpoWlhnR3VSRTRlCmNTc2ZKZUpNTmhqOHBlak5CbkNtTDJ0dFVFL3RtQnFxVFpnRUZwSkdWa29UQy9qaWJyTElZM0NhNVBCZUsvZHUKM2d1SHFLWHB0cm9EcXBQTmdYbE1UQkhSdkMwY1luNXFKVDFSVEdrUmV1UG5mSWlpNkE9PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
+  rules:
+  - operations: ["CREATE", "DELETE"]
+    apiGroups: [""]
+    apiVersions: ["v1"]
+    resources: ["namespaces"]
+  - operations: ["CREATE", "DELETE"]
+    apiGroups: ["extensions.istio.io"]
+    apiVersions: ["v1alpha1"]
+    resources: ["wasmplugins"]
+  - operations: ["CREATE", "DELETE"]
+    apiGroups: ["networking.istio.io"]
+    apiVersions: ["v1", "v1alpha3", "v1beta1"]
+    resources: ["destinationrules", "envoyfilters", "gateways", "proxyconfigs", "serviceentries", "sidecars", "virtualservices", "workloadentries", "workloadgroups"]
+  - operations: ["CREATE", "DELETE"]
+    apiGroups: ["security.istio.io"]
+    apiVersions: ["v1"]
+    resources: ["authorizationpolicies", "peerauthentications", "requestauthentications"]
+  - operations: ["CREATE", "DELETE"]
+    apiGroups: ["telemetry.istio.io"]
+    apiVersions: ["v1"]
+    resources: ["telemetries"]
+  admissionReviewVersions: ["v1"]
+  sideEffects: None

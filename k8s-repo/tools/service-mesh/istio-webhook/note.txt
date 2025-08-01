@@ -1,0 +1,61 @@
+- chỉnh lại main.py làm sao đó để khi remote cluster xóa namespace hay resource thì trên primary cũng xóa luôn
+
+- các resource add thêm group networking.istio.io/v1alpha3. Hiện tại chỉ sử dụng được group networking.istio.io/v1 nên khi tạo group alpha3 sẽ báo lỗi
+
+step-by-step
+- primary cluster
+B1 Tạo ServiceAccount
+B2 Lưu thông tin SA_name, token
+    SA_SECRET=$(kubectl -n istio-system get secret | grep istio-sync-webhook | awk '{print $1}')
+    kubectl -n istio-system get secret $SA_SECRET -o jsonpath='{.data.token}' | base64 -d > primary-cluster-token
+    cat primary-cluster-token | base64 | tr -d '\n' > token.b64
+
+    kubectl cluster-info | grep 'Kubernetes control plane' | awk '{print $NF}'
+
+B3 Tạo chứng chỉ TLS với SAN
+
+    cd ~/istio-sync-webhook/certs
+    openssl genrsa -out ca.key 2048
+    openssl req -new -x509 -days 365 -key ca.key -out ca.crt -subj "/CN=istio-sync-webhook-ca"
+    openssl genrsa -out tls.key 2048
+
+    cat > san.cnf << EOF
+    [req]
+    distinguished_name = req_distinguished_name
+    req_extensions = v3_req
+    prompt = no
+
+    [req_distinguished_name]
+    CN = istio-sync-webhook.istio-system.svc
+
+    [v3_req]
+    subjectAltName = @alt_names
+
+    [alt_names]
+    DNS.1 = istio-sync-webhook.istio-system.svc
+    DNS.2 = istio-sync-webhook.istio-system
+    DNS.3 = istio-sync-webhook
+    EOF
+
+    openssl req -new -key tls.key -out tls.csr -config san.cnf
+    openssl x509 -req -days 365 -in tls.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out tls.crt -extensions v3_req -extfile san.cnf
+
+    cat tls.crt | base64 | tr -d '\n' > ../tls.crt.b64
+    cat tls.key | base64 | tr -d '\n' > ../tls.key.b64
+    cat ca.crt | base64 | tr -d '\n' > ../ca-bundle.txt
+
+    openssl x509 -in tls.crt -text -noout | grep -A1 "Subject Alternative Name"
+
+B4 Viết Webhook Server
+    cd ~/istio-sync-webhook
+    cat > requirements.txt << EOF
+
+    touch main.py
+
+B5 Xây dựng Docker Image
+    Tạo Dockerfile && Build and push
+
+- remote cluster
+B1 Tạo and apply file webhook-deployment.yaml (edit images, token, tls.crt, tls.key and api_server bằng các giá trị mà ta đã lưu ở bước 2 trong primary cluster)
+B2 Cấu hình and apply file MutatingWebhookConfiguration (lưu ý caBundle thay bằng caBundle.txt mà đã base64 trong bước 2 primary cluster)
+B3 Test

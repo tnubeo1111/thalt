@@ -1,0 +1,4 @@
+flask==2.2.5
+werkzeug==2.3.8
+kubernetes==25.3.0
+tenacity==8.0.1
