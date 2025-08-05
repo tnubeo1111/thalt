@@ -72,7 +72,6 @@ def create_namespace(namespace_name):
 def delete_namespace(namespace_name):
     logger.debug(f"Attempting to delete namespace: {namespace_name}")
     try:
-        # Delete all Istio resources in the namespace
         for kind, info in ISTIO_RESOURCES.items():
             group = info["group"]
             plural = info["plural"]
@@ -105,7 +104,6 @@ def delete_namespace(namespace_name):
                         logger.info(f"{plural} with version {version} not found in namespace {namespace_name}, ignoring")
                     else:
                         logger.error(f"Failed to list {plural} in namespace {namespace_name}: {str(e)}")
-        # Delete the namespace
         core_v1.delete_namespace(name=namespace_name)
         logger.info(f"Successfully deleted namespace {namespace_name}")
     except ApiException as e:
@@ -116,8 +114,30 @@ def delete_namespace(namespace_name):
             raise
 
 @retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
+def check_resource_exists(group, version, namespace, plural, name):
+    logger.debug(f"Checking if {plural}/{name} exists in namespace {namespace} with version {version}")
+    try:
+        resource = custom_objects_api.get_namespaced_custom_object(
+            group=group,
+            version=version,
+            namespace=namespace,
+            plural=plural,
+            name=name
+        )
+        logger.debug(f"{plural}/{name} exists in namespace {namespace}")
+        return True, resource
+    except ApiException as e:
+        if e.status == 404:
+            logger.debug(f"{plural}/{name} does not exist in namespace {namespace}")
+            return False, None
+        else:
+            logger.error(f"Failed to check {plural}/{name} in namespace {namespace}: {str(e)}")
+            raise
+
+@retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
 def create_custom_object(group, version, namespace, plural, body):
     logger.debug(f"Attempting to create {plural} in namespace {namespace} with version {version}")
+    logger.debug(f"Create body: {json.dumps(body, indent=2)}")
     try:
         create_namespace(namespace)
         custom_objects_api.create_namespaced_custom_object(
@@ -129,11 +149,47 @@ def create_custom_object(group, version, namespace, plural, body):
         )
         logger.info(f"Successfully created {plural} in namespace {namespace} with version {version}")
     except ApiException as e:
-        if e.status in (404, 409):
-            logger.info(f"Ignoring ApiException for {plural} in namespace {namespace}: {str(e)}")
+        logger.error(f"Failed to create {plural} in namespace {namespace}: {str(e)}")
+        raise
+
+@retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
+def update_custom_object(group, version, namespace, plural, name, body):
+    logger.debug(f"Attempting to update {plural}/{name} in namespace {namespace} with version {version}")
+    logger.debug(f"Update body (original): {json.dumps(body, indent=2)}")
+    try:
+        create_namespace(namespace)
+        exists, current_resource = check_resource_exists(group, version, namespace, plural, name)
+        if exists:
+            # Use metadata from primary cluster, spec from remote cluster
+            updated_body = {
+                "apiVersion": body.get("apiVersion", f"{group}/{version}"),
+                "kind": body.get("kind", "VirtualService"),
+                "metadata": {
+                    "name": name,
+                    "namespace": namespace,
+                    "uid": current_resource["metadata"]["uid"],
+                    "resourceVersion": current_resource["metadata"]["resourceVersion"],
+                    "annotations": body.get("metadata", {}).get("annotations", {}),
+                    "labels": body.get("metadata", {}).get("labels", {})
+                },
+                "spec": body.get("spec", {})
+            }
+            logger.debug(f"Update body (adjusted for primary cluster): {json.dumps(updated_body, indent=2)}")
+            custom_objects_api.replace_namespaced_custom_object(
+                group=group,
+                version=version,
+                namespace=namespace,
+                plural=plural,
+                name=name,
+                body=updated_body
+            )
+            logger.info(f"Successfully updated {plural}/{name} in namespace {namespace} with version {version}")
         else:
-            logger.error(f"Failed to create {plural} in namespace {namespace}: {str(e)}")
-            raise
+            logger.info(f"{plural}/{name} not found in namespace {namespace}, attempting to create")
+            create_custom_object(group, version, namespace, plural, body)
+    except ApiException as e:
+        logger.error(f"Failed to update {plural}/{name} in namespace {namespace}: {str(e)}")
+        raise
 
 @retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
 def delete_custom_object(group, version, namespace, plural, name):
@@ -215,6 +271,20 @@ def mutate():
                             )
                             logger.info(f"Created {kind} {name} in namespace {namespace} with version {version} on primary cluster")
                             break
+                        elif operation == "UPDATE":
+                            if not object_data:
+                                logger.error(f"Object data is missing for {kind} UPDATE in namespace {namespace}")
+                                return jsonify({"error": f"Object data is missing for {kind} UPDATE"}), 400
+                            update_custom_object(
+                                group=resource_info["group"],
+                                version=version,
+                                namespace=namespace,
+                                plural=resource_info["plural"],
+                                name=name,
+                                body=object_data
+                            )
+                            logger.info(f"Updated {kind} {name} in namespace {namespace} with version {version} on primary cluster")
+                            break
                         elif operation == "DELETE":
                             delete_custom_object(
                                 group=resource_info["group"],
@@ -229,11 +299,8 @@ def mutate():
                         if e.status == 404 and version != versions_to_try[-1]:
                             logger.info(f"Version {version} not supported, trying next version")
                             continue
-                        if e.status in (404, 409):
-                            logger.info(f"Ignoring ApiException for {kind} {name}: {str(e)}")
-                        else:
-                            logger.error(f"Failed to process {kind} {name} with version {version}: {str(e)}")
-                            return jsonify({"error": f"Failed to process {kind}: {str(e)}"}), 500
+                        logger.error(f"Failed to process {kind} {name} with version {version}: {str(e)}")
+                        return jsonify({"error": f"Failed to process {kind}: {str(e)}"}), 500
                     except Exception as e:
                         logger.error(f"Unexpected error processing {kind} {name} with version {version}: {str(e)}", exc_info=True)
                         return jsonify({"error": f"Unexpected error processing {kind}: {str(e)}"}), 500
