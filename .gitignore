@@ -2,3 +2,7 @@ aws-repo/.terraform/
 aws-repo/terraform.tfstate
 aws-repo/terraform.tfstate.backup
 aws-repo/.terraform.lock.hcl
+terraform-repo/environments/prod/.terraform
+terraform-repo/environments/prod/.terraform.lock.hcl
+terraform-repo/environments/prod/terraform.tfstate
+terraform-repo/environments/prod/terraform.tfstate.backup
