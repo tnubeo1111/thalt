@@ -12,3 +12,9 @@ output "private_subnet_ids" {
   description = "IDs of private subnets"
   value       = aws_subnet.subnet-private-thalt[*].id
 }
+
+output "security_group_ids" {
+  description = "IDs of security groups"
+  value       = aws_security_group.sg-thalt.id
+
+}
