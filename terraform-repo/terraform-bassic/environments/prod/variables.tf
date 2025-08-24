@@ -1,3 +1,9 @@
+# Terraform local variables
+locals {
+  environment = "prod"
+}
+
+# Terraform configuration for VPC
 variable "region" {
   description = "AWS region"
   type        = string
@@ -25,7 +31,7 @@ variable "availability_zones" {
 
 variable "ec2_role_ssm_name" {
   description = "Name for the IAM role for EC2 instances"
-  type        = string  
+  type        = string
 }
 
 # New variable for key pair name

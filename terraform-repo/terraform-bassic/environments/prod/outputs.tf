@@ -24,7 +24,7 @@ output "ec2_role_ssm_name" {
 output "key_pair_name" {
   description = "Name of the EC2 key pair"
   value       = module.key_pair.key_pair_id
-} 
+}
 
 # Output for EC2 instance
 output "ec2_instance_id" {
