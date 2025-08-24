@@ -207,4 +207,4 @@ techshop-infrastructure/
     └── destroy.sh
 ```
 
-**Next Step:** Bạn ready để bắt đầu Phase 1 không? 🎯
+**Next Step:** Are you ready to start Phase 1? 🎯
