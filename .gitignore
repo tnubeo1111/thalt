@@ -6,3 +6,7 @@ terraform-repo/terraform-bassic/environments/prod/.terraform
 terraform-repo/terraform-bassic/environments/prod/.terraform.lock.hcl
 terraform-repo/terraform-bassic/environments/prod/terraform.tfstate
 terraform-repo/terraform-bassic/environments/prod/terraform.tfstate.backup
+terraform-repo/terraform-project/techshop-infrastructure/global/backend/.terraform
+terraform-repo/terraform-project/techshop-infrastructure/global/backend/.terraform.lock.hcl
+terraform-repo/terraform-project/techshop-infrastructure/global/backend/terraform.tfstate
+terraform-repo/terraform-project/techshop-infrastructure/global/backend/terraform.tfstate.backup
