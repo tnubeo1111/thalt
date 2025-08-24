@@ -4,6 +4,7 @@ vpc_cidr             = "10.0.0.0/16"
 public_subnets_cidr  = ["10.0.1.0/24", "10.0.2.0/24"]
 private_subnets_cidr = ["10.0.3.0/24", "10.0.4.0/24"]
 availability_zones   = ["ap-southeast-2a", "ap-southeast-2b"]
+ssh_ingress_cidr = ["0.0.0.0/0"]
 
 # EC2-ROLE Configuration for production environment
 ec2_role_ssm_name = "ec2-role-prod-ssm"

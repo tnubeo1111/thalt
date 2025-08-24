@@ -5,7 +5,7 @@ variable "ec2_role_ssm_name" {
 
 variable "ec2_ssm_policy_attachment" {
   description = "List of IAM policy ARNs to attach to the EC2 role"
-  type        = list(string)
+  type        = set(string)
   default = [
     "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore",
     "arn:aws:iam::aws:policy/CloudWatchActionsEC2Access",
@@ -13,4 +13,9 @@ variable "ec2_ssm_policy_attachment" {
     "arn:aws:iam::aws:policy/CloudWatchEventsFullAccess"
   ]
 
+}
+
+variable "ec2_instance_profile_name" {
+  description = "Name of the IAM instance profile"
+  type        = string
 }

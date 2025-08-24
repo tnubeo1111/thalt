@@ -1,0 +1,10 @@
+vpc_cidr             = "10.0.0.0/16"
+public_subnets_cidr  = ["10.0.1.0/24", "10.0.2.0/24"]
+private_subnets_cidr = ["10.0.3.0/24", "10.0.4.0/24"]
+availability_zones   = ["ap-southeast-2a", "ap-southeast-2b"]
+ec2_role_ssm_name     = "sandbox-ec2-role-ssm"
+key_pair_name        = "sandbox-key-pair"
+ami_id               = "ami-0c55b159cbfafe1f0" # Example AMI
+instance_type        = "t2.micro"
+instance_profile     = "sandbox-instance-profile"
+instance_name        = "sandbox-instance"

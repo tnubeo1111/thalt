@@ -34,6 +34,11 @@ variable "ec2_role_ssm_name" {
   type        = string
 }
 
+variable "ssh_ingress_cidr" {
+  description = "CIDR block for SSH ingress"
+  type        = list(string)
+}
+
 # New variable for key pair name
 variable "key_pair_name" {
   description = "Name for the EC2 key pair"

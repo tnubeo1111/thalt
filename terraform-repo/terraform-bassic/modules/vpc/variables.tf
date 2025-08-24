@@ -22,3 +22,8 @@ variable "environment" {
   description = "Environment name (e.g., prod, sandbox)"
   type        = string
 }
+
+variable "ssh_ingress_cidr" {
+  description = "CIDR block for SSH ingress"
+  type        = list(string)
+}
