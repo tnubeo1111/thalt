@@ -1,0 +1,97 @@
+pipeline {
+    agent {
+        docker {
+            // Image agent build chuẩn có sẵn đầy đủ tools, mount docker socket để build/push image
+            image 'thanhtha/jenkins-agent:full-tools-jdk17-3'
+            args '--user root -v /var/run/docker.sock:/var/run/docker.sock'
+        }
+    }
+    environment {
+        // Biến môi trường project
+        SONAR_PROJECT_KEY = "Java-Login-App"
+        SONAR_PROJECT_NAME = "Java-Login-App-Project"
+        SONAR_URL = "http://172.25.216.100:9000"
+        DIRECTORY = "terraform-repo/terraform-project/java-3-Tier/Java-Login-App"
+        // Docker image tag thêm SHA cú commit để dễ theo dõi
+        DOCKER_HUB = "index.docker.io"
+        DOCKER_IMAGE_TAG = "${BUILD_NUMBER}-${GIT_COMMIT.take(7)}"
+        DOCKER_IMAGE = "thanhtha/Java-Login-App:${DOCKER_IMAGE_TAG}"
+        // Git config cho việc push manifest
+        GIT_REPO_NAME = "cicd-repo"
+        GIT_USER_NAME = "tnubeo1111"
+        GIT_USER_EMAIL_CONFIG = "jenkins-admin@gmail.com"
+        GIT_USER_NAME_CONFIG = "jenkins-admin"
+        // TELEGRAM bot thông báo build
+        TELEGRAM_TOKEN = credentials('telegram-token') // change this line with your credential id for Telegram bot access token
+        TELEGRAM_CHAT_ID = credentials('telegram-chat-id') // change this line with your credential id for Telegram bot chat id
+        TEXT_PRE_BUILD = "Jenkins is building ${JOB_NAME}"
+        TEXT_SUCCESS_BUILD = "[#${env.BUILD_NUMBER}] Project: ${JOB_NAME} build Success"
+        TEXT_FAILURE_BUILD = "[#${env.BUILD_NUMBER}] Project: ${JOB_NAME} build Failure"
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                // Checkout code
+                checkout scm
+            }
+        }
+    }
+    stage('Check Dockerfile') {
+            steps {
+                dir("${DIRECTORY}") {
+                    script {
+                        if (!fileExists('Dockerfile')) {
+                            error "Dockerfile not found in directory ${DIRECTORY}"
+                        }
+                        echo "Dockerfile found, printing first 20 lines:"
+                        sh 'head -20 Dockerfile'
+                    }
+                }
+            }
+    }
+    stage('Create SonarQube Project') {
+            steps {
+                withCredentials([string(credentialsId: 'sonarqube', variable: 'SONAR_AUTH_TOKEN')]) {
+                    script {
+                        // Tạo project SonarQube nếu chưa tạo, tránh lỗi bằng || true
+                        sh """
+                            curl -s -u $SONAR_AUTH_TOKEN: \
+                            -X POST \
+                            -d name=${SONAR_PROJECT_NAME} \
+                            -d project=${SONAR_PROJECT_KEY} \
+                            ${SONAR_URL}/api/projects/create || true
+                        """
+                        echo "SonarQube project creation API called (if exists, ignored)"
+                    }
+                }
+            }
+        }
+        stage('Static Code Analysis') {
+            steps {
+                withCredentials([string(credentialsId: 'sonarqube', variable: 'SONAR_AUTH_TOKEN')]) {
+                    // Quan trọng: dùng withSonarQubeEnv tên server đã cấu hình Jenkins để plugin theo dõi task
+                    withSonarQubeEnv('SonarQubeServerName') {
+                        dir("${DIRECTORY}") {
+                            sh """
+                                sonar-scanner \
+                                    -Dsonar.login=$SONAR_AUTH_TOKEN \
+                                    -Dsonar.host.url=${SONAR_URL} \
+                                    -Dsonar.projectKey=${SONAR_PROJECT_KEY} \
+                                    -Dsonar.projectName=${SONAR_PROJECT_NAME} \
+                                    -Dsonar.sources=.
+                            """
+                        }
+                    }
+                }
+            }
+        }
+        stage('Quality Gate') {
+            steps {
+                // Đợi tối đa 5 phút, abort pipeline khi fail Quality Gate
+                timeout(time: 15, unit: 'MINUTES') {
+                    waitForQualityGate abortPipeline: true
+                }
+            }
+        }
+}
