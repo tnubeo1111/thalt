@@ -19,7 +19,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: mvn -B package --file terraform-repo/terraform-project/java-3-Tier/Java-Login-App/pom.xml
 
     - name: Log in to Docker Hub
       uses: docker/login-action@v2
@@ -30,6 +30,6 @@ jobs:
     - name: Build and push Docker image
       uses: docker/build-push-action@v3
       with:
-        context: .
+        context: terraform-repo/terraform-project/java-3-Tier/Java-Login-App
         push: true
         tags: thanhtha/java-login-app:${{ github.sha }}
