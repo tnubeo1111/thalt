@@ -43,7 +43,7 @@
 		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<artifactId>spring-boot-starter- Tomcat</artifactId>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
@@ -52,7 +52,7 @@
 			<scope>test</scope>
 			<exclusions>
 				<exclusion>
-					<groupId>org.junit.vintage</groupId>
+					<groupId>org.junit.vintage</group Id>
 					<artifactId>junit-vintage-engine</artifactId>
 				</exclusion>
 			</exclusions>

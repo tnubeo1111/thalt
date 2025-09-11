@@ -1,13 +1,13 @@
-FROM tomcat:9.0-jdk11-openjdk-slim
+# Stage 1: Build the application using Maven and JDK 8
+FROM maven:3.6.3-jdk-8 AS build
+WORKDIR /app
+COPY . .
 
-# Xóa các ứng dụng mặc định của Tomcat
+RUN mvn clean package -s settings.xml
+
+# Stage 2: Create the final image using Tomcat and JRE 8
+FROM tomcat:9.0-jre8-slim
 RUN rm -rf /usr/local/tomcat/webapps/*
-
-# Sao chép file .war vào thư mục webapps
-COPY target/dptweb-1.0.war /usr/local/tomcat/webapps/ROOT.war
-
-# Cổng Tomcat
+COPY --from=build /app/target/dptweb-1.0.war /usr/local/tomcat/webapps/ROOT.war
 EXPOSE 8080
-
-# Khởi động Tomcat
 CMD ["catalina.sh", "run"]
