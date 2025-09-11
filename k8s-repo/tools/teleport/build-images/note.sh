@@ -1,0 +1,1 @@
+bakcup github.go file (lib/auth/github.go) then copy this new github.go file to use to crack sso
