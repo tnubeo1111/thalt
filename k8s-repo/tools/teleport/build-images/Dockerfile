@@ -14,6 +14,10 @@ RUN apt-get update && apt-get install -y \
     libcbor-dev \
     libudev-dev \
     zlib1g-dev \
+    libacl1-dev \
+    libselinux1-dev \
+    libpcre2-dev \
+    tar \
     && rm -rf /var/lib/apt/lists/*
 # Cài đặt Node.js (version 20) và kích hoạt Corepack
 RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
@@ -45,15 +49,21 @@ RUN make build/teleport
 RUN make build/tsh
 RUN make build/tctl
 # Stage 2: Tạo image runtime
-FROM public.ecr.aws/gravitational/teleport-distroless:17.7.4
+FROM public.ecr.aws/gravitational/teleport-distroless:18.1.7
 
-# Copy library từ image builder
+# Copy library từ image builder for tar
+COPY --from=builder /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0 /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0
+COPY --from=builder /usr/lib/x86_64-linux-gnu/libselinux.so.1 /usr/lib/x86_64-linux-gnu/libselinux.so.1
+COPY --from=builder /usr/lib/x86_64-linux-gnu/libacl.so.1 /usr/lib/x86_64-linux-gnu/libacl.so.1
+
+# Copy library từ image builder for teleport
 COPY --from=builder /usr/lib/x86_64-linux-gnu/libfido2.so.1 /usr/lib/x86_64-linux-gnu/libfido2.so.1
 COPY --from=builder /usr/lib/x86_64-linux-gnu/libcbor.so.0.8 /usr/lib/x86_64-linux-gnu/libcbor.so.0.8
 COPY --from=builder /usr/lib/x86_64-linux-gnu/libudev.so.1 /usr/lib/x86_64-linux-gnu/libudev.so.1
 COPY --from=builder /usr/lib/x86_64-linux-gnu/libz.so.1 /usr/lib/x86_64-linux-gnu/libz.so.1
 
 # Copy binaries từ stage builder
+COPY --from=builder /bin/tar /bin/tar
 COPY --from=builder /src/build/teleport /usr/local/bin/teleport
 COPY --from=builder /src/build/tsh /usr/local/bin/tsh
 COPY --from=builder /src/build/tctl /usr/local/bin/tctl
