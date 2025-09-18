@@ -1,0 +1,59 @@
+# HPA cho teleport-cluster-auth
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: teleport-cluster-auth-hpa
+  namespace: teleport-cluster
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: teleport-cluster-auth
+  minReplicas: 2
+  maxReplicas: 5
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 70
+  behavior:
+    scaleDown:
+      stabilizationWindowSeconds: 150
+      policies:
+      - type: Pods
+        value: 1
+        periodSeconds: 30
+    scaleUp:
+      stabilizationWindowSeconds: 30
+---
+# HPA cho teleport-cluster-proxy
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: teleport-cluster-proxy-hpa
+  namespace: teleport-cluster
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: teleport-cluster-proxy
+  minReplicas: 2
+  maxReplicas: 5
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 70
+  behavior:
+    scaleDown:
+      stabilizationWindowSeconds: 150
+      policies:
+      - type: Pods
+        value: 1
+        periodSeconds: 30
+    scaleUp:
+      stabilizationWindowSeconds: 30

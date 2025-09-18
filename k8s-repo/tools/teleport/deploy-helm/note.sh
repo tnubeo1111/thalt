@@ -1,0 +1,1 @@
+kubectl create secret generic teleport-s3-credentials   --namespace teleport-cluster   --from-literal=AWS_ACCESS_KEY_ID="key"   --from-literal=AWS_SECRET_ACCESS_KEY="key"

@@ -1,0 +1,57 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: teleport-ingress
+  namespace: teleport
+  annotations:
+    # Nginx Ingress Controller
+    kubernetes.io/ingress.class: "nginx"
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+    
+    # Proxy configuration cho Teleport
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "3600"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "3600"
+    nginx.ingress.kubernetes.io/proxy-connect-timeout: "3600"
+    
+    # WebSocket support cho Teleport web terminal
+    nginx.ingress.kubernetes.io/proxy-set-headers: |
+      Upgrade $http_upgrade
+      Connection "upgrade"
+    
+    # Body size cho file uploads
+    nginx.ingress.kubernetes.io/proxy-body-size: "100m"
+      
+    # Rate limiting (tuỳ chọn)
+    nginx.ingress.kubernetes.io/rate-limit-requests-per-second: "10"
+    nginx.ingress.kubernetes.io/rate-limit-burst-multiplier: "5"
+
+spec:
+  ingressClassName: nginx
+  tls:
+  - hosts:
+    - teleport.test.qzz.io
+    - "*.test.qzz.io"
+    secretName: teleport-tls-secret
+  rules:
+  - host: teleport.test.qzz.io 
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: teleport-auth-service
+            port:
+              number: 443
+  - host: "*.test.qzz.io"  # Wildcard cho apps
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: teleport-auth-service
+            port:
+              number: 443

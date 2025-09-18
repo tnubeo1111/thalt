@@ -1,0 +1,48 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: teleport-sa
+  namespace: teleport
+  annotations:
+    # Nếu dùng IRSA (IAM Roles for Service Accounts) trên AWS EKS
+    # eks.amazonaws.com/role-arn: arn:aws:iam::ACCOUNT-ID:role/teleport-s3-role
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: teleport-role
+rules:
+# Kubernetes integration permissions
+- apiGroups: [""]
+  resources: ["users", "groups", "serviceaccounts"]
+  verbs: ["impersonate"]
+- apiGroups: [""]
+  resources: ["pods", "pods/log", "pods/exec"]
+  verbs: ["get", "list", "create"]
+- apiGroups: [""]
+  resources: ["namespaces"]
+  verbs: ["get", "list"]
+- apiGroups: ["authorization.k8s.io"]
+  resources: ["selfsubjectaccessreviews", "selfsubjectrulesreviews"]
+  verbs: ["create"]
+- apiGroups: ["apps"]
+  resources: ["deployments", "replicasets", "daemonsets", "statefulsets"]
+  verbs: ["get", "list"]
+- apiGroups: ["batch"]
+  resources: ["jobs", "cronjobs"]
+  verbs: ["get", "list"]
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: teleport-rolebinding
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: teleport-role
+subjects:
+- kind: ServiceAccount
+  name: teleport-sa
+  namespace: teleport

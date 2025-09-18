@@ -1,0 +1,24 @@
+kind: role
+version: v5
+metadata:
+  name: db-access
+spec:
+  allow:
+    # Label selectors for database instances this role has access to.
+    #
+    # These will be matched against the static/dynamic labels set on the
+    # database service.
+    db_labels:
+      '*': '*'
+
+    # Database account names this role can connect as.
+    db_users: ["*"]
+
+    # Database names this role will be able to connect to.
+    #
+    # Note, this is not the same as the "name" field in "db_service", this is
+    # the database names within a particular database instance.
+    #
+    # Also note, this setting has effect only for PostgreSQL. It does not
+    # currently have any effect on MySQL databases/schemas.
+    db_names: ["*"]

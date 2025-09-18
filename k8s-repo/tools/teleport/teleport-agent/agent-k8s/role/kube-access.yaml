@@ -1,0 +1,16 @@
+kind: role
+metadata:
+  name: kube-access
+version: v7
+spec:
+  allow:
+    kubernetes_labels:
+      '*': '*'
+    kubernetes_resources:
+      - kind: '*'
+        namespace: '*'
+        name: '*'
+        verbs: ['*']
+    kubernetes_groups:
+    - viewers
+  deny: {}

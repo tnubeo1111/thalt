@@ -1,0 +1,27 @@
+roles: "app"
+proxyAddr: "teleport.thalt.qzz.io:443"
+namespace: "teleport-agent"
+version: "18.1.7"
+serviceAccount:
+  create: false
+  name: "teleport-full-service"
+joinParams:
+  method: "kubernetes"
+  tokenName: "kubernetes-token-full-service"
+joinTokenSecret:
+  create: true
+  name: "teleport-kube-agent-app-join-token"
+apps:
+  - name: "test"
+    uri: "http://nginx-test.web.svc.cluster.local:80"
+    public_addr: "test.test.qzz.io"
+    labels:
+      env: "test"
+      service: "nginx"
+  - name: "minio"
+    uri: "http://minio-service.minio.svc.cluster.local:9001"
+    public_addr: "minio.test.qzz.io"
+    labels:
+      env: "test"
+      service: "minio"
+insecureSkipProxyTLSVerify: true

@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  teleport:
+    image: vcr.test.vn/teleport/teleport-5:18.1.7
+#    image: public.ecr.aws/gravitational/teleport-distroless:18.2.0
+    container_name: teleport
+    user: root
+    ports:
+      - "3022:3022"
+      - "3023:3023"
+      - "3024:3024"
+      - "3025:3025"
+      - "443:443"
+    environment:
+      - TELEPORT_CLUSTER_NAME=teleport.test.qzz.io
+      - TELEPORT_PROXY_LISTENER_MODE=multiplex
+      - TELEPORT_LOG_LEVEL=DEBUG
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - AWS_REQUEST_CHECKSUM_CALCULATION=when_required
+      - AWS_RESPONSE_CHECKSUM_VALIDATION=when_required
+    volumes:
+       - ./teleport/config:/etc/teleport
+       - ./teleport/data:/var/lib/teleport
+       - /root/teleport-docker/ssl:/etc/letsencrypt/live/teleport.test.qzz.io

@@ -1,0 +1,178 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: teleport-auth
+  namespace: teleport
+  labels:
+    app: teleport-auth
+    version: v18.1.7
+spec:
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  selector:
+    matchLabels:
+      app: teleport-auth
+  template:
+    metadata:
+      labels:
+        app: teleport-auth
+        version: v18
+    spec:
+      serviceAccountName: teleport-sa
+      # securityContext:
+      #   runAsNonRoot: true
+      #   runAsUser: 1000
+      #   fsGroup: 1000
+      containers:
+      - name: teleport
+        image: vcr.test.vn/teleport/teleport-tar-3:18.1.7
+        imagePullPolicy: IfNotPresent
+        args:
+        - --config=/etc/teleport/teleport.yaml
+        - --diag-addr=0.0.0.0:3000
+        env:
+        # AWS credentials cho S3 access
+        - name: AWS_ACCESS_KEY_ID
+          valueFrom:
+            secretKeyRef:
+              name: teleport-secrets-s3
+              key: AWS_ACCESS_KEY_ID
+        - name: AWS_SECRET_ACCESS_KEY
+          valueFrom:
+            secretKeyRef:
+              name: teleport-secrets-s3
+              key: AWS_SECRET_ACCESS_KEY
+        - name: AWS_DEFAULT_REGION
+          value: "HCM"  
+        # Tun off checksum
+        - name: AWS_REQUEST_CHECKSUM_CALCULATION
+          value: "when_required"
+        - name: AWS_RESPONSE_CHECKSUM_VALIDATION
+          value: "when_required"
+        # Teleport specific env vars
+        - name: TELEPORT_HOSTNAME
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.name
+        ports:
+        - name: auth
+          containerPort: 3025
+          protocol: TCP
+        - name: ssh
+          containerPort: 3022
+          protocol: TCP
+        - name: proxy
+          containerPort: 3023
+          protocol: TCP
+        - name: tunnel
+          containerPort: 3024
+          protocol: TCP
+        - name: web
+          containerPort: 443
+          protocol: TCP
+        - name: kube
+          containerPort: 3026
+          protocol: TCP
+        - name: diag
+          containerPort: 3000
+          protocol: TCP
+        volumeMounts:
+        - name: teleport-config
+          mountPath: /etc/teleport
+          readOnly: true
+        - name: teleport-data
+          mountPath: /var/lib/teleport
+        resources:
+          requests:
+            memory: "2Gi"
+            cpu: "1000m"
+          limits:
+            memory: "4Gi"
+            cpu: "2000m"
+        livenessProbe:
+          httpGet:
+            path: /healthz
+            port: 3000
+            scheme: HTTP
+          initialDelaySeconds: 60
+          periodSeconds: 30
+          timeoutSeconds: 10
+          failureThreshold: 3
+        readinessProbe:
+          httpGet:
+            path: /readyz
+            port: 3000
+            scheme: HTTP
+          initialDelaySeconds: 60
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 3
+        startupProbe:
+          httpGet:
+            path: /readyz
+            port: 3000
+            scheme: HTTP
+          initialDelaySeconds: 60
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 30
+      volumes:
+      - name: teleport-config
+        configMap:
+          name: teleport-config
+          defaultMode: 0644
+      - name: teleport-data
+        emptyDir: {}
+      # Anti-affinity để tránh schedule trên cùng node
+      # affinity:
+      #   podAntiAffinity:
+      #     preferredDuringSchedulingIgnoredDuringExecution:
+      #     - weight: 100
+      #       podAffinityTerm:
+      #         labelSelector:
+      #           matchLabels:
+      #             app: teleport-auth
+      #         topologyKey: kubernetes.io/hostname
+
+---
+# teleport-service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: teleport-auth-service
+  namespace: teleport
+  labels:
+    app: teleport-auth
+spec:
+  selector:
+    app: teleport-auth
+  type: ClusterIP
+  ports:
+  - name: auth
+    port: 3025
+    targetPort: 3025
+    protocol: TCP
+  - name: ssh
+    port: 3022
+    targetPort: 3022
+    protocol: TCP
+  - name: proxy
+    port: 3023
+    targetPort: 3023
+    protocol: TCP
+  - name: tunnel
+    port: 3024
+    targetPort: 3024
+    protocol: TCP
+  - name: web
+    port: 443
+    targetPort: 443
+    protocol: TCP
+  - name: kube
+    port: 3026
+    targetPort: 3026
+    protocol: TCP

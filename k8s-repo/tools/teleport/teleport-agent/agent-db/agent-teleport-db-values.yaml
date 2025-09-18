@@ -1,0 +1,32 @@
+roles: db
+proxyAddr: "teleport.thalt.qzz.io:443"
+namespace: "teleport-agent"
+version: "18.1.7"
+# Set to false if using Teleport Community Edition
+enterprise: true
+serviceAccount:
+  create: false
+  name: "teleport-full-service"
+joinParams:
+  method: "kubernetes"
+  tokenName: "kubernetes-token-full-service"
+joinTokenSecret:
+  create: true
+  name: "teleport-kube-agent-db-join-token"
+databases:
+  - name: test-postgres
+    uri: db-pg.test.qzz.io:5433
+    protocol: postgres
+    tls:
+       ca_cert_file: "/etc/teleport-tls-db/db-ca/ca.pem"
+    static_labels:
+      env: dev
+      service: postgres
+extraVolumes:
+   - name: db-ca
+     secret:
+       secretName: db-ca
+extraVolumeMounts:
+   - name: db-ca
+     mountPath: /etc/teleport-tls-db/db-ca
+     readOnly: true
