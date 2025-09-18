@@ -4,7 +4,7 @@
 
 This repository contains Kubernetes manifests and configuration files for deploying Teleport, a modern access plane that provides secure access to infrastructure resources including Kubernetes clusters, servers, databases, and applications.
 
-![Teleport Architecture](architecture-diagram.png)
+![Teleport Architecture](architecture-diagram/architecture.png)
 
 ## Architecture Components
 
