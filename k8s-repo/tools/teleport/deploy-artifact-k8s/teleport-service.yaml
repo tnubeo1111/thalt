@@ -1,0 +1,37 @@
+# teleport-service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: teleport-auth-service
+  namespace: teleport
+  labels:
+    app: teleport-auth
+spec:
+  selector:
+    app: teleport-auth
+  type: ClusterIP
+  ports:
+  - name: auth
+    port: 3025
+    targetPort: 3025
+    protocol: TCP
+  - name: ssh
+    port: 3022
+    targetPort: 3022
+    protocol: TCP
+  - name: proxy
+    port: 3023
+    targetPort: 3023
+    protocol: TCP
+  - name: tunnel
+    port: 3024
+    targetPort: 3024
+    protocol: TCP
+  - name: web
+    port: 443
+    targetPort: 443
+    protocol: TCP
+  - name: kube
+    port: 3026
+    targetPort: 3026
+    protocol: TCP

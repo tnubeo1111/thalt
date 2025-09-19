@@ -10,9 +10,9 @@ data:
       data_dir: /var/lib/teleport
       storage:
         type: postgres
-        conn_string: "postgres://teleport:teleport@host:port/teleport?sslmode=disable"
+        conn_string: "postgres://teleport:teleport@postgres.postgresql.svc:5432/teleport?sslmode=verify-full"
         audit_events_uri:
-          - "postgres://teleport:teleport@host:port/teleport?sslmode=disable"
+          - "postgres://teleport:teleport@postgres.postgresql.svc:5432/teleport?sslmode=verify-full"
         audit_sessions_uri: "s3://s3-teleport/teleport-records?endpoint=http://s3-hcm.test.vn&region=hcm&insecure=true&disablesse=true&disableChecksum=true"
       ca_pin: ''
       advertise_ip: teleport.test.qzz.io
@@ -34,19 +34,5 @@ data:
     app_service:
       enabled: true
       debug_app: true
-      # apps:
-      #  - name: "test"
-      #    uri: "http://nginx-test.web.svc.cluster.local:80"
-      #    public_addr: "test.test.qzz.io"
-      #    insecure_skip_verify: true
-      #    labels:
-      #     env: "test"
-      #  - name: "minio"
-      #    uri: "http://minio-service.minio.svc.cluster.local:9001"
-      #    public_addr: "minio.test.qzz.io"
-      #    insecure_skip_verify: true
-      #    labels:
-      #     env: "test"
-      #     service: "minio"
     ssh_service:
       enabled: true
