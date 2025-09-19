@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: postgres-client
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: postgres-client
+  template:
+    metadata:
+      labels:
+        app: postgres-client
+    spec:
+      initContainers:
+      - name: tls-perms
+        image: busybox
+        command:
+        - sh
+        - -c
+        - |
+          cp /tls-src/client.crt /tls/client.crt
+          cp /tls-src/client.key /tls/client.key
+          cp /tls-src/rootCA.crt  /tls/rootCA.crt
+          chmod 600 /tls/client.key   # bắt buộc 0600
+        volumeMounts:
+        - name: tls-secret
+          mountPath: /tls-src
+          readOnly: true
+        - name: tls
+          mountPath: /tls
+      - name: chown-data
+        image: busybox
+        securityContext:
+          runAsUser: 0
+      containers:
+      - name: postgres-client
+        image: httpd
+        volumeMounts:
+        - name: tls
+          mountPath: /tls
+      volumes:
+      - name: tls-secret
+        secret:
+          secretName: postgresql-tls-client
+      - name: tls
+        emptyDir: {}
+

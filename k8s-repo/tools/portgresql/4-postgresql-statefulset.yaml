@@ -1,0 +1,101 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: postgres
+spec:
+  serviceName: postgres
+  replicas: 1
+  selector:
+    matchLabels:
+      app: postgres
+  template:
+    metadata:
+      labels:
+        app: postgres
+    spec:
+      initContainers:
+      - name: tls-perms
+        image: busybox
+        command:
+        - sh
+        - -c
+        - |
+          cp /tls-src/server.crt /tls/server.crt
+          cp /tls-src/server.key /tls/server.key
+          cp /tls-src/rootCA.crt  /tls/rootCA.crt
+          chown 26:26 /tls/server.crt /tls/server.key /tls/rootCA.crt
+          chmod 600 /tls/server.key   # bắt buộc 0600
+        volumeMounts:
+        - name: tls-secret
+          mountPath: /tls-src
+          readOnly: true
+        - name: tls
+          mountPath: /tls
+      - name: chown-data
+        image: busybox
+        securityContext:
+          runAsUser: 0
+        command: ["chown", "-R", "26:26", "/bitnami/postgresql"]
+        volumeMounts:
+        - name: postgres-storage
+          mountPath: /bitnami/postgresql
+      containers:
+      - name: postgres
+        image: bitnamisecure/postgresql
+        securityContext:
+          runAsUser: 26
+        env:
+        - name: POSTGRESQL_USERNAME
+          valueFrom:
+            secretKeyRef:
+              name: postgres-secret
+              key: POSTGRESQL_USERNAME
+        - name: POSTGRESQL_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: postgres-secret
+              key: POSTGRESQL_PASSWORD
+        - name: POSTGRESQL_DATABASE
+          valueFrom:
+            secretKeyRef:
+              name: postgres-secret
+              key: POSTGRESQL_DATABASE
+        - name: POSTGRESQL_POSTGRES_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: postgres-secret
+              key: POSTGRESQL_POSTGRES_PASSWORD
+        - name: POSTGRESQL_ENABLE_TLS
+          value: "yes"
+        - name: POSTGRESQL_TLS_CERT_FILE
+          value: "/tls/server.crt"
+        - name: POSTGRESQL_TLS_KEY_FILE
+          value: "/tls/server.key"
+        - name: POSTGRESQL_TLS_CA_FILE
+          value: "/tls/rootCA.crt"
+        - name: POSTGRESQL_WAL_LEVEL
+          value: "logical"
+        - name: POSTGRESQL_MAX_CONNECTIONS
+          value: "1000"
+        ports:
+        - containerPort: 5432
+          name: postgres
+        volumeMounts:
+        - name: postgres-storage
+          mountPath: /bitnami/postgresql
+        - name: tls
+          mountPath: /tls
+#        - name: postgres-config
+#          mountPath: /etc/postgresql
+      volumes:
+      - name: postgres-storage
+        persistentVolumeClaim:
+          claimName: postgres-pvc
+      - name: tls-secret
+        secret:
+          secretName: postgresql-tls
+      - name: tls
+        emptyDir: {}
+      # - name: postgres-config
+      #   configMap:
+      #     name: postgres-config
