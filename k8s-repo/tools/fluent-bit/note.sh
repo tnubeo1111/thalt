@@ -1,0 +1,1 @@
+kubectl create secret generic kafka-ca-cert-secret --from-file=ca.crt=./ca.crt -n kafka-hcm
