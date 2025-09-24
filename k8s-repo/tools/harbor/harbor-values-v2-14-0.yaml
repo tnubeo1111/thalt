@@ -1,0 +1,175 @@
+expose:
+  type: ingress
+  tls:
+    enabled: true
+    certSource: secret
+    secret:
+      secretName: "vcr.test.vn"
+  ingress:
+    hosts:
+      core: vcr.test.vn
+    className: "nginx"
+externalURL: https://vcr.test.vn
+persistence:
+  imageChartStorage:
+    type: s3
+    s3:
+      # Set an existing secret for S3 accesskey and secretkey
+      # keys in the secret should be REGISTRY_STORAGE_S3_ACCESSKEY and REGISTRY_STORAGE_S3_SECRETKEY for registry
+      #existingSecret: ""
+      region: hcm
+      bucket: s3-harbor
+      accesskey: <accesskey>
+      secretkey: <secretkey>
+      regionendpoint: http://s3-hcm.sds.test.vn
+      #encrypt: false
+      #keyid: mykeyid
+      secure: false
+      skipverify: true
+      #v4auth: true
+      chunksize: "5242880"
+      rootdirectory: harbor
+# existingSecretAdminPassword:
+existingSecretAdminPasswordKey: HARBOR_ADMIN_PASSWORD
+harborAdminPassword: "password"
+proxy:
+  httpProxy:
+  httpsProxy:
+  noProxy: 127.0.0.1,localhost,.local,.internal
+  components:
+    - core
+    - jobservice
+    - trivy
+metrics:
+  enabled: true
+  core:
+    path: /metrics
+    port: 8001
+  registry:
+    path: /metrics
+    port: 8001
+  jobservice:
+    path: /metrics
+    port: 8001
+  exporter:
+    path: /metrics
+    port: 8001
+  serviceMonitor:
+    enabled: true
+    additionalLabels:
+      release: kube-prometheus-stack
+    interval: 20s
+    relabelings:
+      - targetLabel: test_product
+        replacement: vcr
+      - targetLabel: test_service
+        replacement: harbor
+      - targetLabel: test_team
+        replacement: cloud
+cache:
+  enabled: true
+  expireHours: 24
+nginx:
+  image:
+    repository: goharbor/nginx-photon
+    tag: v2.14.0
+portal:
+  image:
+    repository: goharbor/harbor-portal
+    tag: v2.14.0
+  replicas: 1
+core:
+  image:
+    repository: goharbor/harbor-core
+    tag: v2.14.0
+  replicas: 2
+  resources:
+    requests:
+      memory: 256Mi
+      cpu: 200m
+    limits:
+      cpu: "500m"
+      memory: "512Mi"
+jobservice:
+  image:
+    repository: goharbor/harbor-jobservice
+    tag: v2.14.0
+  replicas: 1
+  resources:
+    requests:
+      memory: 256Mi
+      cpu: 200m
+    limits:
+      cpu: "500m"
+      memory: "512Mi"
+registry:
+  registry:
+    image:
+      repository: goharbor/registry-photon
+      tag: v2.14.0
+    resources:
+      requests:
+        memory: 256Mi
+        cpu: 200m
+      limits:
+        cpu: "500m"
+        memory: "512Mi"
+  controller:
+    image:
+      repository: goharbor/harbor-registryctl
+      tag: v2.14.0
+    resources:
+      requests:
+        memory: 256Mi
+        cpu: 200m
+      limits:
+        cpu: "500m"
+        memory: "512Mi"
+  replicas: 2
+trivy:
+  enabled: true
+  image:
+    repository: goharbor/trivy-adapter-photon
+    tag: v2.14.0
+  replicas: 1
+  resources:
+    requests:
+      memory: 256Mi
+      cpu: 200m
+    limits:
+      cpu: "500m"
+      memory: "512Mi"
+  vulnType: "os,library"
+  severity: "UNKNOWN,LOW,MEDIUM,HIGH,CRITICAL"
+  securityCheck: "vuln"
+database:
+  type: external
+  external:
+    host: "IP"
+    port: "5432"
+    username: "username"
+    password: "password"
+    coreDatabase: "databasename"
+    # if using existing secret, the key must be "password"
+    existingSecret: ""
+    sslmode: "disable"
+  maxIdleConns: 100
+  maxOpenConns: 900
+redis:
+  type: internal
+  internal:
+    image:
+      repository: goharbor/redis-photon
+      tag: v2.14.0
+    resources:
+      requests:
+        memory: 256Mi
+        cpu: 200m
+      limits:
+        cpu: "500m"
+        memory: "512Mi"
+    cacheLayerDatabaseIndex: "7"
+exporter:
+  image:
+    repository: goharbor/harbor-exporter
+    tag: v2.14.0
