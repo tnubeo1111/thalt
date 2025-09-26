@@ -1,0 +1,26 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: postgresql-exporter-db
+  labels:
+    release: <prometheus-release> # Replace with your Prometheus release name
+spec:
+  selector:
+    matchLabels:
+      app: postgresql-exporter-db
+  endpoints:
+  - port: http
+    interval: 30s
+    path: /metrics
+    honorLabels: true
+    relabelings:
+    - targetLabel: test_product
+      replacement: vcr-postgresql
+    - targetLabel: test_service
+      replacement: postgresql
+    - targetLabel: test_team
+      replacement: cloud
+
+  namespaceSelector:
+    matchNames:
+    - <namespace> # Replace with the namespace where the PostgreSQL exporter is deployed

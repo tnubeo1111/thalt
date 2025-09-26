@@ -1,0 +1,29 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: postgresql-exporter-node
+  labels:
+    release: <Prometheus-release> # Replace with your Prometheus operator release name if different
+spec:
+  selector:
+    matchLabels:
+      app: postgresql-exporter-node
+  endpoints:
+  - port: http
+    interval: 15s
+    path: /metrics
+    honorLabels: true
+    relabelings:
+    - targetLabel: test_product
+      replacement: vcr-postgresql-node
+    - targetLabel: test_service
+      replacement: postgresql-node
+    - targetLabel: test_team
+      replacement: cloud
+    - sourceLabels: [__address__]
+      targetLabel: __address__
+      replacement: <IP>:9100 # Replace <IP> with the actual IP address external of the PostgreSQL exporter node
+
+  namespaceSelector:
+    matchNames:
+    - <namespace>

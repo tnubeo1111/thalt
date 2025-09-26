@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Endpoints
+metadata:
+  name: postgresql-exporter-node
+  namespace: <namespace>
+subsets:
+  - addresses:
+      - ip: <IP> # Replace <IP> with the actual IP address external of the PostgreSQL exporter node
+    ports:
+      - name: http
+        port: 9100
